@@ -1,3 +1,5 @@
+// Kevin Peters
+
 package intlist;
 
 import org.junit.jupiter.api.Test;
@@ -55,5 +57,8 @@ class IntListTest {
         for (int i = 0; i < 5; i++) {
             assertEquals(2, binaryList.getAt(i));
         }
+
+        IntList emptyList = new IntList();
+        emptyList.removeAll(0);
     }
 }

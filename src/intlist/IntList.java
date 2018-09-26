@@ -1,11 +1,12 @@
+// Kevin Peters
 package intlist;
 
 public class IntList {
 
+    private static final int START_SIZE = 8;
     // Fields
     private int[] items;
     private int size;
-    private static final int START_SIZE = 8;
 
     // Constructor
     IntList() {
@@ -47,6 +48,7 @@ public class IntList {
     public void insertAt(int toAdd, int index) {
         indexValidityCheck(index);
         checkAndGrow();
+
         shiftRight(index);
         items[index] = toAdd;
         size++;
@@ -57,9 +59,6 @@ public class IntList {
      * shifts other values so that there are no empty spaces
      * adjusts size to account for removed ints
      * items.length is NOT adjusted
-     * <p>
-     * Opted NOT to use removeAt to save computational power of moving all
-     * array values every time an instance of an int is removed
      *
      * @param toRemove int value to be removed
      */
@@ -67,6 +66,10 @@ public class IntList {
         int[] newItems = new int[items.length];
         int newSize = 0;
 
+        /*
+        Opted NOT to use removeAt to save computational power of moving all
+        array values every time an instance of an int is removed
+         */
         for (int i = 0, j = 0; i < size; i++) {
             if (items[i] != toRemove) {
                 newItems[j] = items[i];
