@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="formatting">
+    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web_nav/WebNavigator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/web_nav/WebNavigator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMSI 281.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CMSI 281.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,68 +46,59 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="524" />
-          <entry key="txt" value="83" />
+          <entry key="java" value="1306" />
+          <entry key="txt" value="116" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="524" />
-          <entry key="PLAIN_TEXT" value="83" />
+          <entry key="JAVA" value="1306" />
+          <entry key="PLAIN_TEXT" value="116" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
+          <entry key="java" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="11" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/intlist/IntListTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/intlist/IntList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="34" selection-end-line="25" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/web_nav/WebNavigator.java">
+        <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+            <state relative-caret-position="387">
+              <caret line="96" column="53" lean-forward="true" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1029#1030#0" expanded="true" />
+                <element signature="e#763#764#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#824#825#0" expanded="true" />
+                <element signature="e#855#856#0" expanded="true" />
+                <element signature="e#1875#1876#0" expanded="true" />
+                <element signature="e#1932#1933#0" expanded="true" />
+                <element signature="e#1985#1986#0" expanded="true" />
+                <element signature="e#2042#2043#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/io/FileInputStream.java">
+        <entry file="file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="243" column="23" selection-start-line="243" selection-start-column="23" selection-end-line="243" selection-end-column="23" />
+            <state relative-caret-position="-423">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,6 +109,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -132,6 +124,9 @@
         <option value="$PROJECT_DIR$/src/intlist/IntList.java" />
         <option value="$PROJECT_DIR$/src/ForneyFox/WebNavigator.java" />
         <option value="$PROJECT_DIR$/src/web_nav/WebNavigator.java" />
+        <option value="$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieInterfaceTest.java" />
+        <option value="$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java" />
+        <option value="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" />
       </list>
     </option>
   </component>
@@ -142,8 +137,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="180" />
-    <option name="y" value="-15" />
+    <option name="x" value="472" />
+    <option name="y" value="127" />
     <option name="width" value="2100" />
     <option name="height" value="1290" />
   </component>
@@ -164,6 +159,18 @@
               <item name="CMSI-281" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CMSI-281" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMSI-281" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="forneymonegerie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMSI-281" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMSI-281" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="intlist" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -178,8 +185,22 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="forneymonegerie" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -193,60 +214,99 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WebNavigator">
-    <configuration name="WebNavigator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="web_nav.WebNavigator" />
+  <component name="RunManager" selected="JUnit.ForneymonegerieTests">
+    <configuration name="ForneymonegerieTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CMSI 281" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="web_nav.*" />
+          <option name="PATTERN" value="forneymonegerie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="forneymonegerie" />
+      <option name="MAIN_CLASS_NAME" value="forneymonegerie.ForneymonegerieTests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ForneymonegerieTests.testCountType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CMSI 281" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="intlist.*" />
+          <option name="PATTERN" value="forneymonegerie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="intlist" />
-      <option name="MAIN_CLASS_NAME" value="intlist.IntListTest" />
+      <option name="PACKAGE_NAME" value="forneymonegerie" />
+      <option name="MAIN_CLASS_NAME" value="forneymonegerie.ForneymonegerieTests" />
+      <option name="METHOD_NAME" value="testCountType" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntListTest.removeAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ForneymonegerieTests.testNth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CMSI 281" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="intlist.*" />
+          <option name="PATTERN" value="forneymonegerie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="intlist" />
-      <option name="MAIN_CLASS_NAME" value="intlist.IntListTest" />
-      <option name="METHOD_NAME" value="removeAll" />
+      <option name="PACKAGE_NAME" value="forneymonegerie" />
+      <option name="MAIN_CLASS_NAME" value="forneymonegerie.ForneymonegerieTests" />
+      <option name="METHOD_NAME" value="testNth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ForneymonegerieTests.testRarestType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CMSI 281" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="forneymonegerie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="forneymonegerie" />
+      <option name="MAIN_CLASS_NAME" value="forneymonegerie.ForneymonegerieTests" />
+      <option name="METHOD_NAME" value="testRarestType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ForneymonegerieTests.testReleaseType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CMSI 281" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="forneymonegerie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="forneymonegerie" />
+      <option name="MAIN_CLASS_NAME" value="forneymonegerie.ForneymonegerieTests" />
+      <option name="METHOD_NAME" value="testReleaseType" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.IntListTest" />
-      <item itemvalue="JUnit.IntListTest.removeAll" />
-      <item itemvalue="Application.WebNavigator" />
+      <item itemvalue="JUnit.ForneymonegerieTests.testReleaseType" />
+      <item itemvalue="JUnit.ForneymonegerieTests.testCountType" />
+      <item itemvalue="JUnit.ForneymonegerieTests" />
+      <item itemvalue="JUnit.ForneymonegerieTests.testNth" />
+      <item itemvalue="JUnit.ForneymonegerieTests.testRarestType" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WebNavigator" />
-        <item itemvalue="JUnit.IntListTest" />
-        <item itemvalue="JUnit.IntListTest.removeAll" />
+        <item itemvalue="JUnit.ForneymonegerieTests" />
+        <item itemvalue="JUnit.ForneymonegerieTests.testRarestType" />
+        <item itemvalue="JUnit.ForneymonegerieTests.testNth" />
+        <item itemvalue="JUnit.ForneymonegerieTests.testCountType" />
+        <item itemvalue="JUnit.ForneymonegerieTests.testReleaseType" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +323,7 @@
       <workItem from="1537305987556" duration="166000" />
       <workItem from="1537406444329" duration="1119000" />
       <workItem from="1537938282369" duration="120000" />
-      <workItem from="1537938404880" duration="1869000" />
+      <workItem from="1537938404880" duration="7739000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -286,28 +346,50 @@
       <option name="project" value="LOCAL" />
       <updated>1537939816360</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="now clears forward on visit">
+      <created>1537940290398</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537940290398</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IntListTest - 2018.09.18 at 14h 28m 39s.xml">
-      <configuration name="IntListTest" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testNth - 2018.09.25 at 23h 56m 06s.xml">
+      <configuration name="ForneymonegerieTests.testNth" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest - 2018.09.19 at 18h 21m 13s.xml">
-      <configuration name="IntListTest" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testNth - 2018.09.25 at 23h 56m 11s.xml">
+      <configuration name="ForneymonegerieTests.testNth" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest_removeAll - 2018.09.19 at 18h 22m 16s.xml">
-      <configuration name="IntListTest.removeAll" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testNth - 2018.09.25 at 23h 56m 29s.xml">
+      <configuration name="ForneymonegerieTests.testNth" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest_removeAll - 2018.09.19 at 18h 22m 37s.xml">
-      <configuration name="IntListTest.removeAll" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testNth - 2018.09.25 at 23h 57m 29s.xml">
+      <configuration name="ForneymonegerieTests.testNth" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntListTest - 2018.09.19 at 18h 27m 09s.xml">
-      <configuration name="IntListTest" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testNth - 2018.09.25 at 23h 58m 38s.xml">
+      <configuration name="ForneymonegerieTests.testNth" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ForneymonegerieTests_testNth - 2018.09.25 at 23h 58m 40s.xml">
+      <configuration name="ForneymonegerieTests.testNth" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ForneymonegerieTests_testNth - 2018.09.25 at 23h 59m 05s.xml">
+      <configuration name="ForneymonegerieTests.testNth" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ForneymonegerieTests_testRarestType - 2018.09.26 at 00h 03m 44s.xml">
+      <configuration name="ForneymonegerieTests.testRarestType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ForneymonegerieTests_testRarestType - 2018.09.26 at 00h 05m 01s.xml">
+      <configuration name="ForneymonegerieTests.testRarestType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ForneymonegerieTests - 2018.09.26 at 00h 14m 25s.xml">
+      <configuration name="ForneymonegerieTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3274000" />
+    <option name="totallyTimeSpent" value="9144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -322,7 +404,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3282981" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997986" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3957704" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -350,7 +432,8 @@
     <MESSAGE value="Finished stack implementation" />
     <MESSAGE value="Finished intlist" />
     <MESSAGE value="formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="formatting" />
+    <MESSAGE value="now clears forward on visit" />
+    <option name="LAST_COMMIT_MESSAGE" value="now clears forward on visit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -370,23 +453,6 @@
     <entry file="file://$PROJECT_DIR$/CMSI 281.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/intlist/IntListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/intlist/IntList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="34" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -396,13 +462,148 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/web_nav/WebNavigator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+        <state relative-caret-position="351">
+          <caret line="62" column="36" lean-forward="true" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieInterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/intlist/IntListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/intlist/IntList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="125" column="4" selection-start-line="125" selection-start-column="4" selection-end-line="129" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="96" column="53" lean-forward="true" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
+          <folding>
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#1875#1876#0" expanded="true" />
+            <element signature="e#1932#1933#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
+            <element signature="e#2042#2043#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>CMSI 281</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
