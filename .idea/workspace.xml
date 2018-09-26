@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMSI 281.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CMSI 281.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,14 +46,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1306" />
-          <entry key="txt" value="116" />
+          <entry key="java" value="1307" />
+          <entry key="txt" value="174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1306" />
-          <entry key="PLAIN_TEXT" value="116" />
+          <entry key="JAVA" value="1307" />
+          <entry key="PLAIN_TEXT" value="174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -73,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="96" column="53" lean-forward="true" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
+            <state relative-caret-position="567">
+              <caret line="129" column="65" lean-forward="true" selection-start-line="129" selection-start-column="65" selection-end-line="129" selection-end-column="65" />
               <folding>
                 <element signature="e#997#998#0" expanded="true" />
                 <element signature="e#1029#1030#0" expanded="true" />
@@ -323,7 +323,7 @@
       <workItem from="1537305987556" duration="166000" />
       <workItem from="1537406444329" duration="1119000" />
       <workItem from="1537938282369" duration="120000" />
-      <workItem from="1537938404880" duration="7739000" />
+      <workItem from="1537938404880" duration="7793000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -353,13 +353,17 @@
       <option name="project" value="LOCAL" />
       <updated>1537940290398</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="most methods finished, forgot to commit as i went...">
+      <created>1537946184874</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537946184874</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ForneymonegerieTests_testNth - 2018.09.25 at 23h 56m 06s.xml">
-      <configuration name="ForneymonegerieTests.testNth" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ForneymonegerieTests_testNth - 2018.09.25 at 23h 56m 11s.xml">
       <configuration name="ForneymonegerieTests.testNth" configurationId="JUnit" />
     </history-entry>
@@ -387,9 +391,12 @@
     <history-entry file="ForneymonegerieTests - 2018.09.26 at 00h 14m 25s.xml">
       <configuration name="ForneymonegerieTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ForneymonegerieTests - 2018.09.26 at 00h 15m 50s.xml">
+      <configuration name="ForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9144000" />
+    <option name="totallyTimeSpent" value="9198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -433,7 +440,8 @@
     <MESSAGE value="Finished intlist" />
     <MESSAGE value="formatting" />
     <MESSAGE value="now clears forward on visit" />
-    <option name="LAST_COMMIT_MESSAGE" value="now clears forward on visit" />
+    <MESSAGE value="most methods finished, forgot to commit as i went..." />
+    <option name="LAST_COMMIT_MESSAGE" value="most methods finished, forgot to commit as i went..." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -513,8 +521,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="96" column="53" lean-forward="true" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
+        <state relative-caret-position="567">
+          <caret line="129" column="65" lean-forward="true" selection-start-line="129" selection-start-column="65" selection-end-line="129" selection-end-column="65" />
           <folding>
             <element signature="e#997#998#0" expanded="true" />
             <element signature="e#1029#1030#0" expanded="true" />

@@ -77,11 +77,6 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         }
     }
 
-    private void shiftLeft(int index) {
-        for (int i = index; i < size - 1; i++) {
-            collection[i] = collection[i + 1];
-        }
-    }
 
     public int countType(String toCount) {
         for (int i = 0; i < typeSize; i++) {
@@ -134,7 +129,11 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     // Private helper methods
     // ----------------------------------------------------------
 
-    // TODO: Add yours here!
+    private void shiftLeft(int index) {
+        for (int i = index; i < size - 1; i++) {
+            collection[i] = collection[i + 1];
+        }
+    }
 
     // Private Classes
     // ----------------------------------------------------------
