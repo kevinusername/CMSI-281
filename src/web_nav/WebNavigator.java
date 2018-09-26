@@ -1,8 +1,5 @@
 package web_nav;
 
-// TODO: Choose imports based on DS choice
-
-import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
