@@ -7,13 +7,13 @@ public class WebNavigator {
 
     // Fields
     private String current; // Tracks currently visited site
-    private Stack<String> history = new Stack(); // Tracks previously visited sites
-    private Stack<String> future = new Stack(); // Tracks sites sites that have gone "back" from
+    private Stack<String> history; // Tracks previously visited sites
+    private Stack<String> future; // Tracks sites sites that have gone "back" from
 
     // Constructor
     WebNavigator() {
-        history = null;
-        future = null;
+        history = new Stack<>();
+        future  = new Stack<>();
         current = null;
     }
 
@@ -65,6 +65,7 @@ public class WebNavigator {
             history.push(current);
         }
         current = site;
+        future.clear();
     }
 
     /*
