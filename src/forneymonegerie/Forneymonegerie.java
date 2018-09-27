@@ -25,32 +25,34 @@ public class Forneymonegerie implements ForneymonegerieInterface {
 
     /**
      * An absolute nightmare
+     *
      * @param y1
      * @param y2
-     * @return
+     * @return a *new* Forneymonegerie object consisting of all Forneymon from y1 that do NOT appear in y2.
      */
     public static Forneymonegerie diffMon(Forneymonegerie y1, Forneymonegerie y2) {
         Forneymonegerie fusion = new Forneymonegerie();
 
         for (int i = 0; i < y1.typeSize; i++) {
-            for (int j = 0; j < y2.typeSize; j++) {
-                if (y1.collection[i].type.equals(y2.collection[j].type)) {
-                    int difference = y1.collection[i].count - y2.collection[j].count;
-                    if (difference > 0) {
-                        fusion.collect(y1.collection[i].type);
-                        fusion.size += difference - 1;
-                        fusion.collection[fusion.typeSize - 1].count += difference - 1;
-                        break;
-                    }
-                    break;
-                } else if (j == y2.typeSize - 1) {
-                    fusion.collect(y1.collection[i].type);
-                    fusion.size += y1.collection[i].count - 1;
-                    fusion.collection[fusion.typeSize - 1].count += y1.collection[i].count - 1;
-                    break;
-                }
+            int y2Location = y2.typeIndex(y1.collection[i].type);
+
+            if (y2Location == -1) { // when type in y1 not present in y2
+                // Collect all of that type from y1
+                fusion.collect(y1.collection[i].type);
+                fusion.size += y1.collection[i].count - 1;
+                fusion.collection[fusion.typeSize - 1].count += y1.collection[i].count - 1;
+                continue; // Move onto next type
+            }
+
+            int difference = y1.collection[i].count - y2.collection[y2Location].count;
+            if (difference > 0) {
+                // Collect all the Forneymon of that type that are in y1 but NOT y2
+                fusion.collect(y1.collection[i].type);
+                fusion.size += difference - 1;
+                fusion.collection[fusion.typeSize - 1].count += difference - 1;
             }
         }
+
         return fusion;
     }
 
