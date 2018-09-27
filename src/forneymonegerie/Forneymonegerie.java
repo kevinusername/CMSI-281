@@ -24,7 +24,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     // ----------------------------------------------------------
 
     /**
-     * An absolute nightmare
+     * Less of an absolute nightmare than before
      *
      * @param y1
      * @param y2
@@ -34,7 +34,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         Forneymonegerie fusion = new Forneymonegerie();
 
         for (int i = 0; i < y1.typeSize; i++) {
-            int y2Location = y2.typeIndex(y1.collection[i].type);
+            int y2Location = y2.typeIndex(y1.collection[i].type); // Index of this type in y2 collection
 
             if (y2Location == -1) { // when type in y1 not present in y2
                 // Collect all of that type from y1
@@ -44,8 +44,9 @@ public class Forneymonegerie implements ForneymonegerieInterface {
                 continue; // Move onto next type
             }
 
-            int difference = y1.collection[i].count - y2.collection[y2Location].count;
-            if (difference > 0) {
+            // Reaching this point implies the type IS in y2
+            int difference = y1.collection[i].count - y2.collection[y2Location].count; // Difference in amount of this type
+            if (difference > 0) { // If more of this type in y1 than y2
                 // Collect all the Forneymon of that type that are in y1 but NOT y2
                 fusion.collect(y1.collection[i].type);
                 fusion.size += difference - 1;
@@ -57,13 +58,22 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     }
 
     public static boolean sameCollection(Forneymonegerie y1, Forneymonegerie y2) {
+
+        // Don't bother if size fields don't match
         if (y1.size != y2.size || y1.typeSize != y2.typeSize) {
             return false;
         }
 
+        // Since size fields match, make sure all types, and their respective sizes, match
         for (int i = 0; i < y1.typeSize; i++) {
-            if (y1.collection[i].count != y2.collection[y2.typeIndex(y1.collection[i].type)].count) {
-                System.out.println("hello there");
+            int y2Location = y2.typeIndex(y1.collection[i].type);
+
+            if (y2Location == -1) {  // If this type from y1 is NOT in y2, not equal
+                return false;
+            }
+
+            // If the amount of each type is not the same, not equal
+            if (y1.collection[i].count != y2.collection[y2Location].count) {
                 return false;
             }
         }
@@ -85,13 +95,16 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     }
 
     public boolean collect(String toAdd) {
-        for (int i = 0; i < typeSize; i++) {
-            if (collection[i].type.equals(toAdd)) {
-                collection[i].count++;
-                size++;
-                return false;
-            }
+
+        int index = typeIndex(toAdd);
+
+        if (index != -1) { // If type is already in collection, just increment sizes
+            collection[index].count++;
+            size++;
+            return false;
         }
+
+        // Add new type and increment sizes
         collection[typeSize] = new ForneymonType(toAdd, 1);
         size++;
         typeSize++;
