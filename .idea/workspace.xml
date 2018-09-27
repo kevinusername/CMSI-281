@@ -38,23 +38,24 @@
     <session id="-23105095">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4414" />
-          <entry key="txt" value="275" />
+          <entry key="java" value="4677" />
+          <entry key="txt" value="316" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4414" />
-          <entry key="PLAIN_TEXT" value="275" />
+          <entry key="JAVA" value="4677" />
+          <entry key="PLAIN_TEXT" value="316" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -74,27 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
-              <folding>
-                <element signature="e#3491#3492#0" expanded="true" />
-                <element signature="e#3523#3524#0" expanded="true" />
-                <element signature="e#3548#3549#0" expanded="true" />
-                <element signature="e#3575#3576#0" expanded="true" />
-                <element signature="e#3604#3605#0" expanded="true" />
-                <element signature="e#3635#3636#0" expanded="true" />
-                <element signature="e#4722#4723#0" expanded="true" />
-                <element signature="e#4769#4770#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/intlist/IntList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="119" selection-end-column="5" />
+            <state relative-caret-position="18">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -102,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
+            <state relative-caret-position="2646">
               <caret line="149" column="16" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -150,8 +132,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="471" />
-    <option name="y" value="126" />
+    <option name="x" value="470" />
+    <option name="y" value="125" />
     <option name="width" value="2100" />
     <option name="height" value="1290" />
   </component>
@@ -160,6 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -189,7 +172,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,7 +320,8 @@
       <workItem from="1537406444329" duration="1119000" />
       <workItem from="1537938282369" duration="120000" />
       <workItem from="1537938404880" duration="7920000" />
-      <workItem from="1538014672272" duration="9348000" />
+      <workItem from="1538014672272" duration="9597000" />
+      <workItem from="1538024808831" duration="366000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -403,19 +386,17 @@
       <option name="project" value="LOCAL" />
       <updated>1538023859217</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="checkAndGrow helper method added">
+      <created>1538024537066</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1538024537066</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ForneymonegerieTests_testSameForneymonegerie - 2018.09.26 at 21h 06m 02s.xml">
-      <configuration name="ForneymonegerieTests.testSameForneymonegerie" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ForneymonegerieTests_testSameForneymonegerie - 2018.09.26 at 21h 06m 30s.xml">
-      <configuration name="ForneymonegerieTests.testSameForneymonegerie" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ForneymonegerieTests - 2018.09.26 at 21h 06m 42s.xml">
-      <configuration name="ForneymonegerieTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ForneymonegerieTests - 2018.09.26 at 21h 08m 49s.xml">
       <configuration name="ForneymonegerieTests" configurationId="JUnit" />
     </history-entry>
@@ -437,15 +418,24 @@
     <history-entry file="ForneymonegerieTests - 2018.09.26 at 21h 49m 11s.xml">
       <configuration name="ForneymonegerieTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ForneymonegerieTests - 2018.09.26 at 22h 01m 47s.xml">
+      <configuration name="ForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ForneymonegerieTests - 2018.09.26 at 22h 09m 29s.xml">
+      <configuration name="ForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ForneymonegerieTests - 2018.09.26 at 22h 10m 45s.xml">
+      <configuration name="ForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18673000" />
+    <option name="totallyTimeSpent" value="19288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14535464" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14685315" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -488,7 +478,8 @@
     <MESSAGE value="All tests pass???" />
     <MESSAGE value="Cleaner version of diffMon" />
     <MESSAGE value="Further simplifying of methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Further simplifying of methods" />
+    <MESSAGE value="checkAndGrow helper method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkAndGrow helper method added" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -553,7 +544,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
+        <state relative-caret-position="2646">
           <caret line="149" column="16" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -563,25 +554,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/intlist/IntList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="119" selection-end-column="5" />
+        <state relative-caret-position="284">
+          <caret line="105" column="9" lean-forward="true" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
-          <folding>
-            <element signature="e#3491#3492#0" expanded="true" />
-            <element signature="e#3523#3524#0" expanded="true" />
-            <element signature="e#3548#3549#0" expanded="true" />
-            <element signature="e#3575#3576#0" expanded="true" />
-            <element signature="e#3604#3605#0" expanded="true" />
-            <element signature="e#3635#3636#0" expanded="true" />
-            <element signature="e#4722#4723#0" expanded="true" />
-            <element signature="e#4769#4770#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

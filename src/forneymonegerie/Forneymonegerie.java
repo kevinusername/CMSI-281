@@ -1,7 +1,5 @@
 package forneymonegerie;
 
-import java.util.Arrays;
-
 public class Forneymonegerie implements ForneymonegerieInterface {
 
     private static final int START_SIZE = 16;
@@ -26,8 +24,8 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     /**
      * Less of an absolute nightmare than before
      *
-     * @param y1
-     * @param y2
+     * @param y1 Forneymonegerie in which all Forneymon MUST be
+     * @param y2 Forneymonegerie in which all Forneymon must NOT be
      * @return a *new* Forneymonegerie object consisting of all Forneymon from y1 that do NOT appear in y2.
      */
     public static Forneymonegerie diffMon(Forneymonegerie y1, Forneymonegerie y2) {
@@ -114,13 +112,19 @@ public class Forneymonegerie implements ForneymonegerieInterface {
 
     public boolean release(String toRemove) {
         int index = typeIndex(toRemove);
-        if (index != -1) {
+        if (index != -1) { // If the type is in the collection
+
+            if (collection[index].count == 1) { // If last of a type, remove the type and exit
+                releaseType(toRemove);
+                return true;
+            }
+
             collection[index].count -= 1;
             size--;
             return true;
         }
 
-        return false;
+        return false; // Type isn't in the collection, nothing removed
     }
 
     public void releaseType(String toNuke) {
