@@ -176,6 +176,14 @@ public class ForneymonegerieTests {
         fm2.collect("Dampymon");
         assertTrue(Forneymonegerie.sameCollection(fm1, fm2));
         assertTrue(Forneymonegerie.sameCollection(fm2, fm1));
+
+        // Custom Tests
+        fm2.collect("Dampymon");
+        assertFalse(Forneymonegerie.sameCollection(fm2, fm1));
+        fm2.release("Dampymon");
+        assertTrue(Forneymonegerie.sameCollection(fm2, fm1));
+        // End custom tests
+
         fm2.collect("Leafymon");
         assertFalse(Forneymonegerie.sameCollection(fm1, fm2));
     }

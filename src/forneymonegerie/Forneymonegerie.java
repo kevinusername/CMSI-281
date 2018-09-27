@@ -1,5 +1,7 @@
 package forneymonegerie;
 
+import java.util.Arrays;
+
 public class Forneymonegerie implements ForneymonegerieInterface {
 
     private static final int START_SIZE = 16;
@@ -20,12 +22,50 @@ public class Forneymonegerie implements ForneymonegerieInterface {
 
     // Static methods
     // ----------------------------------------------------------
+
+    /**
+     * An absolute nightmare
+     * @param y1
+     * @param y2
+     * @return
+     */
     public static Forneymonegerie diffMon(Forneymonegerie y1, Forneymonegerie y2) {
-        throw new UnsupportedOperationException();
+        Forneymonegerie fusion = new Forneymonegerie();
+
+        for (int i = 0; i < y1.typeSize; i++) {
+            for (int j = 0; j < y2.typeSize; j++) {
+                if (y1.collection[i].type.equals(y2.collection[j].type)) {
+                    int difference = y1.collection[i].count - y2.collection[j].count;
+                    if (difference > 0) {
+                        fusion.collect(y1.collection[i].type);
+                        fusion.size += difference - 1;
+                        fusion.collection[fusion.typeSize - 1].count += difference - 1;
+                        break;
+                    }
+                    break;
+                } else if (j == y2.typeSize - 1) {
+                    fusion.collect(y1.collection[i].type);
+                    fusion.size += y1.collection[i].count - 1;
+                    fusion.collection[fusion.typeSize - 1].count += y1.collection[i].count - 1;
+                    break;
+                }
+            }
+        }
+        return fusion;
     }
 
     public static boolean sameCollection(Forneymonegerie y1, Forneymonegerie y2) {
-        throw new UnsupportedOperationException();
+        if (y1.size != y2.size || y1.typeSize != y2.typeSize) {
+            return false;
+        }
+
+        for (int i = 0; i < y1.typeSize; i++) {
+            if (y1.collection[i].count != y2.collection[y2.typeIndex(y1.collection[i].type)].count) {
+                System.out.println("hello there");
+                return false;
+            }
+        }
+        return true;
     }
 
     // Methods
@@ -57,43 +97,37 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     }
 
     public boolean release(String toRemove) {
-        for (int i = 0; i < typeSize; i++) {
-            if (collection[i].type.equals(toRemove)) {
-                collection[i].count -= 1;
-                size--;
-                return true;
-            }
+        int index = typeIndex(toRemove);
+        if (index != -1) {
+            collection[index].count -= 1;
+            size--;
+            return true;
         }
+
         return false;
     }
 
     public void releaseType(String toNuke) {
-        for (int i = 0; i < typeSize; i++) {
-            if (collection[i].type.equals(toNuke)) {
-                size -= collection[i].count;
-                shiftLeft(i);
-                typeSize--;
-            }
+        int index = typeIndex(toNuke);
+        if (index != -1) {
+            size -= collection[index].count;
+            shiftLeft(index);
+            typeSize--;
         }
     }
 
 
     public int countType(String toCount) {
-        for (int i = 0; i < typeSize; i++) {
-            if (collection[i].type.equals(toCount)) {
-                return collection[i].count;
-            }
+        int index = typeIndex(toCount);
+        if (index != -1) {
+            return collection[index].count;
         }
+
         return 0;
     }
 
     public boolean contains(String toCheck) {
-        for (int i = 0; i < typeSize; i++) {
-            if (collection[i].type.equals(toCheck)) {
-                return true;
-            }
-        }
-        return false;
+        return typeIndex(toCheck) != -1;
     }
 
     public String nth(int n) {
@@ -117,12 +151,25 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         return rarest.type;
     }
 
+    @Override
     public Forneymonegerie clone() {
-        throw new UnsupportedOperationException();
+        Forneymonegerie clonegerie = new Forneymonegerie();
+        clonegerie.collection = collection;
+        clonegerie.size = size;
+        clonegerie.typeSize = typeSize;
+
+        return clonegerie;
     }
 
     public void trade(Forneymonegerie other) {
-        throw new UnsupportedOperationException();
+        Forneymonegerie temp = clone();
+        collection = other.collection;
+        size = other.size;
+        typeSize = other.typeSize;
+
+        other.collection = temp.collection;
+        other.size = temp.size;
+        other.typeSize = typeSize;
     }
 
 
@@ -133,6 +180,15 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         for (int i = index; i < size - 1; i++) {
             collection[i] = collection[i + 1];
         }
+    }
+
+    private int typeIndex(String toFind) {
+        for (int i = 0; i < typeSize; i++) {
+            if (collection[i].type.equals(toFind)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     // Private Classes
