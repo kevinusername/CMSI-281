@@ -47,24 +47,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4065" />
-          <entry key="txt" value="245" />
+          <entry key="java" value="4414" />
+          <entry key="txt" value="275" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4065" />
-          <entry key="PLAIN_TEXT" value="245" />
+          <entry key="JAVA" value="4414" />
+          <entry key="PLAIN_TEXT" value="275" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="13" />
+          <entry key="java" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="13" />
+          <entry key="JAVA" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -74,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="126" column="26" lean-forward="true" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
+            <state relative-caret-position="639">
+              <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
               <folding>
                 <element signature="e#3491#3492#0" expanded="true" />
                 <element signature="e#3523#3524#0" expanded="true" />
@@ -86,6 +86,15 @@
                 <element signature="e#4722#4723#0" expanded="true" />
                 <element signature="e#4769#4770#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/intlist/IntList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="119" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -169,6 +178,12 @@
               <item name="CMSI-281" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="forneymonegerie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMSI-281" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMSI-281" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="intlist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -323,7 +338,7 @@
       <workItem from="1537406444329" duration="1119000" />
       <workItem from="1537938282369" duration="120000" />
       <workItem from="1537938404880" duration="7920000" />
-      <workItem from="1538014672272" duration="8691000" />
+      <workItem from="1538014672272" duration="9348000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -381,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538022741149</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Further simplifying of methods">
+      <created>1538023859217</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1538023859217</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -417,13 +439,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18016000" />
+    <option name="totallyTimeSpent" value="18673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14535464" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14535464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -465,7 +487,8 @@
     <MESSAGE value="moved private method" />
     <MESSAGE value="All tests pass???" />
     <MESSAGE value="Cleaner version of diffMon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaner version of diffMon" />
+    <MESSAGE value="Further simplifying of methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Further simplifying of methods" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -511,13 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/intlist/IntList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="125" column="4" selection-start-line="125" selection-start-column="4" selection-end-line="129" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/web_nav/WebNavigator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-135">
@@ -545,10 +561,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/intlist/IntList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="119" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="126" column="26" lean-forward="true" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
+        <state relative-caret-position="639">
+          <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
           <folding>
             <element signature="e#3491#3492#0" expanded="true" />
             <element signature="e#3523#3524#0" expanded="true" />

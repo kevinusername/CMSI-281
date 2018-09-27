@@ -105,6 +105,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         }
 
         // Add new type and increment sizes
+        checkAndGrow();
         collection[typeSize] = new ForneymonType(toAdd, 1);
         size++;
         typeSize++;
@@ -156,10 +157,10 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     }
 
     public String rarestType() {
-        ForneymonType rarest = collection[0];
+        ForneymonType rarest = collection[0]; // Default to first collected type
 
         for (int i = 1; i < typeSize; i++) {
-            if (collection[i].count <= rarest.count) {
+            if (collection[i].count <= rarest.count) { // If a type is found to be rarer, save its type instead
                 rarest = collection[i];
             }
         }
@@ -178,10 +179,13 @@ public class Forneymonegerie implements ForneymonegerieInterface {
 
     public void trade(Forneymonegerie other) {
         Forneymonegerie temp = clone();
+
+        // Inherit fields from other
         collection = other.collection;
         size = other.size;
         typeSize = other.typeSize;
 
+        // Inherit fields from clone of original
         other.collection = temp.collection;
         other.size = temp.size;
         other.typeSize = typeSize;
@@ -197,6 +201,12 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         }
     }
 
+    /**
+     * Finds index of a given type in the collection
+     *
+     * @param toFind type to search for index of
+     * @return index in array, -1 if NOT present
+     */
     private int typeIndex(String toFind) {
         for (int i = 0; i < typeSize; i++) {
             if (collection[i].type.equals(toFind)) {
@@ -204,6 +214,26 @@ public class Forneymonegerie implements ForneymonegerieInterface {
             }
         }
         return -1;
+    }
+
+    private void checkAndGrow() {
+        // Case: big enough to fit another item, so no
+        // need to grow
+        if (typeSize < collection.length) {
+            return;
+        }
+
+        // Case: we're at capacity and need to grow
+        // Step 1: create new, bigger array; we'll
+        ForneymonType[] newItems = new ForneymonType[collection.length + 8];
+
+        // Step 2: copy the items from the old array
+        for (int i = 0; i < collection.length; i++) {
+            newItems[i] = collection[i];
+        }
+
+        // Step 3: update IntList reference
+        collection = newItems;
     }
 
     // Private Classes
