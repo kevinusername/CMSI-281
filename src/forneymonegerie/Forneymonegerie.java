@@ -29,6 +29,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
      * @return a *new* Forneymonegerie object consisting of all Forneymon from y1 that do NOT appear in y2.
      */
     public static Forneymonegerie diffMon(Forneymonegerie y1, Forneymonegerie y2) {
+        // TODO: Initialize with y1 instead of blank menagerie
         Forneymonegerie fusion = new Forneymonegerie();
 
         for (int i = 0; i < y1.typeSize; i++) {
@@ -56,6 +57,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     }
 
     public static boolean sameCollection(Forneymonegerie y1, Forneymonegerie y2) {
+        // TODO: can be done in one line...
 
         // Don't bother if size fields don't match
         if (y1.size != y2.size || y1.typeSize != y2.typeSize) {
@@ -174,7 +176,11 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     @Override
     public Forneymonegerie clone() {
         Forneymonegerie clonegerie = new Forneymonegerie();
-        clonegerie.collection = collection;
+        clonegerie.collection = new ForneymonType[collection.length];
+
+        for (int i = 0; i < typeSize; i++) {
+            clonegerie.collection[i] = new ForneymonType(collection[i].type, collection[i].count);
+        }
         clonegerie.size = size;
         clonegerie.typeSize = typeSize;
 
