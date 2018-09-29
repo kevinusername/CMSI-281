@@ -201,6 +201,19 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         other.typeSize = typeSize;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder returnString = new StringBuilder("[ ");
+        for (int i = 0; i < typeSize; i++) {
+            returnString.append("\"" + collection[i].type + "\"" + ": " + collection[i].count);
+            if (i != typeSize - 1) {
+                returnString.append(", ");
+            }
+        }
+        returnString.append(" ]");
+        return returnString.toString();
+    }
+
 
     // Private helper methods
     // ----------------------------------------------------------

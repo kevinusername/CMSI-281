@@ -188,4 +188,22 @@ public class ForneymonegerieTests {
         assertFalse(Forneymonegerie.sameCollection(fm1, fm2));
     }
 
+    @Test
+    public void testGiantForneymonegerie() {
+        for (int i = 0; i < 100; i++) {
+            fm.collect("" + i);
+            int j = i;
+            while (j > 0) {
+                fm.collect("" + i);
+                j--;
+            }
+        }
+        System.out.println(fm.toString());
+    }
+
+    @Test
+    public void testPrintEmpty() {
+        System.out.println(fm.toString());
+    }
+
 }
