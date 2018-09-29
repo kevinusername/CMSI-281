@@ -190,7 +190,7 @@ public class ForneymonegerieTests {
     }
 
     @Test
-    public void testGiantForneymonegerie() {
+    public void testGiantForneymonegerie() { // See if it can grow to accept any amount of Forneymon
         for (int i = 0; i < 100; i++) {
             fm.collect("" + i);
             int j = i;
@@ -199,12 +199,22 @@ public class ForneymonegerieTests {
                 j--;
             }
         }
-        System.out.println(fm.toString());
+        System.out.println(fm.toString()); // See if they're all in there
+
+        Forneymonegerie cloneyBoi = fm.clone();
+        cloneyBoi.release("50");
+
+        System.out.println(cloneyBoi.toString()); // See if they're all in there
+
+
+        assertFalse(Forneymonegerie.sameCollection(fm, cloneyBoi));
+        System.out.println(Forneymonegerie.diffMon(fm, cloneyBoi).toString());
+        assertEquals("[ \"50\": 1 ]", Forneymonegerie.diffMon(fm, cloneyBoi).toString());
     }
 
     @Test
     public void testPrintEmpty() {
-        System.out.println(fm.toString());
+        assertEquals("[  ]", fm.toString());
     }
 
 }

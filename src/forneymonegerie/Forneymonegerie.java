@@ -33,17 +33,18 @@ public class Forneymonegerie implements ForneymonegerieInterface {
 
         for (int i = 0; i < fusion.typeSize; i++) {
             int y2Index = y2.typeIndex(fusion.collection[i].type);
-            if (y2Index == -1) {
+            if (y2Index == -1) { // If type isn't in y2, move on to next type
                 continue;
             }
             int difference = fusion.collection[i].count - y2.collection[y2Index].count;
-            if (difference <= 0) {
+            if (difference <= 0) { // Remove types where the count is greater or equal in y2
                 fusion.releaseType(fusion.collection[i].type);
                 i--;
                 continue;
             }
-            fusion.collection[i].count -= difference;
-            fusion.size -= difference;
+            fusion.size -= fusion.collection[i].count - difference;
+            fusion.collection[i].count = difference;
+
         }
 
         return fusion;
@@ -57,7 +58,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
      * @return if Forneymonegeries are same
      */
     public static boolean sameCollection(Forneymonegerie y1, Forneymonegerie y2) {
-        return (diffMon(y2, y1).empty() && diffMon(y1, y2).empty());  // Clever girl...
+        return (diffMon(y2, y1).empty() && diffMon(y1, y2).empty());  // Clever girl... (hopefully)
     }
 
     // Methods
@@ -150,7 +151,6 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     }
 
     /**
-     *
      * @param toCheck type to see if it is in the collection
      * @return if type was found in collection
      */
@@ -196,6 +196,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
 
     /**
      * Swaps the fields of 2 Forneymonegeries
+     *
      * @param other Forneymonegerie to be swapped with
      */
     public void trade(Forneymonegerie other) {
