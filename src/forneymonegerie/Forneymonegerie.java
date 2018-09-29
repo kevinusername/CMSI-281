@@ -43,33 +43,21 @@ public class Forneymonegerie implements ForneymonegerieInterface {
                 continue;
             }
             fusion.collection[i].count -= difference;
+            fusion.size -= difference;
         }
 
         return fusion;
     }
 
+    /**
+     * Checks if 2 Forneymonegeries contain the same Forneymon, not necessarily in same order
+     *
+     * @param y1 Forneymonegerie to compare
+     * @param y2 Forneymonegeries to compare
+     * @return if Forneymonegeries are same
+     */
     public static boolean sameCollection(Forneymonegerie y1, Forneymonegerie y2) {
-        // TODO: can be done in one line...
-
-        // Don't bother if size fields don't match
-        if (y1.size != y2.size || y1.typeSize != y2.typeSize) {
-            return false;
-        }
-
-        // Since size fields match, make sure all types, and their respective sizes, match
-        for (int i = 0; i < y1.typeSize; i++) {
-            int y2Location = y2.typeIndex(y1.collection[i].type);
-
-            if (y2Location == -1) {  // If this type from y1 is NOT in y2, not equal
-                return false;
-            }
-
-            // If the amount of each type is not the same, not equal
-            if (y1.collection[i].count != y2.collection[y2Location].count) {
-                return false;
-            }
-        }
-        return true;
+        return (diffMon(y2, y1).empty() && diffMon(y1, y2).empty());  // Clever girl...
     }
 
     // Methods
@@ -86,6 +74,12 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         return typeSize;
     }
 
+    /**
+     * Adds 1 Forneymon of the specified type to the collection
+     *
+     * @param toAdd type to be added
+     * @return if at least one of this type was already in the collection
+     */
     public boolean collect(String toAdd) {
 
         int index = typeIndex(toAdd);
@@ -104,6 +98,13 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         return true;
     }
 
+    /**
+     * Release 1 Forneymon of the specified type.
+     * if it was the last of its type, removes the type
+     *
+     * @param toRemove type to remove 1 of
+     * @return if type was found in the collection
+     */
     public boolean release(String toRemove) {
         int index = typeIndex(toRemove);
         if (index != -1) { // If the type is in the collection
@@ -121,6 +122,11 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         return false; // Type isn't in the collection, nothing removed
     }
 
+    /**
+     * Release all of a given type of Forneymon
+     *
+     * @param toNuke type to be removed
+     */
     public void releaseType(String toNuke) {
         int index = typeIndex(toNuke);
         if (index != -1) {
@@ -211,7 +217,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     // ----------------------------------------------------------
 
     private void shiftLeft(int index) {
-        for (int i = index; i < size - 1; i++) {
+        for (int i = index; i < typeSize - 1; i++) {
             collection[i] = collection[i + 1];
         }
     }

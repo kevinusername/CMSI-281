@@ -4,6 +4,7 @@
     <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,14 +81,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="733" />
-          <entry key="txt" value="39" />
+          <entry key="java" value="1463" />
+          <entry key="txt" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="733" />
-          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="JAVA" value="1463" />
+          <entry key="PLAIN_TEXT" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -107,8 +108,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+            <state relative-caret-position="530">
+              <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
               <folding>
                 <element signature="e#3878#3879#0" expanded="true" />
                 <element signature="e#3910#3911#0" expanded="true" />
@@ -116,8 +117,8 @@
                 <element signature="e#3962#3963#0" expanded="true" />
                 <element signature="e#3991#3992#0" expanded="true" />
                 <element signature="e#4022#4023#0" expanded="true" />
-                <element signature="e#5448#5449#0" expanded="true" />
-                <element signature="e#5495#5496#0" expanded="true" />
+                <element signature="e#4245#4246#0" expanded="true" />
+                <element signature="e#4292#4293#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3654">
-              <caret line="205" column="41" selection-start-line="205" selection-start-column="41" selection-end-line="205" selection-end-column="41" />
+            <state relative-caret-position="490">
+              <caret line="177" selection-start-line="177" selection-end-line="177" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5955#5956#0" expanded="true" />
@@ -255,7 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ForneymonegerieTests">
+  <component name="RunManager" selected="JUnit.ForneymonegerieTests.testSameForneymonegerie">
     <configuration name="ForneymonegerieTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CMSI 281" />
       <extension name="coverage">
@@ -302,7 +303,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ForneymonegerieTests.testPrintEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ForneymonegerieTests.testReleaseType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CMSI 281" />
       <extension name="coverage">
         <pattern>
@@ -312,7 +313,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="forneymonegerie" />
       <option name="MAIN_CLASS_NAME" value="forneymonegerie.ForneymonegerieTests" />
-      <option name="METHOD_NAME" value="testPrintEmpty" />
+      <option name="METHOD_NAME" value="testReleaseType" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -339,15 +340,15 @@
       <item itemvalue="JUnit.ForneymonegerieTests.testDiffMon" />
       <item itemvalue="JUnit.ForneymonegerieTests.testSameForneymonegerie" />
       <item itemvalue="JUnit.ForneymonegerieTests.testGiantForneymonegerie" />
-      <item itemvalue="JUnit.ForneymonegerieTests.testPrintEmpty" />
+      <item itemvalue="JUnit.ForneymonegerieTests.testReleaseType" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ForneymonegerieTests.testSameForneymonegerie" />
+        <item itemvalue="JUnit.ForneymonegerieTests.testReleaseType" />
+        <item itemvalue="JUnit.ForneymonegerieTests.testDiffMon" />
         <item itemvalue="JUnit.ForneymonegerieTests" />
         <item itemvalue="JUnit.ForneymonegerieTests.testGiantForneymonegerie" />
-        <item itemvalue="JUnit.ForneymonegerieTests.testPrintEmpty" />
-        <item itemvalue="JUnit.ForneymonegerieTests.testSameForneymonegerie" />
-        <item itemvalue="JUnit.ForneymonegerieTests.testDiffMon" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +369,7 @@
       <workItem from="1538014672272" duration="9597000" />
       <workItem from="1538024808831" duration="366000" />
       <workItem from="1538189906277" duration="81000" />
-      <workItem from="1538190056035" duration="2503000" />
+      <workItem from="1538190056035" duration="4126000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -447,43 +448,50 @@
       <option name="project" value="LOCAL" />
       <updated>1538191252563</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Rewrote diffMon method">
+      <created>1538192589211</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1538192589211</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ForneymonegerieTests_testGiantForneymonegerie - 2018.09.28 at 20h 09m 49s.xml">
-      <configuration name="ForneymonegerieTests.testGiantForneymonegerie" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testDiffMon - 2018.09.28 at 20h 53m 19s.xml">
+      <configuration name="ForneymonegerieTests.testDiffMon" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ForneymonegerieTests_testGiantForneymonegerie - 2018.09.28 at 20h 18m 00s.xml">
-      <configuration name="ForneymonegerieTests.testGiantForneymonegerie" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testSameForneymonegerie - 2018.09.28 at 20h 53m 19s.xml">
+      <configuration name="ForneymonegerieTests.testSameForneymonegerie" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ForneymonegerieTests_testPrintEmpty - 2018.09.28 at 20h 19m 29s.xml">
-      <configuration name="ForneymonegerieTests.testPrintEmpty" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testSameForneymonegerie - 2018.09.28 at 20h 55m 45s.xml">
+      <configuration name="ForneymonegerieTests.testSameForneymonegerie" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ForneymonegerieTests_testPrintEmpty - 2018.09.28 at 20h 19m 59s.xml">
-      <configuration name="ForneymonegerieTests.testPrintEmpty" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testReleaseType - 2018.09.28 at 20h 56m 25s.xml">
+      <configuration name="ForneymonegerieTests.testReleaseType" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ForneymonegerieTests_testPrintEmpty - 2018.09.28 at 20h 20m 18s.xml">
-      <configuration name="ForneymonegerieTests.testPrintEmpty" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testReleaseType - 2018.09.28 at 20h 58m 12s.xml">
+      <configuration name="ForneymonegerieTests.testReleaseType" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ForneymonegerieTests_testGiantForneymonegerie - 2018.09.28 at 20h 20m 22s.xml">
-      <configuration name="ForneymonegerieTests.testGiantForneymonegerie" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testReleaseType - 2018.09.28 at 21h 01m 32s.xml">
+      <configuration name="ForneymonegerieTests.testReleaseType" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ForneymonegerieTests - 2018.09.28 at 20h 39m 04s.xml">
-      <configuration name="ForneymonegerieTests" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testSameForneymonegerie - 2018.09.28 at 21h 01m 39s.xml">
+      <configuration name="ForneymonegerieTests.testSameForneymonegerie" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ForneymonegerieTests - 2018.09.28 at 20h 40m 17s.xml">
-      <configuration name="ForneymonegerieTests" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testSameForneymonegerie - 2018.09.28 at 21h 02m 51s.xml">
+      <configuration name="ForneymonegerieTests.testSameForneymonegerie" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ForneymonegerieTests - 2018.09.28 at 20h 41m 58s.xml">
-      <configuration name="ForneymonegerieTests" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testSameForneymonegerie - 2018.09.28 at 21h 02m 53s.xml">
+      <configuration name="ForneymonegerieTests.testSameForneymonegerie" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ForneymonegerieTests - 2018.09.28 at 20h 42m 05s.xml">
-      <configuration name="ForneymonegerieTests" configurationId="JUnit" />
+    <history-entry file="ForneymonegerieTests_testSameForneymonegerie - 2018.09.28 at 21h 05m 50s.xml">
+      <configuration name="ForneymonegerieTests.testSameForneymonegerie" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21872000" />
+    <option name="totallyTimeSpent" value="23495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -534,13 +542,31 @@
     <MESSAGE value="Further simplifying of methods" />
     <MESSAGE value="checkAndGrow helper method added" />
     <MESSAGE value="Added toString() and more tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added toString() and more tests" />
+    <MESSAGE value="Rewrote diffMon method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rewrote diffMon method" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java</url>
+          <line>176</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java</url>
+          <line>177</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="y2.collection" language="JAVA" />
         <watch expression="y1.collection[0]" />
+        <watch expression="fm2" />
       </configuration>
     </watches-manager>
   </component>
@@ -616,8 +642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3654">
-          <caret line="205" column="41" selection-start-line="205" selection-start-column="41" selection-end-line="205" selection-end-column="41" />
+        <state relative-caret-position="490">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5955#5956#0" expanded="true" />
@@ -628,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="530">
+          <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
           <folding>
             <element signature="e#3878#3879#0" expanded="true" />
             <element signature="e#3910#3911#0" expanded="true" />
@@ -637,8 +663,8 @@
             <element signature="e#3962#3963#0" expanded="true" />
             <element signature="e#3991#3992#0" expanded="true" />
             <element signature="e#4022#4023#0" expanded="true" />
-            <element signature="e#5448#5449#0" expanded="true" />
-            <element signature="e#5495#5496#0" expanded="true" />
+            <element signature="e#4245#4246#0" expanded="true" />
+            <element signature="e#4292#4293#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -174,6 +174,7 @@ public class ForneymonegerieTests {
         fm2.collect("Burnymon");
         fm2.collect("Dampymon");
         fm2.collect("Dampymon");
+        Forneymonegerie fm3 = Forneymonegerie.diffMon(fm1, fm2);
         assertTrue(Forneymonegerie.sameCollection(fm1, fm2));
         assertTrue(Forneymonegerie.sameCollection(fm2, fm1));
 
