@@ -1,3 +1,4 @@
+// Kevin Peters
 package forneymonegerie;
 
 public class Forneymonegerie implements ForneymonegerieInterface {
@@ -22,7 +23,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     // ----------------------------------------------------------
 
     /**
-     * Returns a *new* Forneymonegerie object consisting of all Forneymon from y1 that do NOT appear in y2.
+     * Returns a new Forneymonegerie object consisting of all Forneymon from y1 that do NOT appear in y2.
      *
      * @param y1 Forneymonegerie in which all Forneymon MUST be
      * @param y2 Forneymonegerie in which all Forneymon must NOT be
@@ -44,9 +45,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
             }
             fusion.size -= fusion.collection[i].count - difference;
             fusion.collection[i].count = difference;
-
         }
-
         return fusion;
     }
 

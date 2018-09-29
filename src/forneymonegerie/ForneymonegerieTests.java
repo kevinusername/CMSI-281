@@ -1,3 +1,4 @@
+// Kevin Peters
 package forneymonegerie;
 
 import static org.junit.Assert.*;
@@ -204,11 +205,7 @@ public class ForneymonegerieTests {
         Forneymonegerie cloneyBoi = fm.clone();
         cloneyBoi.release("50");
 
-        System.out.println(cloneyBoi.toString()); // See if they're all in there
-
-
         assertFalse(Forneymonegerie.sameCollection(fm, cloneyBoi));
-        System.out.println(Forneymonegerie.diffMon(fm, cloneyBoi).toString());
         assertEquals("[ \"50\": 1 ]", Forneymonegerie.diffMon(fm, cloneyBoi).toString());
     }
 
