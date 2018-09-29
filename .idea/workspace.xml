@@ -4,7 +4,6 @@
     <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,14 +80,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1463" />
-          <entry key="txt" value="62" />
+          <entry key="java" value="1846" />
+          <entry key="txt" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1463" />
-          <entry key="PLAIN_TEXT" value="62" />
+          <entry key="JAVA" value="1846" />
+          <entry key="PLAIN_TEXT" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -108,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
+            <state relative-caret-position="396">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#3878#3879#0" expanded="true" />
                 <element signature="e#3910#3911#0" expanded="true" />
@@ -117,8 +116,8 @@
                 <element signature="e#3962#3963#0" expanded="true" />
                 <element signature="e#3991#3992#0" expanded="true" />
                 <element signature="e#4022#4023#0" expanded="true" />
-                <element signature="e#4245#4246#0" expanded="true" />
-                <element signature="e#4292#4293#0" expanded="true" />
+                <element signature="e#4556#4557#0" expanded="true" />
+                <element signature="e#4603#4604#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,6 +150,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>same</find>
+      <find>todo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -369,7 +369,7 @@
       <workItem from="1538014672272" duration="9597000" />
       <workItem from="1538024808831" duration="366000" />
       <workItem from="1538189906277" duration="81000" />
-      <workItem from="1538190056035" duration="4126000" />
+      <workItem from="1538190056035" duration="4352000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -455,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538192589211</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Clever samecollection...">
+      <created>1538194206335</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1538194206335</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -491,7 +498,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23495000" />
+    <option name="totallyTimeSpent" value="23721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -543,7 +550,8 @@
     <MESSAGE value="checkAndGrow helper method added" />
     <MESSAGE value="Added toString() and more tests" />
     <MESSAGE value="Rewrote diffMon method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rewrote diffMon method" />
+    <MESSAGE value="Clever samecollection..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Clever samecollection..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -654,8 +662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
+        <state relative-caret-position="396">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#3878#3879#0" expanded="true" />
             <element signature="e#3910#3911#0" expanded="true" />
@@ -663,8 +671,8 @@
             <element signature="e#3962#3963#0" expanded="true" />
             <element signature="e#3991#3992#0" expanded="true" />
             <element signature="e#4022#4023#0" expanded="true" />
-            <element signature="e#4245#4246#0" expanded="true" />
-            <element signature="e#4292#4293#0" expanded="true" />
+            <element signature="e#4556#4557#0" expanded="true" />
+            <element signature="e#4603#4604#0" expanded="true" />
           </folding>
         </state>
       </provider>

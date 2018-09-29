@@ -131,12 +131,15 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         int index = typeIndex(toNuke);
         if (index != -1) {
             size -= collection[index].count;
-            shiftLeft(index);
+            shiftLeft(index);  // Move all types to the right of this one over, thus overwriting the removed type
             typeSize--;
         }
     }
 
-
+    /**
+     * @param toCount type to determine number of
+     * @return number of given type
+     */
     public int countType(String toCount) {
         int index = typeIndex(toCount);
         if (index != -1) {
@@ -146,6 +149,11 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         return 0;
     }
 
+    /**
+     *
+     * @param toCheck type to see if it is in the collection
+     * @return if type was found in collection
+     */
     public boolean contains(String toCheck) {
         return typeIndex(toCheck) != -1;
     }
@@ -176,6 +184,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         Forneymonegerie clonegerie = new Forneymonegerie();
         clonegerie.collection = new ForneymonType[collection.length];
 
+        // Manually copy over all types to get new references
         for (int i = 0; i < typeSize; i++) {
             clonegerie.collection[i] = new ForneymonType(collection[i].type, collection[i].count);
         }
@@ -185,6 +194,10 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         return clonegerie;
     }
 
+    /**
+     * Swaps the fields of 2 Forneymonegeries
+     * @param other Forneymonegerie to be swapped with
+     */
     public void trade(Forneymonegerie other) {
         Forneymonegerie temp = clone();
 
