@@ -46,20 +46,25 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         if (empty()) {
             head = new ForneymonType(toAdd, 1);
             tail = head;
+
             size++;
             typeSize++;
+            modCount++;
             return true;
         }
 
-        LinkedForneymonegerie.Iterator iter = findType(toAdd);
+        Iterator iter = findType(toAdd);
         if (iter == null) {
             tail.next = new ForneymonType(toAdd, 1);
             tail.next.prev = tail;
-            tail = tail.prev;
+            tail = tail.next;
+
             size++;
             typeSize++;
+            modCount++;
             return true;
         }
+
         iter.current.count++;
         size++;
         modCount++;
@@ -67,15 +72,52 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public boolean release(String toRemove) {
-        throw new UnsupportedOperationException();
+        Iterator iter = findType(toRemove);
+        if (iter == null) { return false; }
+
+        if (iter.current.count == 1) {
+            releaseType(toRemove);
+            return true;
+        }
+        iter.current.count--;
+        size--;
+        modCount++;
+        return true;
     }
 
     public void releaseType(String toNuke) {
-        throw new UnsupportedOperationException();
+        Iterator iter = findType(toNuke);
+        if (iter == null) {
+            return;
+        }
+
+        size -= iter.current.count;
+        typeSize--;
+        modCount++;
+
+        // Adjust adjacent objects references, thus removing this type
+        ForneymonType prev = iter.current.prev;
+        ForneymonType next = iter.current.next;
+
+        if (prev == null) {
+            head = next;
+            return;
+        }
+        if (next == null) {
+            prev.next = null;
+            tail = prev;
+        }
+
+        prev.next = next;
+        next.prev = prev;
     }
 
     public int countType(String toCount) {
-        throw new UnsupportedOperationException();
+        Iterator iter = findType(toCount);
+        if (iter == null) {
+            return 0;
+        }
+        return iter.current.count;
     }
 
     public boolean contains(String toCheck) {
@@ -106,15 +148,20 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     // Private helper methods
     // -----------------------------------------------------------
 
-    private LinkedForneymonegerie.Iterator findType(String toFind) {
+    private Iterator findType(String toFind) {
         Iterator iter = getIterator();
 
-        do {
+        while (true) {
             if (iter.getType().equals(toFind)) {
                 return iter;
             }
+
+            if (iter.current.next == null) {
+                break;
+            }
+
             iter.nextType();
-        } while (iter.current.next != null);
+        }
 
         return null;
     }
@@ -197,14 +244,10 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         // Custom private helper methods:
         private void nextType() {
             if (!isValid()) { throw new IllegalStateException("Invalid iterator!"); }
-            if (hasNext()) {
+            if (current.next != null) {
                 current = current.next;
                 typePosition = 1;
             }
-        }
-
-        private boolean hasNextType() {
-            return (current.next != null);
         }
     }
 
