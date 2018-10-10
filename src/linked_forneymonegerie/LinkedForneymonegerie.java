@@ -101,11 +101,13 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
         if (prev == null) {
             head = next;
+            head.prev = null;
             return;
         }
         if (next == null) {
             prev.next = null;
             tail = prev;
+            return;
         }
 
         prev.next = next;
@@ -126,7 +128,20 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public String rarestType() {
-        throw new UnsupportedOperationException();
+        Iterator iter = getIterator();
+        ForneymonType rarest = iter.current;
+        iter.nextType();
+
+        while (true) {
+            if (iter.current.count <= rarest.count) {
+                rarest = iter.current;
+            }
+            if (iter.current.next == null) {
+                break;
+            }
+            iter.nextType();
+        }
+        return rarest.type;
     }
 
     public LinkedForneymonegerie clone() {
