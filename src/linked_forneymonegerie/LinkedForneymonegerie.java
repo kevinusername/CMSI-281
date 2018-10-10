@@ -72,7 +72,6 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         throw new UnsupportedOperationException();
     }
 
-
     // -----------------------------------------------------------
     // Static methods
     // -----------------------------------------------------------
@@ -89,7 +88,6 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     // -----------------------------------------------------------
 
     // TODO: Your helper methods here!
-
 
     // Inner Classes
     // -----------------------------------------------------------
@@ -111,14 +109,17 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         }
 
         public boolean hasNext() {
-            if (current.next != null) {
-                return true;
-            }
+            if (!isValid()) { return false; }
+
+            if (current.next != null) { return true; }
             return typePosition < current.count;
         }
 
         public boolean hasPrev() {
-            throw new UnsupportedOperationException();
+            if (!isValid()) { return false; }
+
+            if (current.prev != null) { return true; }
+            return typePosition > current.count;
         }
 
         public boolean isValid() {
@@ -126,21 +127,40 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         }
 
         public String getType() {
-            throw new UnsupportedOperationException();
+            if (!isValid()) { return null; }
+            return current.type;
         }
 
         public void next() {
-            throw new UnsupportedOperationException();
+            if (!isValid()) { throw new IllegalStateException("Invalid iterator!"); }
+
+            // If this is the last of this type, move on to the next type if it exists
+            if (typePosition == current.count) {
+                if (!hasNext()) { throw new NoSuchElementException("There is no next element"); }
+                current = current.next;
+            }
+
+            typePosition++; // Move to next Forneymon of this type
         }
 
         public void prev() {
-            throw new UnsupportedOperationException();
+            if (!isValid()) { throw new IllegalStateException("Invalid iterator!"); }
+
+            // If this is not the first of its type, move back 1 in this type
+            if (typePosition > 1) { typePosition--; }
+
+            if (!hasPrev()) { throw new NoSuchElementException("There is no previous element"); }
+
+            current = current.prev;
         }
 
         public void replaceAll(String toReplaceWith) {
-            throw new UnsupportedOperationException();
-        }
+            if (!isValid()) { throw new IllegalStateException("Invalid iterator!"); }
 
+            // TODO: Implement checking if toReplaceWith type already exists once there is a contains() method
+
+            current.type = toReplaceWith;
+        }
     }
 
     private class ForneymonType {
@@ -153,5 +173,4 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
             count = c;
         }
     }
-
 }

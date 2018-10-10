@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="Version for submission">
+    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,14 +82,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2789" />
-          <entry key="txt" value="156" />
+          <entry key="java" value="3429" />
+          <entry key="txt" value="219" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2789" />
-          <entry key="PLAIN_TEXT" value="156" />
+          <entry key="JAVA" value="3429" />
+          <entry key="PLAIN_TEXT" value="219" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -107,8 +109,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="112" column="34" lean-forward="true" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
+            <state relative-caret-position="301">
+              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
               <folding>
                 <element signature="e#637#638#0" expanded="true" />
                 <element signature="e#666#667#0" expanded="true" />
@@ -116,18 +118,8 @@
                 <element signature="e#1024#1025#0" expanded="true" />
                 <element signature="e#1053#1054#0" expanded="true" />
                 <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#3117#3118#0" expanded="true" />
-                <element signature="e#3182#3183#0" expanded="true" />
                 <element signature="e#3218#3219#0" expanded="true" />
                 <element signature="e#3277#3278#0" expanded="true" />
-                <element signature="e#3312#3313#0" expanded="true" />
-                <element signature="e#3377#3378#0" expanded="true" />
-                <element signature="e#3407#3408#0" expanded="true" />
-                <element signature="e#3472#3473#0" expanded="true" />
-                <element signature="e#3502#3503#0" expanded="true" />
-                <element signature="e#3567#3568#0" expanded="true" />
-                <element signature="e#3623#3624#0" expanded="true" />
-                <element signature="e#3688#3689#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -225,7 +217,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -363,7 +355,7 @@
       <workItem from="1538190056035" duration="6000000" />
       <workItem from="1539056177285" duration="54000" />
       <workItem from="1539056280517" duration="81000" />
-      <workItem from="1539137807790" duration="1976000" />
+      <workItem from="1539137807790" duration="3355000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -477,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538195763805</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Initial commit of linked_forneymonegerie&#10;first steps">
+      <created>1539140168761</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1539140168761</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -513,7 +512,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27480000" />
+    <option name="totallyTimeSpent" value="28859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -569,7 +568,8 @@
     <MESSAGE value="comments added" />
     <MESSAGE value="Fixed diffMon and added Tests" />
     <MESSAGE value="Version for submission" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version for submission" />
+    <MESSAGE value="Initial commit of linked_forneymonegerie&#10;first steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit of linked_forneymonegerie&#10;first steps" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -676,8 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="112" column="34" lean-forward="true" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
+        <state relative-caret-position="301">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
           <folding>
             <element signature="e#637#638#0" expanded="true" />
             <element signature="e#666#667#0" expanded="true" />
@@ -685,18 +685,8 @@
             <element signature="e#1024#1025#0" expanded="true" />
             <element signature="e#1053#1054#0" expanded="true" />
             <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#3117#3118#0" expanded="true" />
-            <element signature="e#3182#3183#0" expanded="true" />
             <element signature="e#3218#3219#0" expanded="true" />
             <element signature="e#3277#3278#0" expanded="true" />
-            <element signature="e#3312#3313#0" expanded="true" />
-            <element signature="e#3377#3378#0" expanded="true" />
-            <element signature="e#3407#3408#0" expanded="true" />
-            <element signature="e#3472#3473#0" expanded="true" />
-            <element signature="e#3502#3503#0" expanded="true" />
-            <element signature="e#3567#3568#0" expanded="true" />
-            <element signature="e#3623#3624#0" expanded="true" />
-            <element signature="e#3688#3689#0" expanded="true" />
           </folding>
         </state>
       </provider>
