@@ -6,7 +6,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
     // Fields
     // -----------------------------------------------------------
-    private ForneymonType head;
+    private ForneymonType head, tail;
     private int size, typeSize, modCount;
 
 
@@ -14,6 +14,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     // -----------------------------------------------------------
     LinkedForneymonegerie() {
         head = null;
+        tail = null;
         size = 0;
         typeSize = 0;
         modCount = 0;
@@ -42,10 +43,27 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public boolean collect(String toAdd) {
-        if (head == null) {
+        if (empty()) {
             head = new ForneymonType(toAdd, 1);
+            tail = head;
+            size++;
+            typeSize++;
             return true;
         }
+
+        LinkedForneymonegerie.Iterator iter = findType(toAdd);
+        if (iter == null) {
+            tail.next = new ForneymonType(toAdd, 1);
+            tail.next.prev = tail;
+            tail = tail.prev;
+            size++;
+            typeSize++;
+            return true;
+        }
+        iter.current.count++;
+        size++;
+        modCount++;
+        return false;
     }
 
     public boolean release(String toRemove) {
@@ -61,7 +79,8 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public boolean contains(String toCheck) {
-        throw new UnsupportedOperationException();
+        Iterator iter = findType(toCheck);
+        return iter != null;
     }
 
     public String rarestType() {
@@ -81,13 +100,24 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public LinkedForneymonegerie.Iterator getIterator() {
-        throw new UnsupportedOperationException();
+        return new Iterator(this);
     }
 
     // Private helper methods
     // -----------------------------------------------------------
 
-    // TODO: Your helper methods here!
+    private LinkedForneymonegerie.Iterator findType(String toFind) {
+        Iterator iter = getIterator();
+
+        do {
+            if (iter.getType().equals(toFind)) {
+                return iter;
+            }
+            iter.nextType();
+        } while (iter.current.next != null);
+
+        return null;
+    }
 
     // Inner Classes
     // -----------------------------------------------------------
@@ -160,6 +190,21 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
             // TODO: Implement checking if toReplaceWith type already exists once there is a contains() method
 
             current.type = toReplaceWith;
+            itModCount++;
+            owner.modCount++;
+        }
+
+        // Custom private helper methods:
+        private void nextType() {
+            if (!isValid()) { throw new IllegalStateException("Invalid iterator!"); }
+            if (hasNext()) {
+                current = current.next;
+                typePosition = 1;
+            }
+        }
+
+        private boolean hasNextType() {
+            return (current.next != null);
         }
     }
 
