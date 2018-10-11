@@ -68,12 +68,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
     public boolean collect(String toAdd) {
         if (empty()) {
-            head = new ForneymonType(toAdd, 1);
-            tail = head;
-
-            size++;
-            typeSize++;
-            modCount++;
+            append(toAdd, 1);
             return true;
         }
 
