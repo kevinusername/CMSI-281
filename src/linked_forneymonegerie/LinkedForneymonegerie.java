@@ -21,7 +21,31 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public static LinkedForneymonegerie diffMon(LinkedForneymonegerie y1, LinkedForneymonegerie y2) {
-        throw new UnsupportedOperationException();
+        LinkedForneymonegerie diffBoi = y1.clone();
+
+        Iterator y1Iter = y1.getIterator();
+
+        while (true) {
+            Iterator y2Location = y2.findType(y1Iter.getType());
+
+            if (y2Location != null) { // If the type is in y2
+                // If there are equal or more of this type in y2, remove the type from diffBoi
+                if (y2Location.getCount() >= y1Iter.getCount()) {
+                    diffBoi.releaseType(y2Location.getType());
+                }
+                // Otherwise, release the amount of this type in y2 from diffBoi
+                else {
+                    for (int i = 0; i < y2Location.getCount(); i++) {
+                        diffBoi.release(y2Location.getType());
+                    }
+                }
+            }
+
+            // If there are more types to check in y1, move to next type, otherwise stop checking
+            if (y1Iter.hasNextType()) { y1Iter.nextType(); } else { break; }
+        }
+
+        return diffBoi;
     }
 
     public static boolean sameCollection(LinkedForneymonegerie y1, LinkedForneymonegerie y2) {
@@ -319,6 +343,10 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
         private int getCount() {
             return current.count;
+        }
+
+        private boolean hasNextType() {
+            return (current.next != null);
         }
     }
 
