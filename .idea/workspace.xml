@@ -86,26 +86,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6768" />
-          <entry key="txt" value="443" />
+          <entry key="java" value="7261" />
+          <entry key="txt" value="464" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6768" />
-          <entry key="PLAIN_TEXT" value="443" />
+          <entry key="JAVA" value="7261" />
+          <entry key="PLAIN_TEXT" value="464" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="9" />
+          <entry key="java" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="10" />
         </counts>
       </usages-collector>
     </session>
@@ -115,18 +115,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="86" column="45" lean-forward="true" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
+            <state relative-caret-position="244">
+              <caret line="264" column="96" selection-start-line="264" selection-start-column="96" selection-end-line="264" selection-end-column="96" />
               <folding>
-                <element signature="e#75#108#0" expanded="true" />
+                <element signature="e#75#137#0" expanded="true" />
                 <element signature="e#1315#1316#0" expanded="true" />
                 <element signature="e#1347#1348#0" expanded="true" />
                 <element signature="e#1372#1373#0" expanded="true" />
                 <element signature="e#1399#1400#0" expanded="true" />
                 <element signature="e#1428#1429#0" expanded="true" />
                 <element signature="e#1459#1460#0" expanded="true" />
-                <element signature="e#5266#5267#0" expanded="true" />
-                <element signature="e#5307#5308#0" expanded="true" />
+                <element signature="e#6097#6098#0" expanded="true" />
+                <element signature="e#6138#6139#0" expanded="true" />
                 <element signature="e#5783#5784#0" expanded="true" />
                 <element signature="e#5842#5843#0" expanded="true" />
                 <element signature="e#7771#7772#0" expanded="true" />
@@ -395,7 +395,7 @@
       <workItem from="1539056177285" duration="54000" />
       <workItem from="1539056280517" duration="81000" />
       <workItem from="1539137807790" duration="9180000" />
-      <workItem from="1539227372504" duration="8309000" />
+      <workItem from="1539227372504" duration="9238000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -572,22 +572,17 @@
       <option name="project" value="LOCAL" />
       <updated>1539235521171</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="simplified collect()">
+      <created>1539235711561</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1539235711561</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 19m 54s.xml">
-      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 20m 18s.xml">
-      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 22m 21s.xml">
-      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 23m 34s.xml">
-      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 24m 19s.xml">
       <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
     </history-entry>
@@ -606,9 +601,21 @@
     <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 28m 02s.xml">
       <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 39m 01s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 40m 35s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 41m 22s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 42m 27s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42993000" />
+    <option name="totallyTimeSpent" value="43922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -648,7 +655,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished stack implementation" />
     <MESSAGE value="Finished intlist" />
     <MESSAGE value="formatting" />
     <MESSAGE value="now clears forward on visit" />
@@ -673,7 +679,8 @@
     <MESSAGE value="diffMon method working" />
     <MESSAGE value="sameCollection working" />
     <MESSAGE value="new version of append()" />
-    <option name="LAST_COMMIT_MESSAGE" value="new version of append()" />
+    <MESSAGE value="simplified collect()" />
+    <option name="LAST_COMMIT_MESSAGE" value="simplified collect()" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -851,20 +858,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="86" column="45" lean-forward="true" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
+        <state relative-caret-position="244">
+          <caret line="264" column="96" selection-start-line="264" selection-start-column="96" selection-end-line="264" selection-end-column="96" />
           <folding>
-            <element signature="e#75#108#0" expanded="true" />
+            <element signature="e#75#137#0" expanded="true" />
             <element signature="e#1315#1316#0" expanded="true" />
             <element signature="e#1347#1348#0" expanded="true" />
             <element signature="e#1372#1373#0" expanded="true" />
             <element signature="e#1399#1400#0" expanded="true" />
             <element signature="e#1428#1429#0" expanded="true" />
             <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#5266#5267#0" expanded="true" />
-            <element signature="e#5307#5308#0" expanded="true" />
+            <element signature="e#6097#6098#0" expanded="true" />
+            <element signature="e#6138#6139#0" expanded="true" />
             <element signature="e#5783#5784#0" expanded="true" />
             <element signature="e#5842#5843#0" expanded="true" />
             <element signature="e#7771#7772#0" expanded="true" />

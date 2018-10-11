@@ -2,7 +2,7 @@ package linked_forneymonegerie;
 
 import java.util.NoSuchElementException;
 
-@SuppressWarnings("WeakerAccess")
+@SuppressWarnings({"WeakerAccess", "SpellCheckingInspection"})
 public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
     // Fields
@@ -67,7 +67,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public boolean collect(String toAdd) {
-        if (empty()) {
+        if (empty()) { // This is its own condition since it must run before the iterator is created to avoid errors
             append(toAdd, 1);
             return true;
         }
@@ -109,37 +109,35 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         typeSize--;
         modCount++;
 
-        if (empty()) {
+        if (empty()) { // Case: toNuke was the only type in collection
             head = null;
             tail = null;
             return;
         }
-
-        // Adjust adjacent objects references, thus removing this type
+        // Shorter var names for the sake of readability
         ForneymonType prev = iter.current.prev;
         ForneymonType next = iter.current.next;
 
-        if (prev == null) {
+        if (prev == null) { // Case: toNuke is head
             head = next;
             head.prev = null;
             return;
         }
-        if (next == null) {
+        if (next == null) { // Case: toNuke is tail
             prev.next = null;
             tail = prev;
             return;
         }
 
+        // Case: toNuke type is in collection, but is not the head or tail
         prev.next = next;
         next.prev = prev;
     }
 
     public int countType(String toCount) {
         Iterator iter = findType(toCount);
-        if (iter == null) {
-            return 0;
-        }
-        return iter.current.count;
+        if (iter == null) { return 0; }
+        return iter.getCount();
     }
 
     public boolean contains(String toCheck) {
@@ -148,17 +146,15 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public String rarestType() {
+        if (empty()) { return null; }
+
         Iterator iter = getIterator();
         ForneymonType rarest = iter.current;
         iter.nextType();
 
         while (true) {
-            if (iter.current.count <= rarest.count) {
-                rarest = iter.current;
-            }
-            if (iter.current.next == null) {
-                break;
-            }
+            if (iter.current.count <= rarest.count) { rarest = iter.current; }
+            if (iter.current.next == null) { break; }
             iter.nextType();
         }
         return rarest.type;
@@ -225,14 +221,8 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         Iterator iter = getIterator();
 
         while (true) {
-            if (iter.getType().equals(toFind)) {
-                return iter;
-            }
-
-            if (iter.current.next == null) {
-                break;
-            }
-
+            if (iter.getType().equals(toFind)) { return iter; }
+            if (iter.current.next == null) { break; }
             iter.nextType();
         }
 
@@ -272,7 +262,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
             owner = y;
             current = y.head;
             itModCount = y.modCount;
-            typePosition = 1;
+            typePosition = 1; // custom field to track what # of a type iterator is currently on
         }
 
         public boolean hasNext() {
