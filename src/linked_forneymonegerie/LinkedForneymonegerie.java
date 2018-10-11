@@ -49,7 +49,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public static boolean sameCollection(LinkedForneymonegerie y1, LinkedForneymonegerie y2) {
-        throw new UnsupportedOperationException();
+        return (diffMon(y2, y1).empty() && diffMon(y1, y2).empty());
     }
 
     // Methods
