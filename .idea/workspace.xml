@@ -86,14 +86,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6630" />
-          <entry key="txt" value="395" />
+          <entry key="java" value="6760" />
+          <entry key="txt" value="419" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6630" />
-          <entry key="PLAIN_TEXT" value="395" />
+          <entry key="JAVA" value="6760" />
+          <entry key="PLAIN_TEXT" value="419" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -115,9 +115,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+            <state relative-caret-position="132">
+              <caret line="177" column="47" selection-start-line="177" selection-start-column="47" selection-end-line="177" selection-end-column="47" />
               <folding>
+                <element signature="e#75#108#0" expanded="true" />
                 <element signature="e#1315#1316#0" expanded="true" />
                 <element signature="e#1347#1348#0" expanded="true" />
                 <element signature="e#1372#1373#0" expanded="true" />
@@ -138,19 +139,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2574">
-              <caret line="145" selection-start-line="145" selection-end-line="145" />
+            <state relative-caret-position="305">
+              <caret line="181" selection-start-line="181" selection-end-line="181" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,6 +167,7 @@
       <find>head</find>
       <find>trade</find>
       <find>getiter</find>
+      <find>append</find>
     </findStrings>
     <replaceStrings>
       <replace>tail</replace>
@@ -402,7 +395,7 @@
       <workItem from="1539056177285" duration="54000" />
       <workItem from="1539056280517" duration="81000" />
       <workItem from="1539137807790" duration="9180000" />
-      <workItem from="1539227372504" duration="6867000" />
+      <workItem from="1539227372504" duration="8114000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -565,43 +558,50 @@
       <option name="project" value="LOCAL" />
       <updated>1539234188933</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="sameCollection working">
+      <created>1539234259600</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1539234259600</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LinkedForneymonegerieTests_testDiffMon - 2018.10.10 at 21h 49m 09s.xml">
-      <configuration name="LinkedForneymonegerieTests.testDiffMon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests_testDiffMon - 2018.10.10 at 21h 50m 16s.xml">
-      <configuration name="LinkedForneymonegerieTests.testDiffMon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests_testDiffMon - 2018.10.10 at 21h 51m 08s.xml">
-      <configuration name="LinkedForneymonegerieTests.testDiffMon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests_testDiffMon - 2018.10.10 at 21h 55m 19s.xml">
-      <configuration name="LinkedForneymonegerieTests.testDiffMon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests_testDiffMon - 2018.10.10 at 21h 55m 22s.xml">
-      <configuration name="LinkedForneymonegerieTests.testDiffMon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests_testDiffMon - 2018.10.10 at 21h 56m 15s.xml">
-      <configuration name="LinkedForneymonegerieTests.testDiffMon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests_testDiffMon - 2018.10.10 at 21h 58m 36s.xml">
-      <configuration name="LinkedForneymonegerieTests.testDiffMon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests_testDiffMon - 2018.10.10 at 22h 01m 33s.xml">
-      <configuration name="LinkedForneymonegerieTests.testDiffMon" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 02m 54s.xml">
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 15m 05s.xml">
       <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 04m 01s.xml">
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 17m 27s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 18m 12s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 19m 01s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 19m 54s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 20m 18s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 22m 21s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 23m 34s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 24m 19s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.10 at 22h 24m 44s.xml">
       <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41551000" />
+    <option name="totallyTimeSpent" value="42798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -615,7 +615,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3278856" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3278856" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39530134" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -664,7 +664,8 @@
     <MESSAGE value="rarest type working" />
     <MESSAGE value="All but static methods *working*" />
     <MESSAGE value="diffMon method working" />
-    <option name="LAST_COMMIT_MESSAGE" value="diffMon method working" />
+    <MESSAGE value="sameCollection working" />
+    <option name="LAST_COMMIT_MESSAGE" value="sameCollection working" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -699,6 +700,12 @@
           <line>145</line>
           <properties />
           <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTests.java</url>
+          <line>181</line>
+          <properties />
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -819,16 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2574">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -836,11 +833,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="181" selection-start-line="181" selection-end-line="181" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+        <state relative-caret-position="132">
+          <caret line="177" column="47" selection-start-line="177" selection-start-column="47" selection-end-line="177" selection-end-column="47" />
           <folding>
+            <element signature="e#75#108#0" expanded="true" />
             <element signature="e#1315#1316#0" expanded="true" />
             <element signature="e#1347#1348#0" expanded="true" />
             <element signature="e#1372#1373#0" expanded="true" />

@@ -2,6 +2,7 @@ package linked_forneymonegerie;
 
 import java.util.NoSuchElementException;
 
+@SuppressWarnings("WeakerAccess")
 public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
     // Fields
@@ -32,9 +33,8 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
                 // If there are equal or more of this type in y2, remove the type from diffBoi
                 if (y2Location.getCount() >= y1Iter.getCount()) {
                     diffBoi.releaseType(y2Location.getType());
-                }
-                // Otherwise, release the amount of this type in y2 from diffBoi
-                else {
+                } else {
+                    // Otherwise, release the amount of this type in y2 from diffBoi
                     for (int i = 0; i < y2Location.getCount(); i++) {
                         diffBoi.release(y2Location.getType());
                     }
@@ -79,13 +79,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
         Iterator iter = findType(toAdd);
         if (iter == null) {
-            tail.next = new ForneymonType(toAdd, 1);
-            tail.next.prev = tail;
-            tail = tail.next;
-
-            size++;
-            typeSize++;
-            modCount++;
+            append(toAdd, 1);
             return true;
         }
 
@@ -175,11 +169,13 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         return rarest.type;
     }
 
+    @Override
     public LinkedForneymonegerie clone() {
         LinkedForneymonegerie cloneyBoi = new LinkedForneymonegerie();
         cloneyBoi.size = size;
         cloneyBoi.typeSize = typeSize;
         cloneyBoi.modCount = modCount;
+        // TODO: Find way to not do this twice?
 
         if (empty()) {
             return cloneyBoi;
@@ -195,6 +191,10 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
             cloneyBoi.append(ogIter.getType(), ogIter.getCount());
             ogIter.nextType();
         }
+
+        cloneyBoi.size = size;
+        cloneyBoi.typeSize = typeSize;
+        cloneyBoi.modCount = modCount;
 
         return cloneyBoi;
     }
@@ -245,10 +245,20 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     private void append(String type, int count) {
-        ForneymonType oldTail = tail;
-        tail.next = new ForneymonType(type, count);
-        tail = oldTail.next;
-        tail.prev = oldTail;
+
+        if (empty()) {
+            head = new ForneymonType(type, count);
+            tail = head;
+        } else {
+            ForneymonType oldTail = tail;
+            tail.next = new ForneymonType(type, count);
+            tail = oldTail.next;
+            tail.prev = oldTail;
+        }
+
+        modCount++;
+        typeSize++;
+        size += count;
     }
 
     // Inner Classes
