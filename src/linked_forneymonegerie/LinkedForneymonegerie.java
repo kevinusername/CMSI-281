@@ -102,9 +102,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
     public void releaseType(String toNuke) {
         Iterator iter = findType(toNuke);
-        if (iter == null) {
-            return;
-        }
+        if (iter == null) { return; } // Case: toNuke is NOT in the collection
 
         size -= iter.current.count;
         typeSize--;
@@ -168,14 +166,12 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         cloneyBoi.modCount = modCount;
         // TODO: Find way to not do this twice?
 
-        if (empty()) {
-            return cloneyBoi;
-        }
+        if (empty()) { return cloneyBoi; }
 
         cloneyBoi.head = new ForneymonType(head.type, head.count);
         cloneyBoi.tail = cloneyBoi.head;
 
-        Iterator ogIter = new Iterator(this);
+        Iterator ogIter = this.getIterator();
         ogIter.nextType();
 
         for (int i = 1; i < typeSize; i++) {
@@ -183,6 +179,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
             ogIter.nextType();
         }
 
+        // Reset these values since they have been altered in the cloning process
         cloneyBoi.size = size;
         cloneyBoi.typeSize = typeSize;
         cloneyBoi.modCount = modCount;
@@ -256,9 +253,9 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         int typePosition;
 
         Iterator(LinkedForneymonegerie y) {
-            if (y.head == null) {
-                throw new IllegalArgumentException("Collection is empty. Nothing to iterate through");
-            }
+//            if (y.head == null) {
+//                throw new IllegalArgumentException("Collection is empty. Nothing to iterate through");
+//            }
             owner = y;
             current = y.head;
             itModCount = y.modCount;

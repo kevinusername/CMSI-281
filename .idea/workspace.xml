@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java" afterDir="false" />
     </list>
@@ -88,14 +87,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8777" />
-          <entry key="txt" value="492" />
+          <entry key="java" value="8912" />
+          <entry key="txt" value="536" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8777" />
-          <entry key="PLAIN_TEXT" value="492" />
+          <entry key="JAVA" value="8912" />
+          <entry key="PLAIN_TEXT" value="536" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -114,11 +113,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="208" column="30" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
+            <state relative-caret-position="504">
+              <caret line="181" column="81" selection-start-line="181" selection-start-column="81" selection-end-line="181" selection-end-column="81" />
               <folding>
                 <element signature="e#75#137#0" expanded="true" />
                 <element signature="e#2068#2069#0" expanded="true" />
@@ -138,11 +137,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="216">
+              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,7 +152,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1566">
+            <state relative-caret-position="3294">
               <caret line="185" column="34" lean-forward="true" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -198,8 +200,8 @@
         <option value="$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java" />
         <option value="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" />
         <option value="$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTests.java" />
-        <option value="$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java" />
         <option value="$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTest.java" />
+        <option value="$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java" />
       </list>
     </option>
   </component>
@@ -290,8 +292,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedForneymonegerieTest.trade">
-    <configuration name="LinkedForneymonegerieTest.collect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LinkedForneymonegerieTests">
+    <configuration name="LinkedForneymonegerieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CMSI 281" />
       <extension name="coverage">
         <pattern>
@@ -301,8 +303,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="linked_forneymonegerie" />
       <option name="MAIN_CLASS_NAME" value="linked_forneymonegerie.LinkedForneymonegerieTest" />
-      <option name="METHOD_NAME" value="collect" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -318,22 +318,6 @@
       <option name="PACKAGE_NAME" value="linked_forneymonegerie" />
       <option name="MAIN_CLASS_NAME" value="linked_forneymonegerie.LinkedForneymonegerieTest" />
       <option name="METHOD_NAME" value="rarestType" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedForneymonegerieTest.release" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CMSI 281" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="linked_forneymonegerie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="linked_forneymonegerie" />
-      <option name="MAIN_CLASS_NAME" value="linked_forneymonegerie.LinkedForneymonegerieTest" />
-      <option name="METHOD_NAME" value="release" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -371,20 +355,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LinkedForneymonegerieTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CMSI 281" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linked_forneymonegerie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="linked_forneymonegerie" />
+      <option name="MAIN_CLASS_NAME" value="linked_forneymonegerie.LinkedForneymonegerieTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.LinkedForneymonegerieTest.collect" />
-      <item itemvalue="JUnit.LinkedForneymonegerieTest.release" />
       <item itemvalue="JUnit.LinkedForneymonegerieTest.releaseType" />
       <item itemvalue="JUnit.LinkedForneymonegerieTest.rarestType" />
       <item itemvalue="JUnit.LinkedForneymonegerieTest.trade" />
+      <item itemvalue="JUnit.LinkedForneymonegerieTest" />
+      <item itemvalue="JUnit.LinkedForneymonegerieTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LinkedForneymonegerieTests" />
+        <item itemvalue="JUnit.LinkedForneymonegerieTest" />
         <item itemvalue="JUnit.LinkedForneymonegerieTest.trade" />
         <item itemvalue="JUnit.LinkedForneymonegerieTest.rarestType" />
         <item itemvalue="JUnit.LinkedForneymonegerieTest.releaseType" />
-        <item itemvalue="JUnit.LinkedForneymonegerieTest.release" />
-        <item itemvalue="JUnit.LinkedForneymonegerieTest.collect" />
       </list>
     </recent_temporary>
   </component>
@@ -410,7 +408,7 @@
       <workItem from="1539056280517" duration="81000" />
       <workItem from="1539137807790" duration="9180000" />
       <workItem from="1539227372504" duration="9400000" />
-      <workItem from="1539553122739" duration="4066000" />
+      <workItem from="1539553122739" duration="4600000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -601,28 +599,17 @@
       <option name="project" value="LOCAL" />
       <updated>1539236762671</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added personal tests and fixed some bugs">
+      <created>1539557229701</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1539557229701</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LinkedForneymonegerieTest_releaseType - 2018.10.14 at 15h 39m 56s.xml">
-      <configuration name="LinkedForneymonegerieTest.releaseType" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTest_rarestType - 2018.10.14 at 15h 40m 59s.xml">
-      <configuration name="LinkedForneymonegerieTest.rarestType" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTest_rarestType - 2018.10.14 at 15h 41m 43s.xml">
-      <configuration name="LinkedForneymonegerieTest.rarestType" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTest_trade - 2018.10.14 at 15h 43m 36s.xml">
-      <configuration name="LinkedForneymonegerieTest.trade" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTest_trade - 2018.10.14 at 15h 44m 23s.xml">
-      <configuration name="LinkedForneymonegerieTest.trade" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTest_trade - 2018.10.14 at 15h 44m 48s.xml">
-      <configuration name="LinkedForneymonegerieTest.trade" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LinkedForneymonegerieTest_trade - 2018.10.14 at 15h 45m 35s.xml">
       <configuration name="LinkedForneymonegerieTest.trade" configurationId="JUnit" />
     </history-entry>
@@ -635,9 +622,27 @@
     <history-entry file="LinkedForneymonegerieTest_trade - 2018.10.14 at 15h 45m 52s.xml">
       <configuration name="LinkedForneymonegerieTest.trade" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LinkedForneymonegerieTest - 2018.10.14 at 15h 52m 20s.xml">
+      <configuration name="LinkedForneymonegerieTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTest - 2018.10.14 at 15h 52m 35s.xml">
+      <configuration name="LinkedForneymonegerieTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTest - 2018.10.14 at 15h 53m 40s.xml">
+      <configuration name="LinkedForneymonegerieTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTest - 2018.10.14 at 15h 54m 15s.xml">
+      <configuration name="LinkedForneymonegerieTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.14 at 15h 54m 28s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.14 at 15h 54m 44s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48150000" />
+    <option name="totallyTimeSpent" value="48684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -677,7 +682,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="formatting" />
     <MESSAGE value="now clears forward on visit" />
     <MESSAGE value="most methods finished, forgot to commit as i went..." />
     <MESSAGE value="moved private method" />
@@ -702,7 +706,8 @@
     <MESSAGE value="new version of append()" />
     <MESSAGE value="simplified collect()" />
     <MESSAGE value="lots of cleanup and comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="lots of cleanup and comments" />
+    <MESSAGE value="Added personal tests and fixed some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added personal tests and fixed some bugs" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -828,9 +833,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
+        <state relative-caret-position="3294">
           <caret line="185" column="34" lean-forward="true" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -840,8 +855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="208" column="30" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
+        <state relative-caret-position="504">
+          <caret line="181" column="81" selection-start-line="181" selection-start-column="81" selection-end-line="181" selection-end-column="81" />
           <folding>
             <element signature="e#75#137#0" expanded="true" />
             <element signature="e#2068#2069#0" expanded="true" />
@@ -857,13 +872,6 @@
             <element signature="e#9902#9903#0" expanded="true" />
             <element signature="e#9955#9956#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerieTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
