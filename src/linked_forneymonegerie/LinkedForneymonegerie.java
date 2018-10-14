@@ -2,7 +2,7 @@ package linked_forneymonegerie;
 
 import java.util.NoSuchElementException;
 
-@SuppressWarnings({"WeakerAccess", "SpellCheckingInspection"})
+@SuppressWarnings({"WeakerAccess", "SpellCheckingInspection"}) // This is just an artifact from my IDE
 public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
     // Fields
@@ -49,6 +49,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public static boolean sameCollection(LinkedForneymonegerie y1, LinkedForneymonegerie y2) {
+        if (y1.size != y2.size) { return false; } // Quick little cheat to save computation if possible
         return (diffMon(y2, y1).empty() && diffMon(y1, y2).empty());
     }
 
@@ -160,7 +161,6 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         return rarest.type;
     }
 
-    @Override
     public LinkedForneymonegerie clone() {
         LinkedForneymonegerie cloneyBoi = new LinkedForneymonegerie();
         cloneyBoi.size = size;
@@ -206,7 +206,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         other.head = temp.head;
         other.tail = temp.tail;
         other.size = temp.size;
-        other.typeSize = other.size;
+        other.typeSize = temp.typeSize;
         other.modCount = temp.modCount + 1;
     }
 
@@ -320,11 +320,18 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         public void replaceAll(String toReplaceWith) {
             if (!isValid()) { throw new IllegalStateException("Invalid iterator"); }
 
-            // TODO: Implement checking if toReplaceWith type already exists once there is a contains() method
+            Iterator iter = findType(toReplaceWith);
+            if (iter == null) {
+                current.type = toReplaceWith;
+                itModCount++;
+                owner.modCount++;
+                return;
+            }
 
-            current.type = toReplaceWith;
+            iter.current.count += current.count;
+            releaseType(getType());
             itModCount++;
-            owner.modCount++;
+            // TODO: this now points to nothing???
         }
 
         // Custom private helper methods:
