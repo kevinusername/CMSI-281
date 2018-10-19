@@ -24,25 +24,25 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     public static LinkedForneymonegerie diffMon(LinkedForneymonegerie y1, LinkedForneymonegerie y2) {
         LinkedForneymonegerie diffBoi = y1.clone();
 
-        Iterator y1Iter = y1.getIterator();
+        ForneymonType y1Type = y1.head;
 
         while (true) {
-            Iterator y2Location = y2.findType(y1Iter.getType());
+            ForneymonType y2Location = y2.findType(y1Type.type);
 
             if (y2Location != null) { // If the type is in y2
                 // If there are equal or more of this type in y2, remove the type from diffBoi
-                if (y2Location.getCount() >= y1Iter.getCount()) {
-                    diffBoi.releaseType(y2Location.getType());
+                if (y2Location.count >= y1Type.count) {
+                    diffBoi.releaseType(y2Location.type);
                 } else {
                     // Otherwise, release the amount of this type in y2 from diffBoi
-                    for (int i = 0; i < y2Location.getCount(); i++) {
-                        diffBoi.release(y2Location.getType());
+                    for (int i = 0; i < y2Location.count; i++) {
+                        diffBoi.release(y2Location.type);
                     }
                 }
             }
 
             // If there are more types to check in y1, move to next type, otherwise stop checking
-            if (y1Iter.hasNextType()) { y1Iter.nextType(); } else { break; }
+            if (y1Type.next != null) { y1Type = y1Type.next; } else { break; }
         }
 
         return diffBoi;
@@ -56,7 +56,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     // Methods
     // -----------------------------------------------------------
     public boolean empty() {
-        return size == 0;
+        return 0 == size;
     }
 
     public int size() {
@@ -73,38 +73,38 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
             return true;
         }
 
-        Iterator iter = findType(toAdd);
-        if (iter == null) {
+        ForneymonType location = findType(toAdd);
+        if (location == null) {
             append(toAdd, 1);
             return true;
         }
 
-        iter.current.count++;
+        location.count++;
         size++;
         modCount++;
         return false;
     }
 
     public boolean release(String toRemove) {
-        Iterator iter = findType(toRemove);
+        ForneymonType location = findType(toRemove);
 
-        if (iter == null) { return false; }
+        if (location == null) { return false; }
 
-        if (iter.current.count == 1) {
+        if (location.count == 1) {
             releaseType(toRemove);
             return true;
         }
-        iter.current.count--;
+        location.count--;
         size--;
         modCount++;
         return true;
     }
 
     public void releaseType(String toNuke) {
-        Iterator iter = findType(toNuke);
-        if (iter == null) { return; } // Case: toNuke is NOT in the collection
+        ForneymonType location = findType(toNuke);
+        if (location == null) { return; } // Case: toNuke is NOT in the collection
 
-        size -= iter.current.count;
+        size -= location.count;
         typeSize--;
         modCount++;
 
@@ -114,8 +114,8 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
             return;
         }
         // Shorter var names for the sake of readability
-        ForneymonType prev = iter.current.prev;
-        ForneymonType next = iter.current.next;
+        ForneymonType prev = location.prev;
+        ForneymonType next = location.next;
 
         if (prev == null) { // Case: toNuke is head
             head = next;
@@ -134,14 +134,14 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public int countType(String toCount) {
-        Iterator iter = findType(toCount);
-        if (iter == null) { return 0; }
-        return iter.getCount();
+        ForneymonType location = findType(toCount);
+        if (location == null) { return 0; }
+        return location.count;
     }
 
     public boolean contains(String toCheck) {
-        Iterator iter = findType(toCheck);
-        return iter != null;
+        ForneymonType location = findType(toCheck);
+        return location != null;
     }
 
     public String rarestType() {
@@ -214,13 +214,15 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     // Private helper methods
     // -----------------------------------------------------------
 
-    private Iterator findType(String toFind) {
-        Iterator iter = getIterator();
+    private ForneymonType findType(String toFind) {
 
+        ForneymonType current = head;
         while (true) {
-            if (iter.getType().equals(toFind)) { return iter; }
-            if (iter.current.next == null) { break; }
-            iter.nextType();
+            if (current.type.equals(toFind)) {
+                return current;
+            }
+            if (current.next == null) { break; }
+            current = current.next;
         }
 
         return null;
@@ -317,15 +319,15 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         public void replaceAll(String toReplaceWith) {
             if (!isValid()) { throw new IllegalStateException("Invalid iterator"); }
 
-            Iterator iter = findType(toReplaceWith);
-            if (iter == null) {
+            ForneymonType location = findType(toReplaceWith);
+            if (location == null) {
                 current.type = toReplaceWith;
                 itModCount++;
                 owner.modCount++;
                 return;
             }
 
-            iter.current.count += current.count;
+            location.count += current.count;
             releaseType(getType());
             itModCount++;
             // TODO: this now points to nothing???
