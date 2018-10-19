@@ -68,17 +68,14 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     }
 
     public boolean collect(String toAdd) {
-        if (empty()) { // This is its own condition since it must run before the iterator is created to avoid errors
-            append(toAdd, 1);
-            return true;
-        }
-
         ForneymonType location = findType(toAdd);
-        if (location == null) {
+
+        if (empty() || location == null) { // Case: type not already in collection
             append(toAdd, 1);
             return true;
         }
 
+        // Case: type is already in collection
         location.count++;
         size++;
         modCount++;
@@ -90,10 +87,11 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
         if (location == null) { return false; }
 
-        if (location.count == 1) {
+        if (location.count == 1) { //case: last of its type
             releaseType(toRemove);
             return true;
         }
+        // case: multiple of its type
         location.count--;
         size--;
         modCount++;
@@ -127,7 +125,6 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
             tail = prev;
             return;
         }
-
         // Case: toNuke type is in collection, but is not the head or tail
         prev.next = next;
         next.prev = prev;
@@ -217,6 +214,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     private ForneymonType findType(String toFind) {
 
         ForneymonType current = head;
+        if (current == null) { return null; }
         while (true) {
             if (current.type.equals(toFind)) {
                 return current;

@@ -87,14 +87,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9165" />
-          <entry key="txt" value="551" />
+          <entry key="java" value="9454" />
+          <entry key="txt" value="656" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9165" />
-          <entry key="PLAIN_TEXT" value="551" />
+          <entry key="JAVA" value="9454" />
+          <entry key="PLAIN_TEXT" value="656" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -116,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="37" column="64" lean-forward="true" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+            <state relative-caret-position="720">
+              <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
               <folding>
                 <element signature="e#6303#6304#0" expanded="true" />
                 <element signature="e#6344#6345#0" expanded="true" />
@@ -429,7 +429,7 @@
       <workItem from="1539137807790" duration="9180000" />
       <workItem from="1539227372504" duration="9400000" />
       <workItem from="1539553122739" duration="5456000" />
-      <workItem from="1539990462552" duration="1543000" />
+      <workItem from="1539990462552" duration="2265000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -634,28 +634,17 @@
       <option name="project" value="LOCAL" />
       <updated>1539557748812</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Changed findType() from iterator to ForneymonType&#10;adjusted all methods using it to reflect this change">
+      <created>1539992065317</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1539992065317</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LinkedForneymonegerieTest_trade - 2018.10.14 at 15h 45m 52s.xml">
-      <configuration name="LinkedForneymonegerieTest.trade" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTest - 2018.10.14 at 15h 52m 20s.xml">
-      <configuration name="LinkedForneymonegerieTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTest - 2018.10.14 at 15h 52m 35s.xml">
-      <configuration name="LinkedForneymonegerieTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTest - 2018.10.14 at 15h 53m 40s.xml">
-      <configuration name="LinkedForneymonegerieTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTest - 2018.10.14 at 15h 54m 15s.xml">
-      <configuration name="LinkedForneymonegerieTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LinkedForneymonegerieTests - 2018.10.14 at 15h 54m 28s.xml">
-      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LinkedForneymonegerieTests - 2018.10.14 at 15h 54m 44s.xml">
       <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
     </history-entry>
@@ -668,9 +657,27 @@
     <history-entry file="LinkedForneymonegerieTests - 2018.10.19 at 16h 33m 18s.xml">
       <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.19 at 16h 37m 23s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.19 at 16h 37m 49s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.19 at 16h 38m 59s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.19 at 16h 42m 30s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.19 at 16h 42m 35s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LinkedForneymonegerieTests - 2018.10.19 at 16h 43m 17s.xml">
+      <configuration name="LinkedForneymonegerieTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51083000" />
+    <option name="totallyTimeSpent" value="51805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -700,7 +707,7 @@
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Run" order="7" weight="0.25774226" />
+      <window_info active="true" anchor="right" id="Run" order="7" visible="true" weight="0.25774226" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -710,7 +717,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="most methods finished, forgot to commit as i went..." />
     <MESSAGE value="moved private method" />
     <MESSAGE value="All tests pass???" />
     <MESSAGE value="Cleaner version of diffMon" />
@@ -735,7 +741,8 @@
     <MESSAGE value="lots of cleanup and comments" />
     <MESSAGE value="Added personal tests and fixed some bugs" />
     <MESSAGE value="Minor cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor cleanup" />
+    <MESSAGE value="Changed findType() from iterator to ForneymonType&#10;adjusted all methods using it to reflect this change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed findType() from iterator to ForneymonType&#10;adjusted all methods using it to reflect this change" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -883,8 +890,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/linked_forneymonegerie/LinkedForneymonegerie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="37" column="64" lean-forward="true" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+        <state relative-caret-position="720">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
           <folding>
             <element signature="e#6303#6304#0" expanded="true" />
             <element signature="e#6344#6345#0" expanded="true" />
