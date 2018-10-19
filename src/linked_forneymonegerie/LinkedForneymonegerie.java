@@ -132,7 +132,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
     public int countType(String toCount) {
         ForneymonType location = findType(toCount);
-        if (location == null) { return 0; }
+        if (null == location) { return 0; }
         return location.count;
     }
 
@@ -144,14 +144,13 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     public String rarestType() {
         if (empty()) { return null; }
 
-        Iterator iter = getIterator();
-        ForneymonType rarest = iter.current;
-        iter.nextType();
+        ForneymonType current = head;
+        ForneymonType rarest = current;
 
         while (true) {
-            if (iter.current.count <= rarest.count) { rarest = iter.current; }
-            if (iter.current.next == null) { break; }
-            iter.nextType();
+            if (current.next == null) { break; }
+            current = current.next;
+            if (current.count <= rarest.count) { rarest = current; }
         }
         return rarest.type;
     }
