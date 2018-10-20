@@ -5,13 +5,16 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * These are my own tests to build upon provided ones
+ */
 class LinkedForneymonegerieTest {
 
     LinkedForneymonegerie fm1;
     LinkedForneymonegerie fm2;
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         fm1 = new LinkedForneymonegerie();
         for (int i = 0; i < 10; i++) {
             fm1.collect("BurnyBoi");

@@ -31,24 +31,22 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         ForneymonType y1Type = y1.head;
 
         while (true) {
-            ForneymonType y2Location = y2.findType(y1Type.type);
+            ForneymonType y2Type = y2.findType(y1Type.type);
 
-            if (y2Location != null) { // If the type is in y2
+            if (y2Type != null) { // Case: type is in y2 (else, no action required)
                 // If there are equal or more of this type in y2, remove the type from diffBoi
-                if (y2Location.count >= y1Type.count) {
-                    diffBoi.releaseType(y2Location.type);
-                } else {
-                    // Otherwise, release the amount of this type in y2 from diffBoi
-                    for (int i = 0; i < y2Location.count; i++) {
-                        diffBoi.release(y2Location.type);
-                    }
+                if (y2Type.count >= y1Type.count) {
+                    diffBoi.releaseType(y2Type.type);
+                } else { // Otherwise, release the amount of this type in y2 from diffBoi
+                    // Saves computational strain of repeatedly calling release()
+                    diffBoi.findType(y1Type.type).count -= y2Type.count;
+                    diffBoi.size -= y2Type.count;
+                    diffBoi.modCount++;
                 }
             }
-
             // If there are more types to check in y1, move to next type, otherwise stop checking
             if (y1Type.next != null) { y1Type = y1Type.next; } else { break; }
         }
-
         return diffBoi;
     }
 
@@ -83,11 +81,10 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     public boolean collect(String toAdd) {
         ForneymonType location = findType(toAdd);
 
-        if (empty() || location == null) { // Case: type not already in collection
+        if (location == null) { // Case: type not already in collection
             append(toAdd, 1);
             return true;
         }
-
         // Case: type is already in collection
         location.count++;
         size++;
@@ -104,13 +101,13 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     public boolean release(String toRemove) {
         ForneymonType location = findType(toRemove);
 
-        if (location == null) { return false; }
+        if (location == null) { return false; } // Case: type not in colelction
 
-        if (location.count == 1) { //case: last of its type
+        if (location.count == 1) { // Case: last of its type
             releaseType(toRemove);
             return true;
         }
-        // case: multiple of its type
+        // Case: multiple of its type
         location.count--;
         size--;
         modCount++;
@@ -135,7 +132,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
             tail = null;
             return;
         }
-        // Shorter var names for the sake of readability
+        // Shorter var names for the sake of readability/sanity
         ForneymonType prev = location.prev;
         ForneymonType next = location.next;
 
@@ -175,7 +172,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         ForneymonType rarest = current;
 
         while (true) {
-            if (current.next == null) { break; }
+            if (null == current.next) { break; }
             current = current.next;
             if (current.count <= rarest.count) { rarest = current; }
         }
@@ -229,9 +226,7 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     /**
      * @return Iterator object for this Forneymonegerie. Starts at head
      */
-    public LinkedForneymonegerie.Iterator getIterator() {
-        return new Iterator(this);
-    }
+    public LinkedForneymonegerie.Iterator getIterator() { return new Iterator(this); }
 
     // Private helper methods
     // -----------------------------------------------------------
@@ -243,15 +238,15 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
     private ForneymonType findType(String toFind) {
 
         ForneymonType current = head;
-        if (current == null) { return null; }
+        if (null == current) { return null; }
 
         while (true) {
             if (current.type.equals(toFind)) { return current; }
-            if (current.next == null) { break; }
+            if (null == current.next) { break; }
             current = current.next;
         }
 
-        return null;
+        return null; // Case: type not in collection
     }
 
     /**
@@ -361,17 +356,16 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
             if (toReplaceWith.equals(current.type)) { return; } // Case: trying to replace current with itself
 
-            ForneymonType location = findType(toReplaceWith);
-            if (location == null) { // Case: toReplaceWith type is not in collection
+            ForneymonType existing = findType(toReplaceWith);
+            if (existing == null) { // Case: toReplaceWith type is not in collection
                 append(toReplaceWith, current.count);
                 releaseType(current.type);
                 current = tail;
             } else { // Case: toReplaceWith type is already in collection
-                location.count += current.count; // Increment existing type's count
+                existing.count += current.count;
                 releaseType(current.type);
-                current = location;
+                current = existing;
             }
-
             // Since the above actions alter mod count, restore owner's original value and increment both counts
             // this allows the iterator to stay in sync by counting this method as only 1 "mod" action for each
             modCount = oldModCount + 1;
@@ -382,6 +376,8 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
          * This is strictly for testing purposes, and is thus package private.
          * <p>
          * Useful when testing that Iterator and its owner are in sync
+         * <p>
+         * Could be removed if it breaks the rules
          *
          * @return current.count
          */
