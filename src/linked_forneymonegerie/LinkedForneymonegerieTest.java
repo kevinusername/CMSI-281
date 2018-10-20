@@ -112,4 +112,32 @@ class LinkedForneymonegerieTest {
         assertEquals(0, fm2.countType("ZappyBoi"));
         assertEquals(3, fm2.typeSize());
     }
+
+    @Test
+    void replaceAll() {
+        LinkedForneymonegerie.Iterator iter = fm1.getIterator();
+
+        // Case: replace with existing type
+        iter.replaceAll("DampyBoi");
+        assertEquals(20, iter.getCount());
+        assertEquals(20, fm1.countType("DampyBoi"));
+        assertEquals(0, fm1.countType("BurnyBoi"));
+        assertEquals(2, fm1.typeSize());
+        assertTrue(iter.isValid());
+
+        // Case: replace with new type
+        iter.replaceAll("NewBoi");
+        assertEquals(20, iter.getCount());
+        assertEquals(20, fm1.countType("NewBoi"));
+        assertEquals(0, fm1.countType("DampyBoi"));
+        assertEquals(2, fm1.typeSize());
+        assertTrue(iter.isValid());
+
+        // Case: replace with same type
+        iter.replaceAll("NewBoi");
+        assertEquals(20, iter.getCount());
+        assertEquals(20, fm1.countType("NewBoi"));
+        assertEquals(2, fm1.typeSize());
+        assertTrue(iter.isValid());
+    }
 }
