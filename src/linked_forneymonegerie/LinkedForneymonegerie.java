@@ -157,25 +157,17 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
     public LinkedForneymonegerie clone() {
         LinkedForneymonegerie cloneyBoi = new LinkedForneymonegerie();
-        cloneyBoi.size = size;
-        cloneyBoi.typeSize = typeSize;
-        cloneyBoi.modCount = modCount;
-        // TODO: Find way to not do this twice?
 
         if (empty()) { return cloneyBoi; }
 
-        cloneyBoi.head = new ForneymonType(head.type, head.count);
-        cloneyBoi.tail = cloneyBoi.head;
+        ForneymonType ogType = head; // reference for current poisition in original collection
 
-        Iterator ogIter = this.getIterator();
-        ogIter.nextType();
-
-        for (int i = 1; i < typeSize; i++) {
-            cloneyBoi.append(ogIter.getType(), ogIter.getCount());
-            ogIter.nextType();
+        for (int i = 0; i < typeSize; i++) {
+            cloneyBoi.append(ogType.type, ogType.count);
+            ogType = ogType.next;
         }
 
-        // Reset these values since they have been altered in the cloning process
+        // Set these values to equal the originals
         cloneyBoi.size = size;
         cloneyBoi.typeSize = typeSize;
         cloneyBoi.modCount = modCount;
@@ -214,10 +206,9 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
 
         ForneymonType current = head;
         if (current == null) { return null; }
+
         while (true) {
-            if (current.type.equals(toFind)) {
-                return current;
-            }
+            if (current.type.equals(toFind)) { return current; }
             if (current.next == null) { break; }
             current = current.next;
         }
@@ -252,9 +243,6 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         int typePosition;
 
         Iterator(LinkedForneymonegerie y) {
-//            if (y.head == null) {
-//                throw new IllegalArgumentException("Collection is empty. Nothing to iterate through");
-//            }
             owner = y;
             current = y.head;
             itModCount = y.modCount;
