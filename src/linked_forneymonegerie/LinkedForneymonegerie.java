@@ -208,7 +208,8 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
      * @param other Forneymonegerie to swap values with
      */
     public void trade(LinkedForneymonegerie other) {
-        LinkedForneymonegerie temp = clone();
+        ForneymonType tempHead = head, tempTail = tail;
+        int tempSize = size, tempTypeSize = typeSize, tempModCount = modCount;
 
         head = other.head;
         tail = other.tail;
@@ -216,11 +217,11 @@ public class LinkedForneymonegerie implements LinkedForneymonegerieInterface {
         typeSize = other.typeSize;
         modCount = other.modCount + 1;
 
-        other.head = temp.head;
-        other.tail = temp.tail;
-        other.size = temp.size;
-        other.typeSize = temp.typeSize;
-        other.modCount = temp.modCount + 1;
+        other.head = tempHead;
+        other.tail = tempTail;
+        other.size = tempSize;
+        other.typeSize = tempTypeSize;
+        other.modCount = tempModCount + 1;
     }
 
     /**
