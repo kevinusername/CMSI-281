@@ -1,3 +1,4 @@
+// Kevin Peters
 package forneymonegerie;
 
 public class Forneymonegerie implements ForneymonegerieInterface {
@@ -22,62 +23,41 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     // ----------------------------------------------------------
 
     /**
-     * Less of an absolute nightmare than before
+     * Returns a new Forneymonegerie object consisting of all Forneymon from y1 that do NOT appear in y2.
      *
      * @param y1 Forneymonegerie in which all Forneymon MUST be
      * @param y2 Forneymonegerie in which all Forneymon must NOT be
-     * @return a *new* Forneymonegerie object consisting of all Forneymon from y1 that do NOT appear in y2.
+     * @return Forneymonegerie object consisting of all Forneymon from y1 that do NOT appear in y2.
      */
     public static Forneymonegerie diffMon(Forneymonegerie y1, Forneymonegerie y2) {
-        // TODO: Initialize with y1 instead of blank menagerie
-        Forneymonegerie fusion = new Forneymonegerie();
+        Forneymonegerie fusion = y1.clone();
 
-        for (int i = 0; i < y1.typeSize; i++) {
-            int y2Location = y2.typeIndex(y1.collection[i].type); // Index of this type in y2 collection
-
-            if (y2Location == -1) { // when type in y1 not present in y2
-                // Collect all of that type from y1
-                fusion.collect(y1.collection[i].type);
-                fusion.size += y1.collection[i].count - 1;
-                fusion.collection[fusion.typeSize - 1].count += y1.collection[i].count - 1;
-                continue; // Move onto next type
+        for (int i = 0; i < fusion.typeSize; i++) {
+            int y2Index = y2.typeIndex(fusion.collection[i].type);
+            if (y2Index == -1) { // If type isn't in y2, move on to next type
+                continue;
             }
-
-            // Reaching this point implies the type IS in y2
-            int difference = y1.collection[i].count - y2.collection[y2Location].count; // Difference in amount of this type
-            if (difference > 0) { // If more of this type in y1 than y2
-                // Collect all the Forneymon of that type that are in y1 but NOT y2
-                fusion.collect(y1.collection[i].type);
-                fusion.size += difference - 1;
-                fusion.collection[fusion.typeSize - 1].count += difference - 1;
+            int difference = fusion.collection[i].count - y2.collection[y2Index].count;
+            if (difference <= 0) { // Remove types where the count is greater or equal in y2
+                fusion.releaseType(fusion.collection[i].type);
+                i--;
+                continue;
             }
+            fusion.size -= fusion.collection[i].count - difference;
+            fusion.collection[i].count = difference;
         }
-
         return fusion;
     }
 
+    /**
+     * Checks if 2 Forneymonegeries contain the same Forneymon, not necessarily in same order
+     *
+     * @param y1 Forneymonegerie to compare
+     * @param y2 Forneymonegeries to compare
+     * @return if Forneymonegeries are same
+     */
     public static boolean sameCollection(Forneymonegerie y1, Forneymonegerie y2) {
-        // TODO: can be done in one line...
-
-        // Don't bother if size fields don't match
-        if (y1.size != y2.size || y1.typeSize != y2.typeSize) {
-            return false;
-        }
-
-        // Since size fields match, make sure all types, and their respective sizes, match
-        for (int i = 0; i < y1.typeSize; i++) {
-            int y2Location = y2.typeIndex(y1.collection[i].type);
-
-            if (y2Location == -1) {  // If this type from y1 is NOT in y2, not equal
-                return false;
-            }
-
-            // If the amount of each type is not the same, not equal
-            if (y1.collection[i].count != y2.collection[y2Location].count) {
-                return false;
-            }
-        }
-        return true;
+        return (diffMon(y2, y1).empty() && diffMon(y1, y2).empty());  // Clever girl... (hopefully)
     }
 
     // Methods
@@ -94,6 +74,12 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         return typeSize;
     }
 
+    /**
+     * Adds 1 Forneymon of the specified type to the collection
+     *
+     * @param toAdd type to be added
+     * @return if at least one of this type was already in the collection
+     */
     public boolean collect(String toAdd) {
 
         int index = typeIndex(toAdd);
@@ -112,6 +98,13 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         return true;
     }
 
+    /**
+     * Release 1 Forneymon of the specified type.
+     * if it was the last of its type, removes the type
+     *
+     * @param toRemove type to remove 1 of
+     * @return if type was found in the collection
+     */
     public boolean release(String toRemove) {
         int index = typeIndex(toRemove);
         if (index != -1) { // If the type is in the collection
@@ -129,16 +122,24 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         return false; // Type isn't in the collection, nothing removed
     }
 
+    /**
+     * Release all of a given type of Forneymon
+     *
+     * @param toNuke type to be removed
+     */
     public void releaseType(String toNuke) {
         int index = typeIndex(toNuke);
         if (index != -1) {
             size -= collection[index].count;
-            shiftLeft(index);
+            shiftLeft(index);  // Move all types to the right of this one over, thus overwriting the removed type
             typeSize--;
         }
     }
 
-
+    /**
+     * @param toCount type to determine number of
+     * @return number of given type
+     */
     public int countType(String toCount) {
         int index = typeIndex(toCount);
         if (index != -1) {
@@ -148,6 +149,10 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         return 0;
     }
 
+    /**
+     * @param toCheck type to see if it is in the collection
+     * @return if type was found in collection
+     */
     public boolean contains(String toCheck) {
         return typeIndex(toCheck) != -1;
     }
@@ -178,6 +183,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         Forneymonegerie clonegerie = new Forneymonegerie();
         clonegerie.collection = new ForneymonType[collection.length];
 
+        // Manually copy over all types to get new references
         for (int i = 0; i < typeSize; i++) {
             clonegerie.collection[i] = new ForneymonType(collection[i].type, collection[i].count);
         }
@@ -187,6 +193,11 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         return clonegerie;
     }
 
+    /**
+     * Swaps the fields of 2 Forneymonegeries
+     *
+     * @param other Forneymonegerie to be swapped with
+     */
     public void trade(Forneymonegerie other) {
         // TODO: Change in same way clone() was changed
         Forneymonegerie temp = clone();
@@ -202,12 +213,25 @@ public class Forneymonegerie implements ForneymonegerieInterface {
         other.typeSize = typeSize;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder returnString = new StringBuilder("[ ");
+        for (int i = 0; i < typeSize; i++) {
+            returnString.append("\"" + collection[i].type + "\"" + ": " + collection[i].count);
+            if (i != typeSize - 1) {
+                returnString.append(", ");
+            }
+        }
+        returnString.append(" ]");
+        return returnString.toString();
+    }
+
 
     // Private helper methods
     // ----------------------------------------------------------
 
     private void shiftLeft(int index) {
-        for (int i = index; i < size - 1; i++) {
+        for (int i = index; i < typeSize - 1; i++) {
             collection[i] = collection[i + 1];
         }
     }

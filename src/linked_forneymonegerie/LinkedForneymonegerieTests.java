@@ -1,31 +1,29 @@
-// Kevin Peters
-package forneymonegerie;
+package linked_forneymonegerie;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-public class ForneymonegerieTests {
-
+public class LinkedForneymonegerieTests {
+    
     // =================================================
     // Test Configuration
     // =================================================
-
+    
     // Used as the basic empty menagerie to test; the @Before
     // method is run before every @Test
-    Forneymonegerie fm;
-
+    LinkedForneymonegerie fm;
     @Before
-    public void init() {
-        fm = new Forneymonegerie();
+    public void init () {
+        fm = new LinkedForneymonegerie();
     }
 
-
+    
     // =================================================
     // Unit Tests
     // =================================================
-
+    
     @Test
     public void testSize() {
         fm.collect("Dampymon");
@@ -97,18 +95,6 @@ public class ForneymonegerieTests {
     }
 
     @Test
-    public void testNth() {
-        fm.collect("Dampymon");
-        fm.collect("Burnymon");
-        fm.collect("Zappymon");
-        fm.collect("Dampymon");
-        assertEquals("Dampymon", fm.nth(0));
-        assertEquals("Dampymon", fm.nth(1));
-        assertEquals("Burnymon", fm.nth(2));
-        assertEquals("Zappymon", fm.nth(3));
-    }
-
-    @Test
     public void testRarestType() {
         fm.collect("Dampymon");
         fm.collect("Dampymon");
@@ -123,7 +109,7 @@ public class ForneymonegerieTests {
         fm.collect("Dampymon");
         fm.collect("Dampymon");
         fm.collect("Burnymon");
-        Forneymonegerie dolly = fm.clone();
+        LinkedForneymonegerie dolly = fm.clone();
         assertEquals(dolly.countType("Dampymon"), 2);
         assertEquals(dolly.countType("Burnymon"), 1);
         dolly.collect("Zappymon");
@@ -132,11 +118,11 @@ public class ForneymonegerieTests {
 
     @Test
     public void testTrade() {
-        Forneymonegerie fm1 = new Forneymonegerie();
+        LinkedForneymonegerie fm1 = new LinkedForneymonegerie();
         fm1.collect("Dampymon");
         fm1.collect("Dampymon");
         fm1.collect("Burnymon");
-        Forneymonegerie fm2 = new Forneymonegerie();
+        LinkedForneymonegerie fm2 = new LinkedForneymonegerie();
         fm2.collect("Zappymon");
         fm2.collect("Leafymon");
         fm1.trade(fm2);
@@ -149,14 +135,14 @@ public class ForneymonegerieTests {
 
     @Test
     public void testDiffMon() {
-        Forneymonegerie fm1 = new Forneymonegerie();
+        LinkedForneymonegerie fm1 = new LinkedForneymonegerie();
         fm1.collect("Dampymon");
         fm1.collect("Dampymon");
         fm1.collect("Burnymon");
-        Forneymonegerie fm2 = new Forneymonegerie();
+        LinkedForneymonegerie fm2 = new LinkedForneymonegerie();
         fm2.collect("Dampymon");
         fm2.collect("Zappymon");
-        Forneymonegerie fm3 = Forneymonegerie.diffMon(fm1, fm2);
+        LinkedForneymonegerie fm3 = LinkedForneymonegerie.diffMon(fm1, fm2);
         assertEquals(fm3.countType("Dampymon"), 1);
         assertEquals(fm3.countType("Burnymon"), 1);
         assertFalse(fm3.contains("Zappymon"));
@@ -167,51 +153,59 @@ public class ForneymonegerieTests {
 
     @Test
     public void testSameForneymonegerie() {
-        Forneymonegerie fm1 = new Forneymonegerie();
+        LinkedForneymonegerie fm1 = new LinkedForneymonegerie();
         fm1.collect("Dampymon");
         fm1.collect("Dampymon");
         fm1.collect("Burnymon");
-        Forneymonegerie fm2 = new Forneymonegerie();
+        LinkedForneymonegerie fm2 = new LinkedForneymonegerie();
         fm2.collect("Burnymon");
         fm2.collect("Dampymon");
         fm2.collect("Dampymon");
-        Forneymonegerie fm3 = Forneymonegerie.diffMon(fm1, fm2);
-        assertTrue(Forneymonegerie.sameCollection(fm1, fm2));
-        assertTrue(Forneymonegerie.sameCollection(fm2, fm1));
-
-        // Custom Tests
-        fm2.collect("Dampymon");
-        assertFalse(Forneymonegerie.sameCollection(fm2, fm1));
-        fm2.release("Dampymon");
-        assertTrue(Forneymonegerie.sameCollection(fm2, fm1));
-        // End custom tests
-
+        assertTrue(LinkedForneymonegerie.sameCollection(fm1, fm2));
+        assertTrue(LinkedForneymonegerie.sameCollection(fm2, fm1));
         fm2.collect("Leafymon");
-        assertFalse(Forneymonegerie.sameCollection(fm1, fm2));
+        assertFalse(LinkedForneymonegerie.sameCollection(fm1, fm2));
     }
-
+    
     @Test
-    public void testGiantForneymonegerie() { // See if it can grow to accept any amount of Forneymon
-        for (int i = 0; i < 100; i++) {
-            fm.collect("" + i);
-            int j = i;
-            while (j > 0) {
-                fm.collect("" + i);
-                j--;
-            }
+    public void testIteratorBasics() {
+        fm.collect("Andrewmon");
+        fm.collect("Andrewmon");
+        fm.collect("Andrewmon");
+        fm.collect("Baddymon");
+        LinkedForneymonegerie.Iterator it = fm.getIterator();
+
+        // Test next()
+        LinkedForneymonegerie dolly = fm.clone();
+        while (true) {
+            String gotten = it.getType();
+            assertTrue(dolly.contains(gotten));
+            dolly.release(gotten);
+            if (it.hasNext()) {it.next();} else {break;}
         }
-        System.out.println(fm.toString()); // See if they're all in there
-
-        Forneymonegerie cloneyBoi = fm.clone();
-        cloneyBoi.release("50");
-
-        assertFalse(Forneymonegerie.sameCollection(fm, cloneyBoi));
-        assertEquals("[ \"50\": 1 ]", Forneymonegerie.diffMon(fm, cloneyBoi).toString());
-    }
-
-    @Test
-    public void testPrintEmpty() {
-        assertEquals("[  ]", fm.toString());
+        assertTrue(dolly.empty());
+        assertFalse(it.hasNext());
+        
+        // Test prev()
+        dolly = fm.clone();
+        while (true) {
+            String gotten = it.getType();
+            assertTrue(dolly.contains(gotten));
+            dolly.release(gotten);
+            if (it.hasPrev()) {it.prev();} else {break;}
+        }
+        // If we've seen every Forneymon that was in fm, and removed
+        // that from dolly (a copy), then dolly should be empty by now
+        assertTrue(dolly.empty());
+        assertFalse(it.hasPrev());
+        
+//        int countOfReplaced = fm.countType(it.getType());
+//        it.replaceAll("Mimicmon");
+//        assertEquals(countOfReplaced, fm.countType("Mimicmon"));
+//        assertTrue(it.isValid());
+        
+        fm.collect("Cooliomon");
+        assertFalse(it.isValid());
     }
 
 }
