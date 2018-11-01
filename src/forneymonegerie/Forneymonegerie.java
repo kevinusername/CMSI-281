@@ -188,6 +188,7 @@ public class Forneymonegerie implements ForneymonegerieInterface {
     }
 
     public void trade(Forneymonegerie other) {
+        // TODO: Change in same way clone() was changed
         Forneymonegerie temp = clone();
 
         // Inherit fields from other

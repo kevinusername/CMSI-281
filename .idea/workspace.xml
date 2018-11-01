@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
+    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="Fixed clone">
+      <change afterPath="$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMSI 281.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CMSI 281.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -73,28 +73,32 @@
     <session id="549918051">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="371" />
+          <entry key="java" value="578" />
+          <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="371" />
+          <entry key="JAVA" value="578" />
+          <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
     </session>
@@ -102,21 +106,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
+        <entry file="file://$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1672">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
+            <state relative-caret-position="426">
+              <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#894#895#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,15 +127,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>same</find>
+      <find>todo</find>
+      <find>left</find>
     </findStrings>
+    <replaceStrings>
+      <replace>right</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -151,6 +156,7 @@
         <option value="$PROJECT_DIR$/src/web_nav/WebNavigator.java" />
         <option value="$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java" />
         <option value="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" />
+        <option value="$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java" />
       </list>
     </option>
   </component>
@@ -160,17 +166,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="469" />
-    <option name="y" value="124" />
-    <option name="width" value="2100" />
-    <option name="height" value="1290" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-11" />
+    <option name="width" value="1301" />
+    <option name="height" value="1391" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,20 +192,12 @@
             </path>
             <path>
               <item name="CMSI-281" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMSI-281" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="forneymonegerie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMSI-281" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,7 +349,9 @@
       <workItem from="1537938404880" duration="7920000" />
       <workItem from="1538014672272" duration="9597000" />
       <workItem from="1538024808831" duration="366000" />
-      <workItem from="1538072469387" duration="2610000" />
+      <workItem from="1538072469387" duration="3078000" />
+      <workItem from="1538189537842" duration="34000" />
+      <workItem from="1541099434572" duration="1304000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -422,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538024537066</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixed clone">
+      <created>1538075114067</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1538075114067</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -458,13 +466,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21898000" />
+    <option name="totallyTimeSpent" value="23704000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
+    <frame x="-7" y="0" width="867" height="927" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1487056" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3135068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -508,7 +516,8 @@
     <MESSAGE value="Cleaner version of diffMon" />
     <MESSAGE value="Further simplifying of methods" />
     <MESSAGE value="checkAndGrow helper method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkAndGrow helper method added" />
+    <MESSAGE value="Fixed clone" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed clone" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -578,9 +587,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
+        <state relative-caret-position="718">
           <caret line="124" selection-start-line="124" selection-end-line="124" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -588,10 +604,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java">
+    <entry file="file://$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+        <state relative-caret-position="426">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
