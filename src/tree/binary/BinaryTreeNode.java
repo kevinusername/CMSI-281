@@ -28,7 +28,7 @@ public class BinaryTreeNode {
     public String getString() {
         return data;
     }
-    
+
     public void doubleTree(BinaryTreeNode n) {
         if (n == null) { return; }
         doubleTree(n.left);
@@ -49,6 +49,7 @@ public class BinaryTreeNode {
         testTree1.left = new BinaryTreeNode("1");
         testTree1.right = new BinaryTreeNode("3");
 
+        // What doubleTree(testTree1) should look like
         BinaryTreeNode testTree2 = new BinaryTreeNode("2");
         testTree2.left = new BinaryTreeNode("2");
         testTree2.left.left = new BinaryTreeNode("1");
@@ -56,10 +57,20 @@ public class BinaryTreeNode {
         testTree2.right = new BinaryTreeNode("3");
         testTree2.right.left = new BinaryTreeNode("3");
 
+        System.out.println(sameTree(testTree1, testTree2));
+
         testTree1.doubleTree(testTree1);
 
         System.out.println(sameTree(testTree2, testTree2));
         System.out.println(sameTree(testTree1, testTree1));
+        System.out.println(sameTree(testTree1, testTree2));
+
+        testTree1.doubleTree(testTree1);
+        testTree2.doubleTree(testTree2);
+        System.out.println(sameTree(testTree1, testTree2));
+
+        testTree1.doubleTree(testTree1);
+        testTree2.doubleTree(testTree2);
         System.out.println(sameTree(testTree1, testTree2));
     }
 }
