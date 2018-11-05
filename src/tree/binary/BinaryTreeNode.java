@@ -28,20 +28,38 @@ public class BinaryTreeNode {
     public String getString() {
         return data;
     }
-
+    
     public void doubleTree(BinaryTreeNode n) {
         if (n == null) { return; }
-        doubleTree(n.getChild("L"));
-        doubleTree(n.getChild("R"));
-
+        doubleTree(n.left);
+        doubleTree(n.right);
         BinaryTreeNode oldLeft = n.left;
         n.left = new BinaryTreeNode(n.data);
         n.left.left = oldLeft;
-
     }
 
     public static boolean sameTree(BinaryTreeNode n1, BinaryTreeNode n2) {
-        throw new UnsupportedOperationException();
+        if (n1 == null || n2 == null) { return n1 == n2; }
+        if (!n1.data.equals(n2.data)) { return false; }
+        return sameTree(n1.left, n2.left) && sameTree(n1.right, n2.right);
     }
 
+    public static void main(String[] args) {
+        BinaryTreeNode testTree1 = new BinaryTreeNode("2");
+        testTree1.left = new BinaryTreeNode("1");
+        testTree1.right = new BinaryTreeNode("3");
+
+        BinaryTreeNode testTree2 = new BinaryTreeNode("2");
+        testTree2.left = new BinaryTreeNode("2");
+        testTree2.left.left = new BinaryTreeNode("1");
+        testTree2.left.left.left = new BinaryTreeNode("1");
+        testTree2.right = new BinaryTreeNode("3");
+        testTree2.right.left = new BinaryTreeNode("3");
+
+        testTree1.doubleTree(testTree1);
+
+        System.out.println(sameTree(testTree2, testTree2));
+        System.out.println(sameTree(testTree1, testTree1));
+        System.out.println(sameTree(testTree1, testTree2));
+    }
 }

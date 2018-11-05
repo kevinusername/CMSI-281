@@ -5,7 +5,6 @@
       <set>
         <option value="activate" />
         <option value="noActionIfCompileErrors" />
-        <option value="organizeImports" />
         <option value="reformat" />
         <option value="unnecessaryThis" />
         <option value="unnecessarySemicolon" />
