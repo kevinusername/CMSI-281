@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tree/heap/BinaryHeap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/heap/BinaryHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/heap/BinaryHeap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,7 +105,7 @@
     <session id="1556788068">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="2" />
@@ -112,24 +113,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1731" />
-          <entry key="txt" value="36" />
+          <entry key="java" value="1760" />
+          <entry key="txt" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1731" />
-          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="JAVA" value="1760" />
+          <entry key="PLAIN_TEXT" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -137,10 +138,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tree/heap/BinaryHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+            <state>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
               <folding>
                 <element signature="e#117#118#0" expanded="true" />
                 <element signature="e#164#165#0" expanded="true" />
@@ -193,8 +209,8 @@
         <option value="$PROJECT_DIR$/src/web_nav/WebNavigator.java" />
         <option value="$PROJECT_DIR$/src/forneymonegerie/ForneymonegerieTests.java" />
         <option value="$PROJECT_DIR$/src/forneymonegerie/Forneymonegerie.java" />
-        <option value="$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java" />
         <option value="$PROJECT_DIR$/src/tree/heap/BinaryHeap.java" />
+        <option value="$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java" />
       </list>
     </option>
   </component>
@@ -248,6 +264,13 @@
             </path>
             <path>
               <item name="CMSI-281" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMSI-281" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="binary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMSI-281" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -295,7 +318,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinaryHeap">
+  <component name="RunManager" selected="Application.BinaryTreeNode">
     <configuration name="BinaryHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tree.heap.BinaryHeap" />
       <module name="CMSI 281" />
@@ -377,8 +400,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BinaryHeap" />
         <item itemvalue="Application.BinaryTreeNode" />
+        <item itemvalue="Application.BinaryHeap" />
         <item itemvalue="JUnit.ForneymonegerieTests" />
         <item itemvalue="JUnit.ForneymonegerieTests.testSameForneymonegerie" />
         <item itemvalue="JUnit.ForneymonegerieTests.testDiffMon" />
@@ -405,7 +428,7 @@
       <workItem from="1538189537842" duration="34000" />
       <workItem from="1541099434572" duration="1304000" />
       <workItem from="1541391586753" duration="5235000" />
-      <workItem from="1541474403642" duration="4303000" />
+      <workItem from="1541474403642" duration="4749000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -498,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541396807930</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="heapSort working">
+      <created>1541479713908</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1541479713908</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -534,11 +564,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33242000" />
+    <option name="totallyTimeSpent" value="33688000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15834166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -548,7 +577,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3340143" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3340143" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39530134" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -587,7 +616,8 @@
     <MESSAGE value="Fixed clone" />
     <MESSAGE value="Methods 1 &amp; 2 working (?)" />
     <MESSAGE value="Methods 1 &amp; 2 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Methods 1 &amp; 2 completed" />
+    <MESSAGE value="heapSort working" />
+    <option name="LAST_COMMIT_MESSAGE" value="heapSort working" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -674,28 +704,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="873">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/heap/BinaryHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
           <folding>
             <element signature="e#117#118#0" expanded="true" />
             <element signature="e#164#165#0" expanded="true" />
             <element signature="e#795#796#0" expanded="true" />
             <element signature="e#833#834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
           </folding>
         </state>
       </provider>
