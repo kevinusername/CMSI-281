@@ -28,8 +28,6 @@ public class Dictreenary implements DictreenaryInterface {
     }
 
     public boolean hasWord(String query) {
-        if (isEmpty()) {return false;}
-
         char[] normalized_chars = normalizeWord(query).toCharArray();
         TTNode current = root;
 
