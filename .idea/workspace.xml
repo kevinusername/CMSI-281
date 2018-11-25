@@ -127,14 +127,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3377" />
-          <entry key="txt" value="78" />
+          <entry key="java" value="4147" />
+          <entry key="txt" value="118" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3375" />
-          <entry key="PLAIN_TEXT" value="78" />
+          <entry key="JAVA" value="4145" />
+          <entry key="PLAIN_TEXT" value="118" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
@@ -156,17 +156,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dictreenary/Dictreenary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="69" column="60" lean-forward="true" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+            <state relative-caret-position="393">
+              <caret line="102" column="52" lean-forward="true" selection-start-line="102" selection-start-column="52" selection-end-line="102" selection-end-column="52" />
               <folding>
                 <element signature="e#431#432#0" expanded="true" />
                 <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#2439#2440#0" expanded="true" />
-                <element signature="e#2496#2497#0" expanded="true" />
-                <element signature="e#2545#2546#0" expanded="true" />
-                <element signature="e#2602#2603#0" expanded="true" />
-                <element signature="e#3180#3181#0" expanded="true" />
-                <element signature="e#3256#3257#0" expanded="true" />
+                <element signature="e#3448#3449#0" expanded="true" />
+                <element signature="e#3524#3525#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,7 +171,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1195">
+            <state relative-caret-position="1840">
               <caret line="104" column="34" lean-forward="true" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
             </state>
           </provider>
@@ -200,6 +196,7 @@
       <find>heap</find>
       <find>cloneHeap</find>
       <find>testHeap</find>
+      <find>word</find>
     </findStrings>
     <replaceStrings>
       <replace>right</replace>
@@ -207,6 +204,7 @@
       <replace>cloneHeap</replace>
       <replace>cloneHeap.heap</replace>
       <replace>testHeap2</replace>
+      <replace>clone</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -358,16 +356,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DictreenaryTests.testHasWord">
-    <configuration name="BinaryTreeNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tree.binary.BinaryTreeNode" />
+  <component name="RunManager" selected="JUnit.DictreenaryTests">
+    <configuration name="DictreenaryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CMSI 281" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tree.binary.*" />
+          <option name="PATTERN" value="dictreenary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="dictreenary" />
+      <option name="MAIN_CLASS_NAME" value="dictreenary.DictreenaryTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DictreenaryTests.getSortedWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CMSI 281" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dictreenary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dictreenary" />
+      <option name="MAIN_CLASS_NAME" value="dictreenary.DictreenaryTests" />
+      <option name="METHOD_NAME" value="getSortedWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DictreenaryTests.spellCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CMSI 281" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dictreenary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dictreenary" />
+      <option name="MAIN_CLASS_NAME" value="dictreenary.DictreenaryTests" />
+      <option name="METHOD_NAME" value="spellCheck" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -383,22 +414,6 @@
       <option name="PACKAGE_NAME" value="dictreenary" />
       <option name="MAIN_CLASS_NAME" value="dictreenary.DictreenaryTests" />
       <option name="METHOD_NAME" value="testAddWord" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DictreenaryTests.testAddWord2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CMSI 281" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dictreenary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dictreenary" />
-      <option name="MAIN_CLASS_NAME" value="dictreenary.DictreenaryTests" />
-      <option name="METHOD_NAME" value="testAddWord2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -420,27 +435,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" factoryName="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.BinaryTreeNode" />
       <item itemvalue="JUnit.DictreenaryTests.testAddWord" />
       <item itemvalue="JUnit.DictreenaryTests.testHasWord" />
-      <item itemvalue="Java Scratch.Scratch" />
-      <item itemvalue="JUnit.DictreenaryTests.testAddWord2" />
+      <item itemvalue="JUnit.DictreenaryTests.spellCheck" />
+      <item itemvalue="JUnit.DictreenaryTests.getSortedWords" />
+      <item itemvalue="JUnit.DictreenaryTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DictreenaryTests" />
+        <item itemvalue="JUnit.DictreenaryTests.getSortedWords" />
+        <item itemvalue="JUnit.DictreenaryTests.spellCheck" />
         <item itemvalue="JUnit.DictreenaryTests.testHasWord" />
         <item itemvalue="JUnit.DictreenaryTests.testAddWord" />
-        <item itemvalue="JUnit.DictreenaryTests.testAddWord2" />
-        <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Application.BinaryTreeNode" />
       </list>
     </recent_temporary>
   </component>
@@ -466,7 +474,7 @@
       <workItem from="1541391586753" duration="5235000" />
       <workItem from="1541474403642" duration="4749000" />
       <workItem from="1543112419612" duration="1372000" />
-      <workItem from="1543113807627" duration="9532000" />
+      <workItem from="1543113807627" duration="14356000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -573,43 +581,57 @@
       <option name="project" value="LOCAL" />
       <updated>1543126163618</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="cleaned up hasWord()">
+      <created>1543126264086</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1543126264086</updated>
+    </task>
+    <task id="LOCAL-00017" summary="spellcheck working">
+      <created>1543128650467</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1543128650467</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 00m 06s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 03m 46s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 03m 50s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 03m 54s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 05m 03s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 05m 06s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 07m 27s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 07m 30s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 07m 54s.xml">
       <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 09m 57s.xml">
       <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 10m 50s.xml">
+      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests_spellCheck - 2018.11.24 at 22h 43m 41s.xml">
+      <configuration name="DictreenaryTests.spellCheck" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests_spellCheck - 2018.11.24 at 22h 47m 02s.xml">
+      <configuration name="DictreenaryTests.spellCheck" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests_spellCheck - 2018.11.24 at 22h 47m 32s.xml">
+      <configuration name="DictreenaryTests.spellCheck" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests_spellCheck - 2018.11.24 at 22h 50m 38s.xml">
+      <configuration name="DictreenaryTests.spellCheck" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests_spellCheck - 2018.11.24 at 22h 50m 39s.xml">
+      <configuration name="DictreenaryTests.spellCheck" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests_getSortedWords - 2018.11.24 at 23h 31m 05s.xml">
+      <configuration name="DictreenaryTests.getSortedWords" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests - 2018.11.24 at 23h 31m 11s.xml">
+      <configuration name="DictreenaryTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44592000" />
+    <option name="totallyTimeSpent" value="49416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -664,7 +686,9 @@
     <MESSAGE value="Methods 1 &amp; 2 completed" />
     <MESSAGE value="heapSort working" />
     <MESSAGE value="first 2 methods *working*" />
-    <option name="LAST_COMMIT_MESSAGE" value="first 2 methods *working*" />
+    <MESSAGE value="cleaned up hasWord()" />
+    <MESSAGE value="spellcheck working" />
+    <option name="LAST_COMMIT_MESSAGE" value="spellcheck working" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -764,24 +788,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1195">
+        <state relative-caret-position="1840">
           <caret line="104" column="34" lean-forward="true" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictreenary/Dictreenary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="69" column="60" lean-forward="true" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+        <state relative-caret-position="393">
+          <caret line="102" column="52" lean-forward="true" selection-start-line="102" selection-start-column="52" selection-end-line="102" selection-end-column="52" />
           <folding>
             <element signature="e#431#432#0" expanded="true" />
             <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#2439#2440#0" expanded="true" />
-            <element signature="e#2496#2497#0" expanded="true" />
-            <element signature="e#2545#2546#0" expanded="true" />
-            <element signature="e#2602#2603#0" expanded="true" />
-            <element signature="e#3180#3181#0" expanded="true" />
-            <element signature="e#3256#3257#0" expanded="true" />
+            <element signature="e#3448#3449#0" expanded="true" />
+            <element signature="e#3524#3525#0" expanded="true" />
           </folding>
         </state>
       </provider>

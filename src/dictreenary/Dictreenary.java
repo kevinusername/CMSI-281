@@ -91,7 +91,9 @@ public class Dictreenary implements DictreenaryInterface {
     }
 
     public ArrayList<String> getSortedWords() {
-        throw new UnsupportedOperationException();
+        ArrayList<String> sortedList = new ArrayList<>();
+        inOrderCollector(sortedList, root, "");
+        return sortedList;
     }
 
     // Helper Methods
@@ -129,6 +131,14 @@ public class Dictreenary implements DictreenaryInterface {
         clone[index] = clone[index + 1];
         clone[index + 1] = temp;
         return String.valueOf(clone);
+    }
+
+    private void inOrderCollector(ArrayList<String> sortedList, TTNode current, String workingWord) {
+        if (current == null) { return; }
+        inOrderCollector(sortedList, current.left, workingWord);
+        if (current.wordEnd) { sortedList.add(workingWord + current.letter); }
+        inOrderCollector(sortedList, current.mid, workingWord + current.letter);
+        inOrderCollector(sortedList, current.right, workingWord);
     }
 
     // TTNode Internal Storage
