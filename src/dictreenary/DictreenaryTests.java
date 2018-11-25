@@ -4,30 +4,31 @@ import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
 public class DictreenaryTests {
-    
+
     // =================================================
     // Test Configuration
     // =================================================
-    
+
     // Used as the basic empty Dictreenary to test; 
     // the @Before method is run before every @Test
     Dictreenary dt;
+
     @Before
-    public void init () {
+    public void init() {
         dt = new Dictreenary();
     }
-    
-    
+
     // =================================================
     // Unit Tests
     // =================================================
-    
+
     // Initialization Tests
     // -------------------------------------------------
     @Test
@@ -45,6 +46,16 @@ public class DictreenaryTests {
         dt.addWord("ass");
         dt.addWord("at");
         dt.addWord("bat");
+    }
+
+    @Test
+    public void testAddWord2() {
+        dt.addWord("it");
+        dt.addWord("is");
+        dt.addWord("item");
+        dt.addWord("bad");
+        dt.addWord("bard");
+        dt.addWord("zoo");
     }
 
     @Test
@@ -89,7 +100,7 @@ public class DictreenaryTests {
         assertEquals(null, dt.spellCheck("bad"));
         assertEquals(null, dt.spellCheck("zoo"));
     }
-    
+
     @Test
     public void getSortedWords() {
         dt.addWord("is");
@@ -102,9 +113,8 @@ public class DictreenaryTests {
         dt.addWord("bat");
         dt.addWord("bother");
         ArrayList<String> solution = new ArrayList<String>(Arrays.asList(
-            "as", "ass", "at", "bat", "bother", "is", "it", "itenerary", "zoo"
+                "as", "ass", "at", "bat", "bother", "is", "it", "itenerary", "zoo"
         ));
         assertEquals(solution, dt.getSortedWords());
     }
-    
 }
