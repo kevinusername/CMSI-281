@@ -101,9 +101,7 @@ public class Dictreenary implements DictreenaryInterface {
 
     private String normalizeWord(String s) {
         // Edge case handling: empty Strings illegal
-        if (s == null || s.equals("")) {
-            throw new IllegalArgumentException();
-        }
+        if (s == null || s.equals("")) { throw new IllegalArgumentException(); }
         return s.trim().toLowerCase();
     }
 
