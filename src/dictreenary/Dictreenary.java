@@ -62,18 +62,16 @@ public class Dictreenary implements DictreenaryInterface {
         TTNode current = root;
 
         for (int i = 0; i < normalized_chars.length; ) {
+            if (current == null) { return false; }
 
             int diff = compareChars(normalized_chars[i], current.letter);
             if (diff == 0) {
                 i++;
                 if (i == normalized_chars.length) { break; }
-                if (current.mid == null) { return false; }
                 current = current.mid;
             } else if (diff > 0) {
-                if (current.right == null) { return false; }
                 current = current.right;
             } else {
-                if (current.left == null) { return false; }
                 current = current.left;
             }
         }
