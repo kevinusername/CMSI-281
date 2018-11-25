@@ -21,37 +21,10 @@ public class Dictreenary implements DictreenaryInterface {
     }
 
     public void addWord(String toAdd) {
-        char[] normalized_chars = normalizeWord(toAdd).toCharArray();
+        toAdd = normalizeWord(toAdd);
         if (root == null) {
-            root = appendWord(normalized_chars, 0);
-            return;
-        }
-        TTNode current = root;
-
-        for (int i = 0; i < normalized_chars.length; ) {
-
-            int diff = compareChars(normalized_chars[i], current.letter);
-            if (diff == 0) {
-                i++;
-                if (current.mid == null) {
-                    current.mid = appendWord(normalizeWord(toAdd.substring(i)).toCharArray(), 0);
-                    return;
-                }
-                current = current.mid;
-            } else if (diff > 0) {
-                if (current.right == null) {
-                    current.right = appendWord(normalizeWord(toAdd.substring(i)).toCharArray(), 0);
-                    return;
-                }
-                current = current.right;
-            } else {
-                if (current.left == null) {
-                    current.left = appendWord(normalizeWord(toAdd.substring(i)).toCharArray(), 0);
-                    return;
-                }
-                current = current.left;
-            }
-        }
+            root = addNew(toAdd);
+        } else { appendWord(toAdd, root); }
     }
 
     public boolean hasWord(String query) {
@@ -116,11 +89,30 @@ public class Dictreenary implements DictreenaryInterface {
     }
 
     // [!] Add your own helper methods here!
-    private TTNode appendWord(char[] newWords, int index) {
-        if (index == newWords.length) { return null; }
-        TTNode NewNode = (index == newWords.length - 1) ? new TTNode(newWords[index], true) : new TTNode(newWords[index], false);
-        NewNode.mid = appendWord(newWords, index + 1);
-        return NewNode;
+    private boolean appendWord(String toAdd, TTNode current) {
+        if (current == null) { return false; }
+        int diff = compareChars(toAdd.charAt(0), current.letter);
+        if (diff == 0) {
+            if (!appendWord(toAdd.substring(1), current.mid)) {
+                current.mid = addNew(toAdd.substring(1));
+            }
+        } else if (diff > 0) {
+            if (!appendWord(toAdd, current.right)) {
+                current.right = addNew(toAdd);
+            }
+        } else {
+            if (!appendWord(toAdd, current.left)) {
+                current.left = addNew(toAdd);
+            }
+        }
+        return true;
+    }
+
+    private TTNode addNew(String toAdd) {
+        if (toAdd.length() == 0) { return null; }
+        TTNode current = new TTNode(toAdd.charAt(0), toAdd.length() == 1);
+        current.mid = addNew(toAdd.substring(1));
+        return current;
     }
 
     private String swapAdjacent(char[] word, int index) {

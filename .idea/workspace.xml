@@ -127,14 +127,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4147" />
-          <entry key="txt" value="118" />
+          <entry key="java" value="4763" />
+          <entry key="txt" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4145" />
-          <entry key="PLAIN_TEXT" value="118" />
+          <entry key="JAVA" value="4761" />
+          <entry key="PLAIN_TEXT" value="149" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
@@ -156,13 +156,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dictreenary/Dictreenary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="102" column="52" lean-forward="true" selection-start-line="102" selection-start-column="52" selection-end-line="102" selection-end-column="52" />
+            <state relative-caret-position="320">
+              <caret line="96" column="57" lean-forward="true" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
               <folding>
                 <element signature="e#431#432#0" expanded="true" />
                 <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#3448#3449#0" expanded="true" />
-                <element signature="e#3524#3525#0" expanded="true" />
+                <element signature="e#2619#2620#0" expanded="true" />
+                <element signature="e#2695#2696#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,8 +171,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1840">
-              <caret line="104" column="34" lean-forward="true" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+            <state relative-caret-position="80">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -419,7 +419,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DictreenaryTests.testHasWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DictreenaryTests.testAddWord2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CMSI 281" />
       <extension name="coverage">
         <pattern>
@@ -429,7 +429,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="dictreenary" />
       <option name="MAIN_CLASS_NAME" value="dictreenary.DictreenaryTests" />
-      <option name="METHOD_NAME" value="testHasWord" />
+      <option name="METHOD_NAME" value="testAddWord2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -437,18 +437,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.DictreenaryTests.testAddWord" />
-      <item itemvalue="JUnit.DictreenaryTests.testHasWord" />
       <item itemvalue="JUnit.DictreenaryTests.spellCheck" />
       <item itemvalue="JUnit.DictreenaryTests.getSortedWords" />
       <item itemvalue="JUnit.DictreenaryTests" />
+      <item itemvalue="JUnit.DictreenaryTests.testAddWord2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DictreenaryTests" />
+        <item itemvalue="JUnit.DictreenaryTests.testAddWord2" />
+        <item itemvalue="JUnit.DictreenaryTests.testAddWord" />
         <item itemvalue="JUnit.DictreenaryTests.getSortedWords" />
         <item itemvalue="JUnit.DictreenaryTests.spellCheck" />
-        <item itemvalue="JUnit.DictreenaryTests.testHasWord" />
-        <item itemvalue="JUnit.DictreenaryTests.testAddWord" />
       </list>
     </recent_temporary>
   </component>
@@ -474,7 +474,7 @@
       <workItem from="1541391586753" duration="5235000" />
       <workItem from="1541474403642" duration="4749000" />
       <workItem from="1543112419612" duration="1372000" />
-      <workItem from="1543113807627" duration="14356000" />
+      <workItem from="1543113807627" duration="17918000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -595,43 +595,57 @@
       <option name="project" value="LOCAL" />
       <updated>1543128650467</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="working get sorted words">
+      <created>1543131084276</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1543131084276</updated>
+    </task>
+    <task id="LOCAL-00019" summary="cleanup">
+      <created>1543131565421</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1543131565421</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 07m 54s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
+    <history-entry file="DictreenaryTests_testAddWord - 2018.11.25 at 00h 16m 51s.xml">
+      <configuration name="DictreenaryTests.testAddWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 09m 57s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
+    <history-entry file="DictreenaryTests_testAddWord - 2018.11.25 at 00h 23m 58s.xml">
+      <configuration name="DictreenaryTests.testAddWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.24 at 22h 10m 50s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
+    <history-entry file="DictreenaryTests_testAddWord - 2018.11.25 at 00h 24m 02s.xml">
+      <configuration name="DictreenaryTests.testAddWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DictreenaryTests_spellCheck - 2018.11.24 at 22h 43m 41s.xml">
-      <configuration name="DictreenaryTests.spellCheck" configurationId="JUnit" />
+    <history-entry file="DictreenaryTests_testAddWord - 2018.11.25 at 00h 24m 06s.xml">
+      <configuration name="DictreenaryTests.testAddWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DictreenaryTests_spellCheck - 2018.11.24 at 22h 47m 02s.xml">
-      <configuration name="DictreenaryTests.spellCheck" configurationId="JUnit" />
+    <history-entry file="DictreenaryTests_testAddWord - 2018.11.25 at 00h 24m 10s.xml">
+      <configuration name="DictreenaryTests.testAddWord" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DictreenaryTests_spellCheck - 2018.11.24 at 22h 47m 32s.xml">
-      <configuration name="DictreenaryTests.spellCheck" configurationId="JUnit" />
+    <history-entry file="DictreenaryTests_testAddWord2 - 2018.11.25 at 00h 24m 19s.xml">
+      <configuration name="DictreenaryTests.testAddWord2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DictreenaryTests_spellCheck - 2018.11.24 at 22h 50m 38s.xml">
-      <configuration name="DictreenaryTests.spellCheck" configurationId="JUnit" />
+    <history-entry file="DictreenaryTests_testAddWord2 - 2018.11.25 at 00h 25m 55s.xml">
+      <configuration name="DictreenaryTests.testAddWord2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DictreenaryTests_spellCheck - 2018.11.24 at 22h 50m 39s.xml">
-      <configuration name="DictreenaryTests.spellCheck" configurationId="JUnit" />
+    <history-entry file="DictreenaryTests_testAddWord2 - 2018.11.25 at 00h 26m 22s.xml">
+      <configuration name="DictreenaryTests.testAddWord2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DictreenaryTests_getSortedWords - 2018.11.24 at 23h 31m 05s.xml">
-      <configuration name="DictreenaryTests.getSortedWords" configurationId="JUnit" />
+    <history-entry file="DictreenaryTests_testAddWord2 - 2018.11.25 at 00h 29m 38s.xml">
+      <configuration name="DictreenaryTests.testAddWord2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DictreenaryTests - 2018.11.24 at 23h 31m 11s.xml">
+    <history-entry file="DictreenaryTests - 2018.11.25 at 00h 29m 42s.xml">
       <configuration name="DictreenaryTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49416000" />
+    <option name="totallyTimeSpent" value="52978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -688,7 +702,27 @@
     <MESSAGE value="first 2 methods *working*" />
     <MESSAGE value="cleaned up hasWord()" />
     <MESSAGE value="spellcheck working" />
-    <option name="LAST_COMMIT_MESSAGE" value="spellcheck working" />
+    <MESSAGE value="working get sorted words" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -788,20 +822,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="104" column="34" lean-forward="true" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+        <state relative-caret-position="80">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictreenary/Dictreenary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="102" column="52" lean-forward="true" selection-start-line="102" selection-start-column="52" selection-end-line="102" selection-end-column="52" />
+        <state relative-caret-position="320">
+          <caret line="96" column="57" lean-forward="true" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
           <folding>
             <element signature="e#431#432#0" expanded="true" />
             <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#3448#3449#0" expanded="true" />
-            <element signature="e#3524#3525#0" expanded="true" />
+            <element signature="e#2619#2620#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
           </folding>
         </state>
       </provider>
