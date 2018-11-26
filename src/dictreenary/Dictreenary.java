@@ -88,21 +88,24 @@ public class Dictreenary implements DictreenaryInterface {
 
     // [!] Add your own helper methods here!
     private boolean appendWord(String toAdd, TTNode current) {
-        if (current == null) { return false; }
+        if (current == null) { return false; } // Signal to place a new word in empty node
+        if (toAdd.length() == 0) { return true; } // Case: nothing left to add. Avoids calling addNew()
+
         int diff = compareChars(toAdd.charAt(0), current.letter);
+
+        // Place letter according to relative order in dictionary
         if (diff == 0) {
             if (!appendWord(toAdd.substring(1), current.mid)) {
                 current.mid = addNew(toAdd.substring(1));
+            } else if (toAdd.length() == 1) { // Case: a longer word containing this word is already known
+                current.wordEnd = true;
             }
         } else if (diff > 0) {
-            if (!appendWord(toAdd, current.right)) {
-                current.right = addNew(toAdd);
-            }
+            if (!appendWord(toAdd, current.right)) { current.right = addNew(toAdd); }
         } else {
-            if (!appendWord(toAdd, current.left)) {
-                current.left = addNew(toAdd);
-            }
+            if (!appendWord(toAdd, current.left)) { current.left = addNew(toAdd); }
         }
+
         return true;
     }
 

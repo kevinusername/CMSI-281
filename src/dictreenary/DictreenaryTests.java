@@ -60,12 +60,15 @@ public class DictreenaryTests {
 
     @Test
     public void testHasWord() {
+        assertFalse(dt.hasWord("empty"));
         dt.addWord("is");
         dt.addWord("it");
         dt.addWord("as");
         dt.addWord("ass");
         dt.addWord("at");
+        dt.addWord("batter");
         dt.addWord("bat");
+        dt.addWord("batti");
         dt.addWord("AcT");
         assertTrue(dt.hasWord("is"));
         assertTrue(dt.hasWord("it"));
