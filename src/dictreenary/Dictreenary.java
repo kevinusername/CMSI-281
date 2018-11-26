@@ -16,9 +16,7 @@ public class Dictreenary implements DictreenaryInterface {
     // Methods
     // -----------------------------------------------------------
 
-    public boolean isEmpty() {
-        return root == null;
-    }
+    public boolean isEmpty() { return root == null; }
 
     public void addWord(String toAdd) {
         toAdd = normalizeWord(toAdd);
