@@ -36,9 +36,10 @@ public class Dictreenary implements DictreenaryInterface {
 
             int diff = compareChars(normalized_chars[i], current.letter);
 
+            // Move toward node where letter is expected be; increment index if match
             if (diff == 0) {
                 i++;
-                if (i == normalized_chars.length) { break; }
+                if (i == normalized_chars.length) { break; } // Matching word found
                 current = current.mid;
             } else if (diff > 0) {
                 current = current.right;
@@ -46,7 +47,7 @@ public class Dictreenary implements DictreenaryInterface {
                 current = current.left;
             }
         }
-        return current.wordEnd;
+        return current.wordEnd; // Return if found word is recognized as a word by dictionary
     }
 
     public String spellCheck(String query) {
@@ -54,6 +55,7 @@ public class Dictreenary implements DictreenaryInterface {
 
         char[] normalized_chars = normalizeWord(query).toCharArray();
 
+        // Go through each possible swap of adjacent chars and check if valid word can be found
         for (int i = 0; i < normalized_chars.length - 1; i++) {
             String correction = swapAdjacent(normalized_chars, i);
             if (hasWord(correction)) { return correction; }
@@ -61,6 +63,11 @@ public class Dictreenary implements DictreenaryInterface {
         return null;
     }
 
+    /**
+     * Uses a private, recursive in-order-traversal to find all words
+     *
+     * @return ArrayList of words in alphabetical order (according to spec)
+     */
     public ArrayList<String> getSortedWords() {
         ArrayList<String> sortedList = new ArrayList<>();
         inOrderCollector(sortedList, root, "");
@@ -87,13 +94,22 @@ public class Dictreenary implements DictreenaryInterface {
     }
 
     // [!] Add your own helper methods here!
+
+    /**
+     * Recursively look through the Ternary Tree to find where a word should be placed. If a longer word containing the
+     * new word is already known, mark the shorter word's last letter as a wordEnd.
+     *
+     * @param toAdd   Word to add to tree
+     * @param current currently examined node
+     * @return false if null node found where word can be placed, else true
+     */
     private boolean appendWord(String toAdd, TTNode current) {
         if (current == null) { return false; } // Signal to place a new word in empty node
         if (toAdd.length() == 0) { return true; } // Case: nothing left to add. Avoids calling addNew()
 
         int diff = compareChars(toAdd.charAt(0), current.letter);
 
-        // Place letter according to relative order in dictionary
+        // Navigate letters according to relative order in dictionary
         if (diff == 0) {
             if (!appendWord(toAdd.substring(1), current.mid)) {
                 current.mid = addNew(toAdd.substring(1));
@@ -109,6 +125,13 @@ public class Dictreenary implements DictreenaryInterface {
         return true;
     }
 
+    /**
+     * Called once a null node is found where a word should be placed. Creates a chain of mid children from the
+     * proceeding letters
+     *
+     * @param toAdd word, or substring of a word, to add to a null node on the tree
+     * @return A node with word's letters as a chain of mid children.
+     */
     private TTNode addNew(String toAdd) {
         if (toAdd.length() == 0) { return null; }
         TTNode current = new TTNode(toAdd.charAt(0), toAdd.length() == 1);
@@ -116,6 +139,11 @@ public class Dictreenary implements DictreenaryInterface {
         return current;
     }
 
+    /**
+     * @param word  char[] of a word's letters
+     * @param index index of char to swap with its right adjacent letter
+     * @return the word with letters at i and i+1 swapped
+     */
     private String swapAdjacent(char[] word, int index) {
         char[] clone = word.clone();
         char temp = clone[index];
@@ -124,6 +152,13 @@ public class Dictreenary implements DictreenaryInterface {
         return String.valueOf(clone);
     }
 
+    /**
+     * Use and in-order-traversal to append found words to ArrayList in order
+     *
+     * @param sortedList  originally empty list to append found words to
+     * @param current     the node that is being examined
+     * @param workingWord String of previous nodes' letters visited along this path
+     */
     private void inOrderCollector(ArrayList<String> sortedList, TTNode current, String workingWord) {
         if (current == null) { return; }
         inOrderCollector(sortedList, current.left, workingWord);
