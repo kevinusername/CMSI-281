@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
+    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="formatting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dictreenary/Dictreenary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictreenary/Dictreenary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java" afterDir="false" />
@@ -119,23 +119,23 @@
     <session id="1556788068">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.4" value="3" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.4" value="4" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5200" />
-          <entry key="txt" value="217" />
+          <entry key="java" value="6743" />
+          <entry key="txt" value="273" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5198" />
-          <entry key="PLAIN_TEXT" value="217" />
+          <entry key="JAVA" value="6741" />
+          <entry key="PLAIN_TEXT" value="273" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
@@ -157,12 +157,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dictreenary/Dictreenary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="90" column="90" selection-start-line="90" selection-start-column="90" selection-end-line="90" selection-end-column="90" />
-              <folding>
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="480">
+              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -170,8 +166,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1180">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            <state relative-caret-position="1900">
+              <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -224,8 +220,8 @@
         <option value="$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java" />
         <option value="$PROJECT_DIR$/src/dictreenary/DictreenaryInterface.java" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-        <option value="$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java" />
         <option value="$PROJECT_DIR$/src/dictreenary/Dictreenary.java" />
+        <option value="$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java" />
       </list>
     </option>
   </component>
@@ -445,8 +441,8 @@
       <list>
         <item itemvalue="JUnit.DictreenaryTests" />
         <item itemvalue="JUnit.DictreenaryTests.testHasWord" />
-        <item itemvalue="JUnit.DictreenaryTests.testAddWord2" />
         <item itemvalue="JUnit.DictreenaryTests.testAddWord" />
+        <item itemvalue="JUnit.DictreenaryTests.testAddWord2" />
         <item itemvalue="JUnit.DictreenaryTests.getSortedWords" />
       </list>
     </recent_temporary>
@@ -474,7 +470,8 @@
       <workItem from="1541474403642" duration="4749000" />
       <workItem from="1543112419612" duration="1372000" />
       <workItem from="1543113807627" duration="18358000" />
-      <workItem from="1543194413861" duration="2253000" />
+      <workItem from="1543194413861" duration="4575000" />
+      <workItem from="1543288110398" duration="1065000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -623,49 +620,70 @@
       <option name="project" value="LOCAL" />
       <updated>1543135005922</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fixes to appendWord">
+      <created>1543196690889</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1543196690889</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added many comments/docs">
+      <created>1543198297052</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1543198297052</updated>
+    </task>
+    <task id="LOCAL-00024" summary="formatting">
+      <created>1543198376500</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1543198376500</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DictreenaryTests - 2018.11.25 at 17h 16m 42s.xml">
-      <configuration name="DictreenaryTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.25 at 17h 19m 42s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.25 at 17h 20m 16s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.25 at 17h 29m 22s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.25 at 17h 30m 05s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.25 at 17h 32m 25s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.25 at 17h 38m 52s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.25 at 17h 38m 57s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DictreenaryTests_testHasWord - 2018.11.25 at 17h 39m 38s.xml">
       <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DictreenaryTests - 2018.11.25 at 17h 39m 42s.xml">
       <configuration name="DictreenaryTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DictreenaryTests - 2018.11.26 at 19h 12m 27s.xml">
+      <configuration name="DictreenaryTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests - 2018.11.26 at 19h 12m 55s.xml">
+      <configuration name="DictreenaryTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests - 2018.11.26 at 19h 13m 40s.xml">
+      <configuration name="DictreenaryTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests - 2018.11.26 at 19h 13m 57s.xml">
+      <configuration name="DictreenaryTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests_testAddWord - 2018.11.26 at 19h 16m 54s.xml">
+      <configuration name="DictreenaryTests.testAddWord" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests_testHasWord - 2018.11.26 at 19h 17m 48s.xml">
+      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests_testHasWord - 2018.11.26 at 19h 18m 10s.xml">
+      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests - 2018.11.26 at 19h 18m 30s.xml">
+      <configuration name="DictreenaryTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55671000" />
+    <option name="totallyTimeSpent" value="59058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16283716" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16433567" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -701,7 +719,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished stack implementation" />
     <MESSAGE value="Finished intlist" />
-    <MESSAGE value="formatting" />
     <MESSAGE value="now clears forward on visit" />
     <MESSAGE value="most methods finished, forgot to commit as i went..." />
     <MESSAGE value="moved private method" />
@@ -720,7 +737,10 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="new recursive addWord method" />
     <MESSAGE value="removed redundant check for empty" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed redundant check for empty" />
+    <MESSAGE value="fixes to appendWord" />
+    <MESSAGE value="added many comments/docs" />
+    <MESSAGE value="formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="formatting" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -827,19 +847,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1180">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        <state relative-caret-position="1900">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictreenary/Dictreenary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="90" column="90" selection-start-line="90" selection-start-column="90" selection-end-line="90" selection-end-column="90" />
-          <folding>
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="480">
+          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>

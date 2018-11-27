@@ -1,3 +1,4 @@
+// Kevin Peters
 package dictreenary;
 
 import java.util.ArrayList;

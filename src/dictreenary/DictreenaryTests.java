@@ -44,6 +44,8 @@ public class DictreenaryTests {
         dt.addWord("it");
         dt.addWord("as");
         dt.addWord("ass");
+        dt.addWord("ass");
+        dt.addWord("ass");
         dt.addWord("at");
         dt.addWord("bat");
     }
@@ -77,7 +79,10 @@ public class DictreenaryTests {
         assertTrue(dt.hasWord("at"));
         assertTrue(dt.hasWord("act"));
         assertTrue(dt.hasWord("bat"));
+        assertTrue(dt.hasWord("batter"));
+        assertTrue(dt.hasWord("batti"));
         assertFalse(dt.hasWord("ii"));
+        assertFalse(dt.hasWord("batt"));
         assertFalse(dt.hasWord("i"));
         assertFalse(dt.hasWord("zoo"));
     }
