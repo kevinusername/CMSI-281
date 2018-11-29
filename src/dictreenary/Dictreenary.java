@@ -38,7 +38,7 @@ public class Dictreenary implements DictreenaryInterface {
             // Move toward node where letter is expected be; increment index if match
             if (diff == 0) {
                 i++;
-                if (i == normalized_chars.length) { break; } // Matching word found
+                if (i == normalized_chars.length) { break; }
                 current = current.mid;
             } else if (diff > 0) {
                 current = current.right;
@@ -46,7 +46,7 @@ public class Dictreenary implements DictreenaryInterface {
                 current = current.left;
             }
         }
-        return current.wordEnd; // Return if found word is recognized as a word by dictionary
+        return current.wordEnd;
     }
 
     public String spellCheck(String query) {
@@ -54,7 +54,6 @@ public class Dictreenary implements DictreenaryInterface {
 
         char[] normalized_chars = normalizeWord(query).toCharArray();
 
-        // Go through each possible swap of adjacent chars and check if valid word can be found
         for (int i = 0; i < normalized_chars.length - 1; i++) {
             String correction = swapAdjacent(normalized_chars, i);
             if (hasWord(correction)) { return correction; }
@@ -103,16 +102,18 @@ public class Dictreenary implements DictreenaryInterface {
      * @return false if null node found where word can be placed, else true
      */
     private boolean appendWord(String toAdd, TTNode current) {
-        if (current == null) { return false; } // Signal to place a new word in empty node
-        if (toAdd.length() == 0) { return true; } // Case: nothing left to add. Avoids calling addNew()
+        /* Why does this return a boolean you ask? Because somewhere in between not being familiar with recurrence
+        and cursing Java's pass by value, I lost my mind and came up with this solution. */
+        if (current == null) { return false; }
+        if (toAdd.length() == 0) { return true; }
 
         int diff = compareChars(toAdd.charAt(0), current.letter);
 
-        // Navigate letters according to relative order in dictionary
         if (diff == 0) {
             if (!appendWord(toAdd.substring(1), current.mid)) {
                 current.mid = addNew(toAdd.substring(1));
-            } else if (toAdd.length() == 1) { // Case: a longer word containing this word is already known
+            } else if (toAdd.length() == 1) {
+                // Case: a longer word containing this word is already known
                 current.wordEnd = true;
             }
         } else if (diff > 0) {

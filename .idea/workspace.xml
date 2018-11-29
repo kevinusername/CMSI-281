@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="formatting">
+    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dictreenary/Dictreenary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictreenary/Dictreenary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,23 +118,23 @@
     <session id="1556788068">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.4" value="4" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.4" value="5" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6743" />
-          <entry key="txt" value="273" />
+          <entry key="java" value="6989" />
+          <entry key="txt" value="301" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6741" />
-          <entry key="PLAIN_TEXT" value="273" />
+          <entry key="JAVA" value="6987" />
+          <entry key="PLAIN_TEXT" value="301" />
           <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
@@ -158,7 +157,7 @@
         <entry file="file://$PROJECT_DIR$/src/dictreenary/Dictreenary.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -166,8 +165,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1900">
-              <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+            <state relative-caret-position="80">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -220,8 +219,8 @@
         <option value="$PROJECT_DIR$/src/tree/binary/BinaryTreeNode.java" />
         <option value="$PROJECT_DIR$/src/dictreenary/DictreenaryInterface.java" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-        <option value="$PROJECT_DIR$/src/dictreenary/Dictreenary.java" />
         <option value="$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java" />
+        <option value="$PROJECT_DIR$/src/dictreenary/Dictreenary.java" />
       </list>
     </option>
   </component>
@@ -261,7 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -311,6 +309,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -471,7 +470,9 @@
       <workItem from="1543112419612" duration="1372000" />
       <workItem from="1543113807627" duration="18358000" />
       <workItem from="1543194413861" duration="4575000" />
-      <workItem from="1543288110398" duration="1065000" />
+      <workItem from="1543288110398" duration="1826000" />
+      <workItem from="1543467292949" duration="13000" />
+      <workItem from="1543478387867" duration="1193000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -641,16 +642,17 @@
       <option name="project" value="LOCAL" />
       <updated>1543198376500</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="minor changes for submission">
+      <created>1543289192037</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1543289192037</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DictreenaryTests_testHasWord - 2018.11.25 at 17h 39m 38s.xml">
-      <configuration name="DictreenaryTests.testHasWord" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests - 2018.11.25 at 17h 39m 42s.xml">
-      <configuration name="DictreenaryTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DictreenaryTests - 2018.11.26 at 19h 12m 27s.xml">
       <configuration name="DictreenaryTests" configurationId="JUnit" />
     </history-entry>
@@ -675,15 +677,21 @@
     <history-entry file="DictreenaryTests - 2018.11.26 at 19h 18m 30s.xml">
       <configuration name="DictreenaryTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DictreenaryTests - 2018.11.28 at 20h 55m 03s.xml">
+      <configuration name="DictreenaryTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DictreenaryTests - 2018.11.29 at 00h 19m 37s.xml">
+      <configuration name="DictreenaryTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59058000" />
+    <option name="totallyTimeSpent" value="61025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16433567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16933067" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -740,7 +748,8 @@
     <MESSAGE value="fixes to appendWord" />
     <MESSAGE value="added many comments/docs" />
     <MESSAGE value="formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="formatting" />
+    <MESSAGE value="minor changes for submission" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes for submission" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -847,15 +856,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1900">
-          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+        <state relative-caret-position="80">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dictreenary/Dictreenary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
         </state>
       </provider>
     </entry>
