@@ -16,8 +16,9 @@ public class PhraseHashTests {
     // Used as the basic empty PhraseHash to test;
     // the @Before method is run before every @Test
     PhraseHash p;
+
     @Before
-    public void init () {
+    public void init() {
         p = new PhraseHash();
     }
 
@@ -84,4 +85,17 @@ public class PhraseHashTests {
         assertEquals(3, p.longestLength());
     }
 
+    @Test
+    public void testHugeTable() {
+        for (int i = 0; i < 100000; i++) {
+            p.put(Integer.toString(i));
+        }
+        assertEquals(100000, p.size());
+        assertEquals(1, p.longestLength());
+
+        // Below relies on buckets being public:
+
+        // assertTrue(p.size() / p.buckets.length < 0.7);
+        // System.out.println((double) p.size() / p.buckets.length);
+    }
 }

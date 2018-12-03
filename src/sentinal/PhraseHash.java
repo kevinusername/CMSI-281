@@ -19,6 +19,7 @@ public class PhraseHash implements PhraseHashInterface {
     PhraseHash() {
         buckets = new String[BUCKET_START];
         size = 0;
+        longest = 0;
     }
 
 
@@ -39,12 +40,11 @@ public class PhraseHash implements PhraseHashInterface {
 
         if (buckets[index] == null) {
             buckets[index] = s;
-        } else if (!buckets[index].equals(s)) {
+        } else if (get(s) == null) {
             insertNextFree(s, index);
         }
 
-        int length = s.split(" ").length;
-        if (length > longest) { longest = length; }
+        checkLongest(s);
 
         size++;
     }
@@ -77,7 +77,7 @@ public class PhraseHash implements PhraseHashInterface {
     private int hash(String s) { return (s.hashCode() % buckets.length + buckets.length) % buckets.length; }
 
     private void checkAndGrow() {
-        if (size / buckets.length < LOAD_MAX) { return; }
+        if ((double) size / buckets.length < LOAD_MAX) { return; }
 
         String[] oldBuckets = buckets;
         buckets = new String[buckets.length * 2];
@@ -91,6 +91,8 @@ public class PhraseHash implements PhraseHashInterface {
     private void insertNextFree(String s, int index) {
         int newIndex = index + 1;
         while (newIndex != index) {
+            if (newIndex == buckets.length) { newIndex = 0; }
+
             if (buckets[newIndex] == null) {
                 buckets[newIndex] = s;
                 return;
@@ -102,11 +104,20 @@ public class PhraseHash implements PhraseHashInterface {
     private String searchNextBuckets(String s, int index) {
         int newIndex = index + 1;
         while (newIndex != index) {
-            if (buckets[newIndex].equals(s)) {
-                return buckets[newIndex];
-            }
+            if (newIndex == buckets.length) { newIndex = 0; }
+
+            // If phrase was in table, would be found before hitting empty cell
+            if (buckets[newIndex] == null) { return null; }
+
+            if (buckets[newIndex].equals(s)) { return buckets[newIndex]; }
+
             newIndex++;
         }
         return null;
+    }
+
+    private void checkLongest(String s) {
+        int length = s.split(" ").length;
+        if (length > longest) { longest = length; }
     }
 }
