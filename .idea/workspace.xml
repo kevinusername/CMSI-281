@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="apparently I wasn't committing this?">
+    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="growing improvements and bug fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sentinal/PhraseHash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentinal/PhraseHash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sentinal/PhraseHashTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentinal/PhraseHashTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,19 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="440">
+              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHashTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
+            <state relative-caret-position="520">
               <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -328,7 +327,7 @@
       <workItem from="1543467292949" duration="13000" />
       <workItem from="1543478387867" duration="1316000" />
       <workItem from="1543814144583" duration="50000" />
-      <workItem from="1543814282405" duration="7534000" />
+      <workItem from="1543814282405" duration="8522000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -533,19 +532,17 @@
       <option name="project" value="LOCAL" />
       <updated>1543819923937</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="growing improvements and bug fixes">
+      <created>1543821891660</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1543821891660</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PhraseHashTests_testHugeTable - 2018.12.02 at 23h 16m 23s.xml">
-      <configuration name="PhraseHashTests.testHugeTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PhraseHashTests_testHugeTable - 2018.12.02 at 23h 17m 45s.xml">
-      <configuration name="PhraseHashTests.testHugeTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PhraseHashTests_testHugeTable - 2018.12.02 at 23h 17m 54s.xml">
-      <configuration name="PhraseHashTests.testHugeTable" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PhraseHashTests_testHugeTable - 2018.12.02 at 23h 18m 47s.xml">
       <configuration name="PhraseHashTests.testHugeTable" configurationId="JUnit" />
     </history-entry>
@@ -567,9 +564,18 @@
     <history-entry file="PhraseHashTests - 2018.12.02 at 23h 22m 27s.xml">
       <configuration name="PhraseHashTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PhraseHashTests - 2018.12.02 at 23h 23m 48s.xml">
+      <configuration name="PhraseHashTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PhraseHashTests - 2018.12.02 at 23h 35m 59s.xml">
+      <configuration name="PhraseHashTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PhraseHashTests - 2018.12.02 at 23h 37m 23s.xml">
+      <configuration name="PhraseHashTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68732000" />
+    <option name="totallyTimeSpent" value="69720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -608,7 +614,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="most methods finished, forgot to commit as i went..." />
     <MESSAGE value="moved private method" />
     <MESSAGE value="All tests pass???" />
     <MESSAGE value="Cleaner version of diffMon" />
@@ -633,7 +638,8 @@
     <MESSAGE value="initial work on PhraseHash methods" />
     <MESSAGE value="PhraseHash passing all tests" />
     <MESSAGE value="apparently I wasn't committing this?" />
-    <option name="LAST_COMMIT_MESSAGE" value="apparently I wasn't committing this?" />
+    <MESSAGE value="growing improvements and bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="growing improvements and bug fixes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -779,22 +785,22 @@
     <entry file="file://$PROJECT_DIR$/src/sentinal/posPhrases.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHashTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
+        <state relative-caret-position="520">
           <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#488#489#0" expanded="true" />
             <element signature="e#524#525#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
         </state>
       </provider>
     </entry>

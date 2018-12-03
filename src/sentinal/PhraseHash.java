@@ -42,10 +42,9 @@ public class PhraseHash implements PhraseHashInterface {
             buckets[index] = s;
         } else if (get(s) == null) {
             insertNextFree(s, index);
-        }
+        } else { return; }
 
         checkLongest(s);
-
         size++;
     }
 
