@@ -30,12 +30,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-              <folding>
-                <element signature="e#1608#1609#0" expanded="true" />
-                <element signature="e#1915#1916#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="254">
+              <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHashTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -193,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DictreenaryTests">
+  <component name="RunManager" selected="JUnit.PhraseHashTests">
     <configuration name="DictreenaryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CMSI 281" />
       <extension name="coverage">
@@ -204,22 +209,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="dictreenary" />
       <option name="MAIN_CLASS_NAME" value="dictreenary.DictreenaryTests" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DictreenaryTests.getSortedWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CMSI 281" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dictreenary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dictreenary" />
-      <option name="MAIN_CLASS_NAME" value="dictreenary.DictreenaryTests" />
-      <option name="METHOD_NAME" value="getSortedWords" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -272,20 +261,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PhraseHashTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CMSI 281" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sentinal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sentinal" />
+      <option name="MAIN_CLASS_NAME" value="sentinal.PhraseHashTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.DictreenaryTests.testAddWord" />
-      <item itemvalue="JUnit.DictreenaryTests.getSortedWords" />
       <item itemvalue="JUnit.DictreenaryTests" />
       <item itemvalue="JUnit.DictreenaryTests.testAddWord2" />
       <item itemvalue="JUnit.DictreenaryTests.testHasWord" />
+      <item itemvalue="JUnit.PhraseHashTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PhraseHashTests" />
         <item itemvalue="JUnit.DictreenaryTests" />
         <item itemvalue="JUnit.DictreenaryTests.testHasWord" />
         <item itemvalue="JUnit.DictreenaryTests.testAddWord" />
         <item itemvalue="JUnit.DictreenaryTests.testAddWord2" />
-        <item itemvalue="JUnit.DictreenaryTests.getSortedWords" />
       </list>
     </recent_temporary>
   </component>
@@ -317,7 +320,7 @@
       <workItem from="1543467292949" duration="13000" />
       <workItem from="1543478387867" duration="1316000" />
       <workItem from="1543814144583" duration="50000" />
-      <workItem from="1543814282405" duration="3327000" />
+      <workItem from="1543814282405" duration="5179000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -501,16 +504,17 @@
       <option name="project" value="LOCAL" />
       <updated>1543479600956</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="initial work on PhraseHash methods">
+      <created>1543817633366</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1543817633366</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DictreenaryTests - 2018.11.26 at 19h 12m 27s.xml">
-      <configuration name="DictreenaryTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictreenaryTests - 2018.11.26 at 19h 12m 55s.xml">
-      <configuration name="DictreenaryTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DictreenaryTests - 2018.11.26 at 19h 13m 40s.xml">
       <configuration name="DictreenaryTests" configurationId="JUnit" />
     </history-entry>
@@ -535,9 +539,15 @@
     <history-entry file="DictreenaryTests - 2018.11.29 at 00h 19m 37s.xml">
       <configuration name="DictreenaryTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PhraseHashTests - 2018.12.02 at 22h 28m 11s.xml">
+      <configuration name="PhraseHashTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PhraseHashTests - 2018.12.02 at 22h 43m 30s.xml">
+      <configuration name="PhraseHashTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64525000" />
+    <option name="totallyTimeSpent" value="66377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -553,7 +563,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3340143" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33367768" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39530134" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -576,7 +586,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished stack implementation" />
     <MESSAGE value="Finished intlist" />
     <MESSAGE value="now clears forward on visit" />
     <MESSAGE value="most methods finished, forgot to commit as i went..." />
@@ -601,7 +610,8 @@
     <MESSAGE value="formatting" />
     <MESSAGE value="minor changes for submission" />
     <MESSAGE value="Comment edits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comment edits" />
+    <MESSAGE value="initial work on PhraseHash methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial work on PhraseHash methods" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -728,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHashTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHashInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -754,14 +757,17 @@
     <entry file="file://$PROJECT_DIR$/src/sentinal/posPhrases.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHashTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-          <folding>
-            <element signature="e#1608#1609#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="254">
+          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
         </state>
       </provider>
     </entry>
