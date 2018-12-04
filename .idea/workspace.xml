@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="growing improvements and bug fixes">
+    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sentinal/PhraseHash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentinal/PhraseHash.java" afterDir="false" />
     </list>
@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+            <state relative-caret-position="200">
+              <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -40,10 +40,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHashTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            <state relative-caret-position="80">
+              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#488#489#0" expanded="true" />
                 <element signature="e#524#525#0" expanded="true" />
               </folding>
@@ -101,8 +100,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
         <option value="$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java" />
         <option value="$PROJECT_DIR$/src/dictreenary/Dictreenary.java" />
-        <option value="$PROJECT_DIR$/src/sentinal/PhraseHashTests.java" />
         <option value="$PROJECT_DIR$/src/sentinal/PhraseHash.java" />
+        <option value="$PROJECT_DIR$/src/sentinal/PhraseHashTests.java" />
       </list>
     </option>
   </component>
@@ -136,7 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,6 +161,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -327,7 +326,8 @@
       <workItem from="1543467292949" duration="13000" />
       <workItem from="1543478387867" duration="1316000" />
       <workItem from="1543814144583" duration="50000" />
-      <workItem from="1543814282405" duration="8522000" />
+      <workItem from="1543814282405" duration="8556000" />
+      <workItem from="1543897888346" duration="1045000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -539,56 +539,61 @@
       <option name="project" value="LOCAL" />
       <updated>1543821891660</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="edge case fixes">
+      <created>1543822822283</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1543822822283</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PhraseHashTests_testHugeTable - 2018.12.02 at 23h 18m 47s.xml">
-      <configuration name="PhraseHashTests.testHugeTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PhraseHashTests_testHugeTable - 2018.12.02 at 23h 19m 05s.xml">
-      <configuration name="PhraseHashTests.testHugeTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PhraseHashTests_testHugeTable - 2018.12.02 at 23h 20m 24s.xml">
-      <configuration name="PhraseHashTests.testHugeTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PhraseHashTests_testHugeTable - 2018.12.02 at 23h 20m 37s.xml">
-      <configuration name="PhraseHashTests.testHugeTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PhraseHashTests_testHugeTable - 2018.12.02 at 23h 21m 43s.xml">
-      <configuration name="PhraseHashTests.testHugeTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PhraseHashTests_testHugeTable - 2018.12.02 at 23h 22m 19s.xml">
-      <configuration name="PhraseHashTests.testHugeTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PhraseHashTests - 2018.12.02 at 23h 22m 27s.xml">
+    <history-entry file="PhraseHashTests - 2018.12.03 at 20h 39m 39s.xml">
       <configuration name="PhraseHashTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PhraseHashTests - 2018.12.02 at 23h 23m 48s.xml">
+    <history-entry file="PhraseHashTests - 2018.12.03 at 20h 41m 29s.xml">
       <configuration name="PhraseHashTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PhraseHashTests - 2018.12.02 at 23h 35m 59s.xml">
+    <history-entry file="PhraseHashTests - 2018.12.03 at 20h 42m 07s.xml">
       <configuration name="PhraseHashTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PhraseHashTests - 2018.12.02 at 23h 37m 23s.xml">
+    <history-entry file="PhraseHashTests - 2018.12.03 at 20h 43m 04s.xml">
+      <configuration name="PhraseHashTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PhraseHashTests - 2018.12.03 at 20h 43m 27s.xml">
+      <configuration name="PhraseHashTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PhraseHashTests - 2018.12.03 at 20h 44m 43s.xml">
+      <configuration name="PhraseHashTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PhraseHashTests - 2018.12.03 at 20h 46m 39s.xml">
+      <configuration name="PhraseHashTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PhraseHashTests - 2018.12.03 at 20h 47m 28s.xml">
+      <configuration name="PhraseHashTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PhraseHashTests - 2018.12.03 at 20h 48m 12s.xml">
+      <configuration name="PhraseHashTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PhraseHashTests - 2018.12.03 at 20h 48m 50s.xml">
       <configuration name="PhraseHashTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69720000" />
+    <option name="totallyTimeSpent" value="70799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17232767" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17382617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Learn" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Extract Method" weight="0.32954547" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33367768" />
@@ -601,6 +606,8 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3299285" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32890704" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Extract Method" order="13" weight="0.32954547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -614,7 +621,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved private method" />
     <MESSAGE value="All tests pass???" />
     <MESSAGE value="Cleaner version of diffMon" />
     <MESSAGE value="Further simplifying of methods" />
@@ -639,7 +645,26 @@
     <MESSAGE value="PhraseHash passing all tests" />
     <MESSAGE value="apparently I wasn't committing this?" />
     <MESSAGE value="growing improvements and bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="growing improvements and bug fixes" />
+    <MESSAGE value="edge case fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="edge case fixes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sentinal/PhraseHashTests.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sentinal/PhraseHashTests.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -785,12 +810,18 @@
     <entry file="file://$PROJECT_DIR$/src/sentinal/posPhrases.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1438">
+          <caret line="123" column="19" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHashTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="80">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#488#489#0" expanded="true" />
             <element signature="e#524#525#0" expanded="true" />
           </folding>
@@ -799,8 +830,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="200">
+          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
         </state>
       </provider>
     </entry>

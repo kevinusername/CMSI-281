@@ -69,11 +69,16 @@ public class PhraseHash implements PhraseHashInterface {
     // -----------------------------------------------------------
 
     /*
-     * This is apparently an effective way to get only positive values from hashCode().
+     * This is apparently an effective way to get only positive values without conditionals.
      * Stack Overflow post explaining it:
      * https://stackoverflow.com/questions/4412179/best-way-to-make-javas-modulus-behave-like-it-should-with-negative-numbers/4412200#4412200
      */
-    private int hash(String s) { return (s.hashCode() % buckets.length + buckets.length) % buckets.length; }
+    private int hash(String s) {
+        char[] phraseChars = s.toCharArray();
+        int hash = 1;
+        for (char c : phraseChars) { hash *= (int) c; }
+        return (hash % buckets.length + buckets.length) % buckets.length;
+    }
 
     private void checkAndGrow() {
         if ((double) size / buckets.length < LOAD_MAX) { return; }
