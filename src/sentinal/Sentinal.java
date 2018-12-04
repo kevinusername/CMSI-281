@@ -18,6 +18,8 @@ public class Sentinal implements SentinalInterface {
     // -----------------------------------------------------------
 
     Sentinal(String posFile, String negFile) throws FileNotFoundException {
+        posHash = new PhraseHash();
+        negHash = new PhraseHash();
         loadSentimentFile(posFile, true);
         loadSentimentFile(negFile, false);
     }
@@ -38,15 +40,29 @@ public class Sentinal implements SentinalInterface {
     public void loadSentimentFile(String filename, boolean positive) throws FileNotFoundException {
         Scanner readPhrase = new Scanner(new File(filename));
         while (readPhrase.hasNextLine()) {
-            String temp = readPhrase.nextLine();
-            int teto = 5 + 3;
             //            System.out.println(readPhrase.nextLine());
-            //            loadSentiment(readPhrase.nextLine(), positive);
+            loadSentiment(readPhrase.nextLine(), positive);
         }
     }
 
     public String sentinalyze(String filename) throws FileNotFoundException {
-        throw new UnsupportedOperationException();
+        Scanner document = new Scanner(new File(filename));
+        int maxPhraseLength = (posHash.longestLength() > negHash.longestLength()) ? posHash.longestLength() : negHash.longestLength();
+        int karmaScore = 0;
+        while (document.hasNextLine()) {
+            String[] words = document.nextLine().split(" ");
+            for (int i = 0; i < maxPhraseLength; i++) {
+                karmaScore += parseLine(words, i);
+            }
+        }
+
+        if (karmaScore > 0) {
+            return "positive";
+        } else if (karmaScore < 0) {
+            return "negative";
+        } else {
+            return "neutral";
+        }
     }
 
 
@@ -54,5 +70,34 @@ public class Sentinal implements SentinalInterface {
     // Helper Methods
     // -----------------------------------------------------------
 
-    // TODO: add your helper methods here!
+    private int parseLine(String[] words, int phraseLength) {
+        if (phraseLength > words.length) { return 0; }
+
+        String[] phrases = generatePhrases(words, phraseLength);
+
+        return getKarma(phrases);
+    }
+
+    private String[] generatePhrases(String[] words, int phraseLength) {
+        String[] phrases = new String[words.length - phraseLength + 1];
+
+        for (int i = 0; i <= words.length - phraseLength; i++) {
+            StringBuilder phrase = new StringBuilder();
+            for (int j = i; j < i + phraseLength; j++) {
+                phrase.append(words[j]);
+                phrase.append(" ");
+            }
+            phrases[i] = phrase.toString().trim();
+        }
+        return phrases;
+    }
+
+    private int getKarma(String[] words) {
+        int karma = 0;
+        for (String word : words) {
+            if (posHash.get(word) != null) karma++;
+            else if (negHash.get(word) != null) karma--;
+        }
+        return karma;
+    }
 }
