@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+            <state relative-caret-position="320">
+              <caret line="72" column="45" lean-forward="true" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -100,8 +100,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
         <option value="$PROJECT_DIR$/src/dictreenary/DictreenaryTests.java" />
         <option value="$PROJECT_DIR$/src/dictreenary/Dictreenary.java" />
-        <option value="$PROJECT_DIR$/src/sentinal/PhraseHash.java" />
         <option value="$PROJECT_DIR$/src/sentinal/PhraseHashTests.java" />
+        <option value="$PROJECT_DIR$/src/sentinal/PhraseHash.java" />
       </list>
     </option>
   </component>
@@ -327,7 +327,7 @@
       <workItem from="1543478387867" duration="1316000" />
       <workItem from="1543814144583" duration="50000" />
       <workItem from="1543814282405" duration="8556000" />
-      <workItem from="1543897888346" duration="1045000" />
+      <workItem from="1543897888346" duration="1102000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -546,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543822822283</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="home grown hash">
+      <created>1543898948451</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1543898948451</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -582,7 +589,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70799000" />
+    <option name="totallyTimeSpent" value="70856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -621,7 +628,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="All tests pass???" />
     <MESSAGE value="Cleaner version of diffMon" />
     <MESSAGE value="Further simplifying of methods" />
     <MESSAGE value="checkAndGrow helper method added" />
@@ -646,7 +652,8 @@
     <MESSAGE value="apparently I wasn't committing this?" />
     <MESSAGE value="growing improvements and bug fixes" />
     <MESSAGE value="edge case fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="edge case fixes" />
+    <MESSAGE value="home grown hash" />
+    <option name="LAST_COMMIT_MESSAGE" value="home grown hash" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -830,8 +837,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        <state relative-caret-position="320">
+          <caret line="72" column="45" lean-forward="true" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
         </state>
       </provider>
     </entry>
