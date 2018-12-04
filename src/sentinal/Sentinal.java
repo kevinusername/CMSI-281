@@ -40,15 +40,16 @@ public class Sentinal implements SentinalInterface {
     public void loadSentimentFile(String filename, boolean positive) throws FileNotFoundException {
         Scanner readPhrase = new Scanner(new File(filename));
         while (readPhrase.hasNextLine()) {
-            //            System.out.println(readPhrase.nextLine());
             loadSentiment(readPhrase.nextLine(), positive);
         }
     }
 
     public String sentinalyze(String filename) throws FileNotFoundException {
         Scanner document = new Scanner(new File(filename));
-        int maxPhraseLength = (posHash.longestLength() > negHash.longestLength()) ? posHash.longestLength() : negHash.longestLength();
+        int maxPhraseLength = (posHash.longestLength() > negHash.longestLength()) ? posHash.longestLength()
+                                                                                  : negHash.longestLength();
         int karmaScore = 0;
+
         while (document.hasNextLine()) {
             String[] words = document.nextLine().split(" ");
             for (int i = 0; i < maxPhraseLength; i++) {
@@ -56,13 +57,7 @@ public class Sentinal implements SentinalInterface {
             }
         }
 
-        if (karmaScore > 0) {
-            return "positive";
-        } else if (karmaScore < 0) {
-            return "negative";
-        } else {
-            return "neutral";
-        }
+        return judgement(karmaScore);
     }
 
 
@@ -89,6 +84,7 @@ public class Sentinal implements SentinalInterface {
             }
             phrases[i] = phrase.toString().trim();
         }
+
         return phrases;
     }
 
@@ -99,5 +95,15 @@ public class Sentinal implements SentinalInterface {
             else if (negHash.get(word) != null) karma--;
         }
         return karma;
+    }
+
+    private String judgement(int karmaScore) {
+        if (karmaScore > 0) {
+            return "positive";
+        } else if (karmaScore < 0) {
+            return "negative";
+        } else {
+            return "neutral";
+        }
     }
 }

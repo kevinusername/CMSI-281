@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="">
+    <list default="true" id="1aaf72c5-83f7-4e06-a10c-05a6bce91729" name="Default Changelist" comment="SentialTests passing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sentinal/PhraseHashTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentinal/PhraseHashTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sentinal/Sentinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentinal/Sentinal.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,48 +32,25 @@
         <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1520">
-              <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+              <caret line="78" column="33" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHashTests.java">
+        <entry file="file://$PROJECT_DIR$/src/sentinal/SentinalTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1840">
-              <caret line="92" column="41" lean-forward="true" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sentinal/negDoc.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="1080">
+              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sentinal/SentinalTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sentinal/Sentinal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="240">
+              <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,6 +78,8 @@
       <find>cloneHeap</find>
       <find>testHeap</find>
       <find>word</find>
+      <find>supererior</find>
+      <find>superior</find>
     </findStrings>
     <replaceStrings>
       <replace>right</replace>
@@ -134,8 +112,8 @@
         <option value="$PROJECT_DIR$/src/dictreenary/Dictreenary.java" />
         <option value="$PROJECT_DIR$/src/sentinal/PhraseHash.java" />
         <option value="$PROJECT_DIR$/src/sentinal/SentinalTests.java" />
-        <option value="$PROJECT_DIR$/src/sentinal/Sentinal.java" />
         <option value="$PROJECT_DIR$/src/sentinal/PhraseHashTests.java" />
+        <option value="$PROJECT_DIR$/src/sentinal/Sentinal.java" />
       </list>
     </option>
   </component>
@@ -363,7 +341,7 @@
       <workItem from="1543814282405" duration="8556000" />
       <workItem from="1543897888346" duration="1102000" />
       <workItem from="1543907348304" duration="13000" />
-      <workItem from="1543907375937" duration="4033000" />
+      <workItem from="1543907375937" duration="5167000" />
     </task>
     <task id="LOCAL-00001" summary="Finished stack implementation">
       <created>1537939751269</created>
@@ -589,22 +567,17 @@
       <option name="project" value="LOCAL" />
       <updated>1543898948451</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="SentialTests passing">
+      <created>1543911424087</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1543911424087</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SentinalTests_testSentinal - 2018.12.03 at 23h 15m 52s.xml">
-      <configuration name="SentinalTests.testSentinal" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SentinalTests_testSentinal - 2018.12.03 at 23h 17m 51s.xml">
-      <configuration name="SentinalTests.testSentinal" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SentinalTests_testSentinal - 2018.12.03 at 23h 18m 25s.xml">
-      <configuration name="SentinalTests.testSentinal" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SentinalTests_testSentinal - 2018.12.03 at 23h 19m 20s.xml">
-      <configuration name="SentinalTests.testSentinal" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SentinalTests_testSentinal - 2018.12.03 at 23h 19m 53s.xml">
       <configuration name="SentinalTests.testSentinal" configurationId="JUnit" />
     </history-entry>
@@ -623,9 +596,21 @@
     <history-entry file="SentinalTests - 2018.12.04 at 00h 16m 50s.xml">
       <configuration name="SentinalTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SentinalTests - 2018.12.04 at 00h 25m 04s.xml">
+      <configuration name="SentinalTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SentinalTests - 2018.12.04 at 00h 25m 08s.xml">
+      <configuration name="SentinalTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SentinalTests - 2018.12.04 at 00h 26m 13s.xml">
+      <configuration name="SentinalTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SentinalTests - 2018.12.04 at 00h 35m 43s.xml">
+      <configuration name="SentinalTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74902000" />
+    <option name="totallyTimeSpent" value="76036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -664,7 +649,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cleaner version of diffMon" />
     <MESSAGE value="Further simplifying of methods" />
     <MESSAGE value="checkAndGrow helper method added" />
     <MESSAGE value="Fixed clone" />
@@ -689,7 +673,8 @@
     <MESSAGE value="growing improvements and bug fixes" />
     <MESSAGE value="edge case fixes" />
     <MESSAGE value="home grown hash" />
-    <option name="LAST_COMMIT_MESSAGE" value="home grown hash" />
+    <MESSAGE value="SentialTests passing" />
+    <option name="LAST_COMMIT_MESSAGE" value="SentialTests passing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -816,39 +801,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sentinal/negPhrases.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1438">
           <caret line="123" column="19" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sentinal/posPhrases.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sentinal/comDoc.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sentinal/neuDoc.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sentinal/Sentinal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,6 +820,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sentinal/PhraseHash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="78" column="33" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sentinal/posDoc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sentinal/neuDoc.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sentinal/negDoc.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -871,10 +844,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sentinal/comDoc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sentinal/negPhrases.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sentinal/posPhrases.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sentinal/SentinalTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="1080">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sentinal/Sentinal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
