@@ -20,7 +20,7 @@ public class SentinalTests {
     Sentinal s;
     // [!] IMPORTANT: Replace the below with an absolute
     // file path to where your test files are located
-    String absolutePath = "S:/Users/you/workspace/project/src/sentinal/";
+    String absolutePath = "C:/Users/Kevin/Documents/GitHub/CMSI-281/src/sentinal/";
     @Before
     public void init () {
         try {

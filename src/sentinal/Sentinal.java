@@ -17,8 +17,9 @@ public class Sentinal implements SentinalInterface {
     // Constructor
     // -----------------------------------------------------------
 
-    Sentinal (String posFile, String negFile) throws FileNotFoundException {
-        // TODO: load files into PhraseHash fields appropriately
+    Sentinal(String posFile, String negFile) throws FileNotFoundException {
+        loadSentimentFile(posFile, true);
+        loadSentimentFile(negFile, false);
     }
 
 
@@ -26,15 +27,25 @@ public class Sentinal implements SentinalInterface {
     // Methods
     // -----------------------------------------------------------
 
-    public void loadSentiment (String phrase, boolean positive) {
-        throw new UnsupportedOperationException();
+    public void loadSentiment(String phrase, boolean positive) {
+        if (positive) {
+            posHash.put(phrase);
+        } else {
+            negHash.put(phrase);
+        }
     }
 
-    public void loadSentimentFile (String filename, boolean positive) throws FileNotFoundException {
-        throw new UnsupportedOperationException();
+    public void loadSentimentFile(String filename, boolean positive) throws FileNotFoundException {
+        Scanner readPhrase = new Scanner(new File(filename));
+        while (readPhrase.hasNextLine()) {
+            String temp = readPhrase.nextLine();
+            int teto = 5 + 3;
+            //            System.out.println(readPhrase.nextLine());
+            //            loadSentiment(readPhrase.nextLine(), positive);
+        }
     }
 
-    public String sentinalyze (String filename) throws FileNotFoundException {
+    public String sentinalyze(String filename) throws FileNotFoundException {
         throw new UnsupportedOperationException();
     }
 
@@ -44,5 +55,4 @@ public class Sentinal implements SentinalInterface {
     // -----------------------------------------------------------
 
     // TODO: add your helper methods here!
-
 }
